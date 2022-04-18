@@ -1,0 +1,4612 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/2022/04/ciio"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/2022/04/ciio">
+    <Prefix name="" IRI="http://www.semanticweb.org/2022/04/ciio"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Catheter Infection Indications Ontology (CIIO). This ontology is for reasoning about clinical signs and symptoms that indicate presence of a catheter or infection.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Date: 18. April 2022 13:25</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="no">Kateter InfeksjonsIndikasjoner Ontologi (CIIO eller Catheter Infection Indications Ontology på engelsk). Denne otologien er for resonnement om kliniske tegn og symptomer som indikerer tilstedeværelsen av et kateter eller infeksjon.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#anatomical_location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#arm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#artery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#blood_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#blood_test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#body_temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#catheter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#catheter_discontinue_use"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#catheter_insertion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#catheter_procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#catheter_removal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#catheter_self_removal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#circulatory_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#consciousness_level"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#device_observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#edema"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#elbow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#epidural"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#frostbite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#general_iv"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hardness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#infusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#injury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#insertion_site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#itchy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iv_antibiotics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iv_fluid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iv_medication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#leakage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#medical_device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobility_impairment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#moisture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#necrosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#phlebitis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pulse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#red"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#relative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#respiratory_rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sentence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#subcutaneous_infusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#subcutaneous_skin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#swollen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tenderness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vital_sign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#warm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_combined_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_documented_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_iv_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_observed_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#location_has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#medication_should_have_been"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#patient_has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#procedure_uses"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#anatomical_location_descriptor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#anatomical_location_descriptor_front_or_back"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#anatomical_location_descriptor_left_or_right"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blood_test_result"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_blood_test_result"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_body_temperature_range"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_conscious_state"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_cultured_bacteria"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_pivc_color"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_severity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#is_forgotten"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#is_missing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#negation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#observation_attribute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#relative_is"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arm.09.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arm.09.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arm.10.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arm.10.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arm.13.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#body_temp.10.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catheter_discontinue_use.10.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catheter_insertion.10.05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catheter_insertion.11.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catheter_procedure.09.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catheter_removal.04.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catheter_removal.06.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catheter_self_removal.06.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.06"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.07"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.08"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.09"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#document.15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#elbow.01.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#elbow.02.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#elbow.05.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#elbow.05.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#elbow.05.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#elbow.06.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#elbow.06.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#elbow.07.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#elbow.09.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#epidural.08.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#frostbite.10.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#general_iv.03.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hand.06.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hand.06.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hand.12.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#infusion.07.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#infusion.09.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#infusion.09.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#infusion.14.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#injury.12.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insertion_site.10.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insertion_site.10.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insertion_site.11.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#insertion_site.14.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#itchy.06.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_antibiotics.01.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_antibiotics.02.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_fluid.01.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_fluid.03.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_fluid.03.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_fluid.09.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_fluid.15.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_fluid.15.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_medication.03.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_medication.03.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_medication.07.01.1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_medication.07.01.2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_medication.08.01.1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_medication.08.01.2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_medication.13.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_medication.15.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iv_medication.15.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#leakage.09.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#leakage.09.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mobility_impairment.10.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#moisture.07.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#moisture.09.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#necrosis.13.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pain.05.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pain.05.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pain.09.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pain.10.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pain.11.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.03.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.05.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.06.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.06.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.06.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.08.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.09.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.09.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.10.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.10.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.10.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.10.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.12.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#patient.15.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.01.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.01.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.02.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.03.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.04.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.05.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.06.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.07.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.09.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.10.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.10.05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.11.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pump.07.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pus.10.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#red.05.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#red.06.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#red.10.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#red.11.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#red.12.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#red.14.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#relative.05.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.01.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.01.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.01.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.02.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.02.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.03.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.03.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.04.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.05.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.05.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.05.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.06.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.06.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.06.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.06.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.07.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.07.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.08.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.09.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.09.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.09.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.09.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.10.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.10.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.10.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.10.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.10.05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.11.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.11.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.11.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.12.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.12.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.13.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.14.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.15.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sentence.15.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#subcutaneous_infusion.01.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#subcutaneous_infusion.02.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#subcutaneous_skin.07.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#subcutaneous_skin.13.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swollen.05.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swollen.05.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swollen.06.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swollen.07.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swollen.10.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swollen.12.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swollen.14.01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tenderness.10.02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#warm.06.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#warm.06.04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#warm.11.03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.test_document"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.01.test_blood_pressure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.01.test_body_temperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.01.test_consciousness_level"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.01.test_pulse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.01.test_respiratory_rate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.01.test_sentence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.02.test_body_temperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.02.test_consciousness_level"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.02.test_sentence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.03.test_body_temperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#01.03.test_sentence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#02.test_document"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#02.01.test_hardness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#02.01.test_sentence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#02.01.test_tenderness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#02.01.test_vein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#03.01.test_blood_test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#03.01.test_document"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#03.01.test_sentence"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#arm"/>
+        <Class IRI="#anatomical_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artery"/>
+        <Class IRI="#circulatory_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#blood_pressure"/>
+        <Class IRI="#vital_sign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#blood_test"/>
+        <Class IRI="#procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#body_temperature"/>
+        <Class IRI="#vital_sign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#catheter"/>
+        <Class IRI="#medical_device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#catheter_discontinue_use"/>
+        <Class IRI="#catheter_procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#catheter_insertion"/>
+        <Class IRI="#catheter_procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#catheter_procedure"/>
+        <Class IRI="#procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#catheter_removal"/>
+        <Class IRI="#catheter_procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#catheter_self_removal"/>
+        <Class IRI="#catheter_procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#circulatory_system"/>
+        <Class IRI="#anatomical_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#consciousness_level"/>
+        <Class IRI="#vital_sign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+        <Class IRI="#observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#device_observation"/>
+        <Class IRI="#observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#edema"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#elbow"/>
+        <Class IRI="#arm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#epidural"/>
+        <Class IRI="#catheter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#frostbite"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#general_iv"/>
+        <Class IRI="#procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hand"/>
+        <Class IRI="#arm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hardness"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#infusion"/>
+        <Class IRI="#procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#injury"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#insertion_site"/>
+        <Class IRI="#anatomical_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#itchy"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iv_antibiotics"/>
+        <Class IRI="#general_iv"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iv_fluid"/>
+        <Class IRI="#general_iv"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iv_medication"/>
+        <Class IRI="#general_iv"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#leakage"/>
+        <Class IRI="#device_observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobility_impairment"/>
+        <Class IRI="#observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#moisture"/>
+        <Class IRI="#device_observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#necrosis"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pain"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#patient"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <Class IRI="#catheter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#phlebitis"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pulse"/>
+        <Class IRI="#vital_sign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pump"/>
+        <Class IRI="#medical_device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pus"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#red"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#relative"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#respiratory_rate"/>
+        <Class IRI="#vital_sign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#subcutaneous_infusion"/>
+        <Class IRI="#infusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#subcutaneous_skin"/>
+        <Class IRI="#anatomical_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#swollen"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tenderness"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vein"/>
+        <Class IRI="#circulatory_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vital_sign"/>
+        <Class IRI="#observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#warm"/>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#anatomical_location"/>
+        <Class IRI="#document"/>
+        <Class IRI="#medical_device"/>
+        <Class IRI="#observation"/>
+        <Class IRI="#person"/>
+        <Class IRI="#procedure"/>
+        <Class IRI="#sentence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#arm"/>
+        <Class IRI="#circulatory_system"/>
+        <Class IRI="#insertion_site"/>
+        <Class IRI="#subcutaneous_skin"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#artery"/>
+        <Class IRI="#vein"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#blood_pressure"/>
+        <Class IRI="#body_temperature"/>
+        <Class IRI="#consciousness_level"/>
+        <Class IRI="#pulse"/>
+        <Class IRI="#respiratory_rate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#blood_test"/>
+        <Class IRI="#catheter_procedure"/>
+        <Class IRI="#general_iv"/>
+        <Class IRI="#infusion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#catheter"/>
+        <Class IRI="#pump"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#catheter_discontinue_use"/>
+        <Class IRI="#catheter_insertion"/>
+        <Class IRI="#catheter_removal"/>
+        <Class IRI="#catheter_self_removal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#descriptive_sign_or_symptom"/>
+        <Class IRI="#device_observation"/>
+        <Class IRI="#mobility_impairment"/>
+        <Class IRI="#vital_sign"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#edema"/>
+        <Class IRI="#frostbite"/>
+        <Class IRI="#hardness"/>
+        <Class IRI="#injury"/>
+        <Class IRI="#itchy"/>
+        <Class IRI="#necrosis"/>
+        <Class IRI="#pain"/>
+        <Class IRI="#phlebitis"/>
+        <Class IRI="#pus"/>
+        <Class IRI="#red"/>
+        <Class IRI="#swollen"/>
+        <Class IRI="#tenderness"/>
+        <Class IRI="#warm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#elbow"/>
+        <Class IRI="#hand"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#epidural"/>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#iv_antibiotics"/>
+        <Class IRI="#iv_fluid"/>
+        <Class IRI="#iv_medication"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#leakage"/>
+        <Class IRI="#moisture"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#patient"/>
+        <Class IRI="#relative"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#arm"/>
+        <NamedIndividual IRI="#arm.09.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#arm"/>
+        <NamedIndividual IRI="#arm.09.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#arm"/>
+        <NamedIndividual IRI="#arm.10.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#arm"/>
+        <NamedIndividual IRI="#arm.10.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#arm"/>
+        <NamedIndividual IRI="#arm.13.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#body_temperature"/>
+        <NamedIndividual IRI="#body_temp.10.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#catheter_discontinue_use"/>
+        <NamedIndividual IRI="#catheter_discontinue_use.10.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#catheter_insertion"/>
+        <NamedIndividual IRI="#catheter_insertion.10.05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#catheter_insertion"/>
+        <NamedIndividual IRI="#catheter_insertion.11.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#catheter_procedure"/>
+        <NamedIndividual IRI="#catheter_procedure.09.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#catheter_removal"/>
+        <NamedIndividual IRI="#catheter_removal.04.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#catheter_removal"/>
+        <NamedIndividual IRI="#catheter_removal.06.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#catheter_self_removal"/>
+        <NamedIndividual IRI="#catheter_self_removal.06.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.06"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.07"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.08"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.09"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#document.15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#elbow"/>
+        <NamedIndividual IRI="#elbow.01.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#elbow"/>
+        <NamedIndividual IRI="#elbow.02.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#elbow"/>
+        <NamedIndividual IRI="#elbow.05.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#elbow"/>
+        <NamedIndividual IRI="#elbow.05.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#elbow"/>
+        <NamedIndividual IRI="#elbow.05.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#elbow"/>
+        <NamedIndividual IRI="#elbow.06.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#elbow"/>
+        <NamedIndividual IRI="#elbow.06.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#elbow"/>
+        <NamedIndividual IRI="#elbow.07.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#elbow"/>
+        <NamedIndividual IRI="#elbow.09.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#epidural"/>
+        <NamedIndividual IRI="#epidural.08.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#frostbite"/>
+        <NamedIndividual IRI="#frostbite.10.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#general_iv"/>
+        <NamedIndividual IRI="#general_iv.03.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hand"/>
+        <NamedIndividual IRI="#hand.06.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hand"/>
+        <NamedIndividual IRI="#hand.06.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hand"/>
+        <NamedIndividual IRI="#hand.12.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#infusion"/>
+        <NamedIndividual IRI="#infusion.07.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#infusion"/>
+        <NamedIndividual IRI="#infusion.09.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#infusion"/>
+        <NamedIndividual IRI="#infusion.09.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#infusion"/>
+        <NamedIndividual IRI="#infusion.14.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#injury"/>
+        <NamedIndividual IRI="#injury.12.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#insertion_site"/>
+        <NamedIndividual IRI="#insertion_site.10.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#insertion_site"/>
+        <NamedIndividual IRI="#insertion_site.10.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#insertion_site"/>
+        <NamedIndividual IRI="#insertion_site.11.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#insertion_site"/>
+        <NamedIndividual IRI="#insertion_site.14.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#itchy"/>
+        <NamedIndividual IRI="#itchy.06.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_antibiotics"/>
+        <NamedIndividual IRI="#iv_antibiotics.01.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_antibiotics"/>
+        <NamedIndividual IRI="#iv_antibiotics.02.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_fluid"/>
+        <NamedIndividual IRI="#iv_fluid.01.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_fluid"/>
+        <NamedIndividual IRI="#iv_fluid.03.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_fluid"/>
+        <NamedIndividual IRI="#iv_fluid.03.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_fluid"/>
+        <NamedIndividual IRI="#iv_fluid.09.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_fluid"/>
+        <NamedIndividual IRI="#iv_fluid.15.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_fluid"/>
+        <NamedIndividual IRI="#iv_fluid.15.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_medication"/>
+        <NamedIndividual IRI="#iv_medication.03.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_medication"/>
+        <NamedIndividual IRI="#iv_medication.03.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_medication"/>
+        <NamedIndividual IRI="#iv_medication.07.01.1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_medication"/>
+        <NamedIndividual IRI="#iv_medication.07.01.2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_medication"/>
+        <NamedIndividual IRI="#iv_medication.08.01.1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_medication"/>
+        <NamedIndividual IRI="#iv_medication.08.01.2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_medication"/>
+        <NamedIndividual IRI="#iv_medication.13.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_medication"/>
+        <NamedIndividual IRI="#iv_medication.15.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iv_medication"/>
+        <NamedIndividual IRI="#iv_medication.15.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#leakage"/>
+        <NamedIndividual IRI="#leakage.09.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#leakage"/>
+        <NamedIndividual IRI="#leakage.09.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#mobility_impairment"/>
+        <NamedIndividual IRI="#mobility_impairment.10.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#moisture"/>
+        <NamedIndividual IRI="#moisture.07.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#moisture"/>
+        <NamedIndividual IRI="#moisture.09.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#necrosis"/>
+        <NamedIndividual IRI="#necrosis.13.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pain"/>
+        <NamedIndividual IRI="#pain.05.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pain"/>
+        <NamedIndividual IRI="#pain.05.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pain"/>
+        <NamedIndividual IRI="#pain.09.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pain"/>
+        <NamedIndividual IRI="#pain.10.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pain"/>
+        <NamedIndividual IRI="#pain.11.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.03.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.05.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.06.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.06.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.06.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.08.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.09.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.09.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.10.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.10.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.10.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.10.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.12.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient"/>
+        <NamedIndividual IRI="#patient.15.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.01.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.01.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.02.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.03.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.04.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.05.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.06.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.07.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.09.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.10.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.10.05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.11.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pump"/>
+        <NamedIndividual IRI="#pump.07.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pus"/>
+        <NamedIndividual IRI="#pus.10.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#red"/>
+        <NamedIndividual IRI="#red.05.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#red"/>
+        <NamedIndividual IRI="#red.06.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#red"/>
+        <NamedIndividual IRI="#red.10.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#red"/>
+        <NamedIndividual IRI="#red.11.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#red"/>
+        <NamedIndividual IRI="#red.12.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#red"/>
+        <NamedIndividual IRI="#red.14.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#relative"/>
+        <NamedIndividual IRI="#relative.05.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.01.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.01.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.01.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.02.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.02.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.03.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.03.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.04.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.05.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.05.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.05.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.06.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.06.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.06.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.06.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.07.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.07.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.08.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.09.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.09.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.09.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.09.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.10.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.10.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.10.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.10.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.10.05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.11.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.11.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.11.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.12.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.12.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.13.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.14.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.15.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#sentence.15.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#subcutaneous_infusion"/>
+        <NamedIndividual IRI="#subcutaneous_infusion.01.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#subcutaneous_infusion"/>
+        <NamedIndividual IRI="#subcutaneous_infusion.02.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#subcutaneous_skin"/>
+        <NamedIndividual IRI="#subcutaneous_skin.07.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#subcutaneous_skin"/>
+        <NamedIndividual IRI="#subcutaneous_skin.13.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#swollen"/>
+        <NamedIndividual IRI="#swollen.05.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#swollen"/>
+        <NamedIndividual IRI="#swollen.05.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#swollen"/>
+        <NamedIndividual IRI="#swollen.06.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#swollen"/>
+        <NamedIndividual IRI="#swollen.07.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#swollen"/>
+        <NamedIndividual IRI="#swollen.10.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#swollen"/>
+        <NamedIndividual IRI="#swollen.12.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#swollen"/>
+        <NamedIndividual IRI="#swollen.14.01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tenderness"/>
+        <NamedIndividual IRI="#tenderness.10.02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#warm"/>
+        <NamedIndividual IRI="#warm.06.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#warm"/>
+        <NamedIndividual IRI="#warm.06.04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#warm"/>
+        <NamedIndividual IRI="#warm.11.03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#01.test_document"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#blood_pressure"/>
+        <NamedIndividual IRI="#01.01.test_blood_pressure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#body_temperature"/>
+        <NamedIndividual IRI="#01.01.test_body_temperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#consciousness_level"/>
+        <NamedIndividual IRI="#01.01.test_consciousness_level"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pulse"/>
+        <NamedIndividual IRI="#01.01.test_pulse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#respiratory_rate"/>
+        <NamedIndividual IRI="#01.01.test_respiratory_rate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#01.01.test_sentence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#body_temperature"/>
+        <NamedIndividual IRI="#01.02.test_body_temperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#consciousness_level"/>
+        <NamedIndividual IRI="#01.02.test_consciousness_level"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#01.02.test_sentence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#body_temperature"/>
+        <NamedIndividual IRI="#01.03.test_body_temperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#01.03.test_sentence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#02.test_document"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hardness"/>
+        <NamedIndividual IRI="#02.01.test_hardness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#02.01.test_sentence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tenderness"/>
+        <NamedIndividual IRI="#02.01.test_tenderness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vein"/>
+        <NamedIndividual IRI="#02.01.test_vein"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#blood_test"/>
+        <NamedIndividual IRI="#03.01.test_blood_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#document"/>
+        <NamedIndividual IRI="#03.01.test_document"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sentence"/>
+        <NamedIndividual IRI="#03.01.test_sentence"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <NamedIndividual IRI="#catheter_discontinue_use.10.01"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <NamedIndividual IRI="#catheter_insertion.10.05"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.10.05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <NamedIndividual IRI="#catheter_insertion.11.01"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.11.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <NamedIndividual IRI="#catheter_procedure.09.03"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.09.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <NamedIndividual IRI="#catheter_removal.04.03"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.04.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <NamedIndividual IRI="#catheter_removal.06.01"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.06.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.01"/>
+        <NamedIndividual IRI="#sentence.01.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.01"/>
+        <NamedIndividual IRI="#sentence.01.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.01"/>
+        <NamedIndividual IRI="#sentence.01.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.02"/>
+        <NamedIndividual IRI="#sentence.02.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.02"/>
+        <NamedIndividual IRI="#sentence.02.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.03"/>
+        <NamedIndividual IRI="#sentence.03.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.03"/>
+        <NamedIndividual IRI="#sentence.03.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.04"/>
+        <NamedIndividual IRI="#sentence.04.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.05"/>
+        <NamedIndividual IRI="#sentence.05.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.05"/>
+        <NamedIndividual IRI="#sentence.05.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.05"/>
+        <NamedIndividual IRI="#sentence.05.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.06"/>
+        <NamedIndividual IRI="#sentence.06.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.06"/>
+        <NamedIndividual IRI="#sentence.06.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.06"/>
+        <NamedIndividual IRI="#sentence.06.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.06"/>
+        <NamedIndividual IRI="#sentence.06.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.07"/>
+        <NamedIndividual IRI="#sentence.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.07"/>
+        <NamedIndividual IRI="#sentence.07.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.08"/>
+        <NamedIndividual IRI="#sentence.08.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.09"/>
+        <NamedIndividual IRI="#sentence.09.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.09"/>
+        <NamedIndividual IRI="#sentence.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.09"/>
+        <NamedIndividual IRI="#sentence.09.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.09"/>
+        <NamedIndividual IRI="#sentence.09.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.10"/>
+        <NamedIndividual IRI="#sentence.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.10"/>
+        <NamedIndividual IRI="#sentence.10.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.10"/>
+        <NamedIndividual IRI="#sentence.10.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.10"/>
+        <NamedIndividual IRI="#sentence.10.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.10"/>
+        <NamedIndividual IRI="#sentence.10.05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.11"/>
+        <NamedIndividual IRI="#sentence.11.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.11"/>
+        <NamedIndividual IRI="#sentence.11.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.11"/>
+        <NamedIndividual IRI="#sentence.11.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.12"/>
+        <NamedIndividual IRI="#sentence.12.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.12"/>
+        <NamedIndividual IRI="#sentence.12.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.13"/>
+        <NamedIndividual IRI="#sentence.13.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.14"/>
+        <NamedIndividual IRI="#sentence.14.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.15"/>
+        <NamedIndividual IRI="#sentence.15.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#document.15"/>
+        <NamedIndividual IRI="#sentence.15.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#infusion.07.02"/>
+        <NamedIndividual IRI="#subcutaneous_skin.07.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#infusion.14.01"/>
+        <NamedIndividual IRI="#insertion_site.14.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#injury.12.01"/>
+        <NamedIndividual IRI="#hand.12.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#itchy.06.03"/>
+        <NamedIndividual IRI="#hand.06.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_combined_with"/>
+        <NamedIndividual IRI="#iv_antibiotics.01.02"/>
+        <NamedIndividual IRI="#iv_fluid.01.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_iv_for"/>
+        <NamedIndividual IRI="#iv_antibiotics.01.02"/>
+        <NamedIndividual IRI="#subcutaneous_infusion.01.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_iv_for"/>
+        <NamedIndividual IRI="#iv_antibiotics.02.02"/>
+        <NamedIndividual IRI="#subcutaneous_infusion.02.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_combined_with"/>
+        <NamedIndividual IRI="#iv_fluid.01.02"/>
+        <NamedIndividual IRI="#iv_antibiotics.01.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <NamedIndividual IRI="#iv_fluid.03.03"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.03.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#iv_fluid.09.02"/>
+        <NamedIndividual IRI="#elbow.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_documented_in"/>
+        <NamedIndividual IRI="#iv_fluid.15.02"/>
+        <NamedIndividual IRI="#sentence.15.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <NamedIndividual IRI="#iv_medication.07.01.1"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <NamedIndividual IRI="#iv_medication.07.01.1"/>
+        <NamedIndividual IRI="#pump.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <NamedIndividual IRI="#iv_medication.07.01.2"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <NamedIndividual IRI="#iv_medication.07.01.2"/>
+        <NamedIndividual IRI="#pump.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#medication_should_have_been"/>
+        <NamedIndividual IRI="#iv_medication.08.01.1"/>
+        <NamedIndividual IRI="#iv_medication.08.01.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#iv_medication.13.01"/>
+        <NamedIndividual IRI="#subcutaneous_skin.13.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_observed_with"/>
+        <NamedIndividual IRI="#leakage.09.02"/>
+        <NamedIndividual IRI="#iv_fluid.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#leakage.09.02"/>
+        <NamedIndividual IRI="#elbow.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_observed_with"/>
+        <NamedIndividual IRI="#leakage.09.04"/>
+        <NamedIndividual IRI="#infusion.09.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#leakage.09.04"/>
+        <NamedIndividual IRI="#arm.09.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#mobility_impairment.10.02"/>
+        <NamedIndividual IRI="#arm.10.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#moisture.09.04"/>
+        <NamedIndividual IRI="#arm.09.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#pain.05.02"/>
+        <NamedIndividual IRI="#elbow.05.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#pain.05.03"/>
+        <NamedIndividual IRI="#elbow.05.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#pain.09.02"/>
+        <NamedIndividual IRI="#arm.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#pain.10.01"/>
+        <NamedIndividual IRI="#insertion_site.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.03.03"/>
+        <NamedIndividual IRI="#iv_fluid.03.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.03.03"/>
+        <NamedIndividual IRI="#iv_medication.03.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.03.03"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.03.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.05.02"/>
+        <NamedIndividual IRI="#relative.05.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.06.02"/>
+        <NamedIndividual IRI="#catheter_self_removal.06.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.06.03"/>
+        <NamedIndividual IRI="#elbow.06.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.06.03"/>
+        <NamedIndividual IRI="#hand.06.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.08.01"/>
+        <NamedIndividual IRI="#epidural.08.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.08.01"/>
+        <NamedIndividual IRI="#iv_medication.08.01.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.09.01"/>
+        <NamedIndividual IRI="#infusion.09.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.09.02"/>
+        <NamedIndividual IRI="#arm.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.10.01"/>
+        <NamedIndividual IRI="#pain.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.10.01"/>
+        <NamedIndividual IRI="#red.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.10.01"/>
+        <NamedIndividual IRI="#swollen.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.10.02"/>
+        <NamedIndividual IRI="#arm.10.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.10.02"/>
+        <NamedIndividual IRI="#body_temp.10.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.10.02"/>
+        <NamedIndividual IRI="#frostbite.10.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.10.03"/>
+        <NamedIndividual IRI="#body_temp.10.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.10.04"/>
+        <NamedIndividual IRI="#frostbite.10.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#patient_has"/>
+        <NamedIndividual IRI="#patient.15.01"/>
+        <NamedIndividual IRI="#iv_fluid.15.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.01.01"/>
+        <NamedIndividual IRI="#elbow.01.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.02.01"/>
+        <NamedIndividual IRI="#elbow.02.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.05.01"/>
+        <NamedIndividual IRI="#elbow.05.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.07.01"/>
+        <NamedIndividual IRI="#elbow.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#pus.10.02"/>
+        <NamedIndividual IRI="#insertion_site.10.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#red.05.03"/>
+        <NamedIndividual IRI="#elbow.05.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#red.06.04"/>
+        <NamedIndividual IRI="#elbow.06.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#red.10.01"/>
+        <NamedIndividual IRI="#arm.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#red.11.03"/>
+        <NamedIndividual IRI="#insertion_site.11.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#red.14.01"/>
+        <NamedIndividual IRI="#insertion_site.14.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.01.01"/>
+        <NamedIndividual IRI="#elbow.01.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.01.01"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.01.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.01.02"/>
+        <NamedIndividual IRI="#iv_antibiotics.01.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.01.02"/>
+        <NamedIndividual IRI="#iv_fluid.01.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.01.02"/>
+        <NamedIndividual IRI="#subcutaneous_infusion.01.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.01.03"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.01.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.02.01"/>
+        <NamedIndividual IRI="#elbow.02.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.02.01"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.02.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.02.02"/>
+        <NamedIndividual IRI="#iv_antibiotics.02.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.02.02"/>
+        <NamedIndividual IRI="#subcutaneous_infusion.02.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.03.02"/>
+        <NamedIndividual IRI="#general_iv.03.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.03.02"/>
+        <NamedIndividual IRI="#iv_fluid.03.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.03.02"/>
+        <NamedIndividual IRI="#iv_medication.03.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.03.03"/>
+        <NamedIndividual IRI="#iv_fluid.03.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.03.03"/>
+        <NamedIndividual IRI="#iv_medication.03.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.03.03"/>
+        <NamedIndividual IRI="#patient.03.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.03.03"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.03.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.04.03"/>
+        <NamedIndividual IRI="#catheter_removal.04.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.04.03"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.04.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.05.01"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.05.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.05.02"/>
+        <NamedIndividual IRI="#elbow.05.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.05.02"/>
+        <NamedIndividual IRI="#pain.05.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.05.02"/>
+        <NamedIndividual IRI="#patient.05.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.05.02"/>
+        <NamedIndividual IRI="#relative.05.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.05.02"/>
+        <NamedIndividual IRI="#swollen.05.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.05.03"/>
+        <NamedIndividual IRI="#elbow.05.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.05.03"/>
+        <NamedIndividual IRI="#pain.05.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.05.03"/>
+        <NamedIndividual IRI="#red.05.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.05.03"/>
+        <NamedIndividual IRI="#swollen.05.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.01"/>
+        <NamedIndividual IRI="#catheter_removal.06.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.01"/>
+        <NamedIndividual IRI="#patient.06.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.01"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.06.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.02"/>
+        <NamedIndividual IRI="#catheter_self_removal.06.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.02"/>
+        <NamedIndividual IRI="#patient.06.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.03"/>
+        <NamedIndividual IRI="#elbow.06.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.03"/>
+        <NamedIndividual IRI="#hand.06.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.03"/>
+        <NamedIndividual IRI="#itchy.06.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.03"/>
+        <NamedIndividual IRI="#patient.06.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.03"/>
+        <NamedIndividual IRI="#warm.06.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.04"/>
+        <NamedIndividual IRI="#elbow.06.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.04"/>
+        <NamedIndividual IRI="#hand.06.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.04"/>
+        <NamedIndividual IRI="#red.06.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.04"/>
+        <NamedIndividual IRI="#swollen.06.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.06.04"/>
+        <NamedIndividual IRI="#warm.06.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.07.01"/>
+        <NamedIndividual IRI="#elbow.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.07.01"/>
+        <NamedIndividual IRI="#iv_medication.07.01.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.07.01"/>
+        <NamedIndividual IRI="#iv_medication.07.01.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.07.01"/>
+        <NamedIndividual IRI="#moisture.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.07.01"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.07.01"/>
+        <NamedIndividual IRI="#pump.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.07.01"/>
+        <NamedIndividual IRI="#swollen.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.07.02"/>
+        <NamedIndividual IRI="#infusion.07.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.07.02"/>
+        <NamedIndividual IRI="#subcutaneous_skin.07.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.08.01"/>
+        <NamedIndividual IRI="#epidural.08.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.08.01"/>
+        <NamedIndividual IRI="#iv_medication.08.01.1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.08.01"/>
+        <NamedIndividual IRI="#iv_medication.08.01.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.08.01"/>
+        <NamedIndividual IRI="#patient.08.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.01"/>
+        <NamedIndividual IRI="#infusion.09.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.01"/>
+        <NamedIndividual IRI="#patient.09.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.02"/>
+        <NamedIndividual IRI="#arm.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.02"/>
+        <NamedIndividual IRI="#elbow.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.02"/>
+        <NamedIndividual IRI="#iv_fluid.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.02"/>
+        <NamedIndividual IRI="#leakage.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.02"/>
+        <NamedIndividual IRI="#pain.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.02"/>
+        <NamedIndividual IRI="#patient.09.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.03"/>
+        <NamedIndividual IRI="#catheter_procedure.09.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.03"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.09.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.04"/>
+        <NamedIndividual IRI="#arm.09.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.04"/>
+        <NamedIndividual IRI="#infusion.09.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.04"/>
+        <NamedIndividual IRI="#leakage.09.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.09.04"/>
+        <NamedIndividual IRI="#moisture.09.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.01"/>
+        <NamedIndividual IRI="#arm.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.01"/>
+        <NamedIndividual IRI="#catheter_discontinue_use.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.01"/>
+        <NamedIndividual IRI="#insertion_site.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.01"/>
+        <NamedIndividual IRI="#pain.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.01"/>
+        <NamedIndividual IRI="#patient.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.01"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.01"/>
+        <NamedIndividual IRI="#red.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.01"/>
+        <NamedIndividual IRI="#swollen.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.02"/>
+        <NamedIndividual IRI="#arm.10.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.02"/>
+        <NamedIndividual IRI="#catheter_insertion.10.05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.02"/>
+        <NamedIndividual IRI="#insertion_site.10.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.02"/>
+        <NamedIndividual IRI="#mobility_impairment.10.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.02"/>
+        <NamedIndividual IRI="#patient.10.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.02"/>
+        <NamedIndividual IRI="#pus.10.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.02"/>
+        <NamedIndividual IRI="#tenderness.10.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.03"/>
+        <NamedIndividual IRI="#body_temp.10.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.03"/>
+        <NamedIndividual IRI="#patient.10.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.04"/>
+        <NamedIndividual IRI="#frostbite.10.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.04"/>
+        <NamedIndividual IRI="#patient.10.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.05"/>
+        <NamedIndividual IRI="#catheter_insertion.10.05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.10.05"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.10.05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.11.01"/>
+        <NamedIndividual IRI="#catheter_insertion.11.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.11.01"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.11.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.11.03"/>
+        <NamedIndividual IRI="#insertion_site.11.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.11.03"/>
+        <NamedIndividual IRI="#red.11.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.11.03"/>
+        <NamedIndividual IRI="#warm.11.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.11.04"/>
+        <NamedIndividual IRI="#pain.11.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.12.01"/>
+        <NamedIndividual IRI="#hand.12.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.12.01"/>
+        <NamedIndividual IRI="#injury.12.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.12.01"/>
+        <NamedIndividual IRI="#patient.12.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.12.02"/>
+        <NamedIndividual IRI="#red.12.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.12.02"/>
+        <NamedIndividual IRI="#swollen.12.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.13.01"/>
+        <NamedIndividual IRI="#arm.13.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.13.01"/>
+        <NamedIndividual IRI="#iv_medication.13.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.13.01"/>
+        <NamedIndividual IRI="#necrosis.13.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.13.01"/>
+        <NamedIndividual IRI="#subcutaneous_skin.13.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.14.01"/>
+        <NamedIndividual IRI="#infusion.14.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.14.01"/>
+        <NamedIndividual IRI="#insertion_site.14.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.14.01"/>
+        <NamedIndividual IRI="#red.14.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.14.01"/>
+        <NamedIndividual IRI="#swollen.14.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.15.01"/>
+        <NamedIndividual IRI="#iv_fluid.15.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.15.01"/>
+        <NamedIndividual IRI="#iv_medication.15.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.15.01"/>
+        <NamedIndividual IRI="#patient.15.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.15.02"/>
+        <NamedIndividual IRI="#iv_fluid.15.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#sentence.15.02"/>
+        <NamedIndividual IRI="#iv_medication.15.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#swollen.05.02"/>
+        <NamedIndividual IRI="#elbow.05.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#swollen.05.03"/>
+        <NamedIndividual IRI="#elbow.05.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#swollen.06.04"/>
+        <NamedIndividual IRI="#elbow.06.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_observed_with"/>
+        <NamedIndividual IRI="#swollen.07.01"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#swollen.07.01"/>
+        <NamedIndividual IRI="#elbow.07.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#swollen.10.01"/>
+        <NamedIndividual IRI="#arm.10.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#swollen.14.01"/>
+        <NamedIndividual IRI="#insertion_site.14.01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#tenderness.10.02"/>
+        <NamedIndividual IRI="#arm.10.02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#warm.06.03"/>
+        <NamedIndividual IRI="#elbow.06.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#warm.06.04"/>
+        <NamedIndividual IRI="#elbow.06.04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#warm.11.03"/>
+        <NamedIndividual IRI="#insertion_site.11.03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#01.test_document"/>
+        <NamedIndividual IRI="#01.01.test_sentence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#01.test_document"/>
+        <NamedIndividual IRI="#01.02.test_sentence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#01.test_document"/>
+        <NamedIndividual IRI="#01.03.test_sentence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#01.01.test_sentence"/>
+        <NamedIndividual IRI="#01.01.test_blood_pressure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#01.01.test_sentence"/>
+        <NamedIndividual IRI="#01.01.test_body_temperature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#01.01.test_sentence"/>
+        <NamedIndividual IRI="#01.01.test_consciousness_level"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#01.01.test_sentence"/>
+        <NamedIndividual IRI="#01.01.test_respiratory_rate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#01.02.test_sentence"/>
+        <NamedIndividual IRI="#01.02.test_body_temperature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#01.02.test_sentence"/>
+        <NamedIndividual IRI="#01.02.test_consciousness_level"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#01.03.test_sentence"/>
+        <NamedIndividual IRI="#01.03.test_body_temperature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#02.test_document"/>
+        <NamedIndividual IRI="#02.01.test_sentence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#02.01.test_hardness"/>
+        <NamedIndividual IRI="#02.01.test_vein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#02.01.test_sentence"/>
+        <NamedIndividual IRI="#02.01.test_hardness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#02.01.test_sentence"/>
+        <NamedIndividual IRI="#02.01.test_tenderness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#02.01.test_sentence"/>
+        <NamedIndividual IRI="#02.01.test_vein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <NamedIndividual IRI="#02.01.test_tenderness"/>
+        <NamedIndividual IRI="#02.01.test_vein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#03.01.test_document"/>
+        <NamedIndividual IRI="#03.01.test_sentence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#03.01.test_sentence"/>
+        <NamedIndividual IRI="#03.01.test_blood_test"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#anatomical_location_descriptor_left_or_right"/>
+        <NamedIndividual IRI="#arm.10.01"/>
+        <Literal xml:lang="en">Left</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_body_temperature_range"/>
+        <NamedIndividual IRI="#body_temp.10.03"/>
+        <Literal xml:lang="en">Hyperthermia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_forgotten"/>
+        <NamedIndividual IRI="#catheter_removal.06.01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#anatomical_location_descriptor_left_or_right"/>
+        <NamedIndividual IRI="#elbow.01.01"/>
+        <Literal xml:lang="en">Right</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#anatomical_location_descriptor_left_or_right"/>
+        <NamedIndividual IRI="#elbow.02.01"/>
+        <Literal xml:lang="en">Left</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#anatomical_location_descriptor_left_or_right"/>
+        <NamedIndividual IRI="#elbow.05.01"/>
+        <Literal xml:lang="en">Left</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#anatomical_location_descriptor_left_or_right"/>
+        <NamedIndividual IRI="#elbow.07.01"/>
+        <Literal xml:lang="en">Left</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_missing"/>
+        <NamedIndividual IRI="#general_iv.03.02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#anatomical_location_descriptor_front_or_back"/>
+        <NamedIndividual IRI="#hand.06.03"/>
+        <Literal xml:lang="en">Back</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_name"/>
+        <NamedIndividual IRI="#iv_antibiotics.01.02"/>
+        <Literal>penicillin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_name"/>
+        <NamedIndividual IRI="#iv_antibiotics.02.02"/>
+        <Literal>diclocil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_name"/>
+        <NamedIndividual IRI="#iv_fluid.01.02"/>
+        <Literal>NaCl</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_missing"/>
+        <NamedIndividual IRI="#iv_fluid.03.02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_name"/>
+        <NamedIndividual IRI="#iv_fluid.15.01"/>
+        <Literal>sodium_chloride</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_missing"/>
+        <NamedIndividual IRI="#iv_medication.03.02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_missing"/>
+        <NamedIndividual IRI="#iv_medication.03.03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_name"/>
+        <NamedIndividual IRI="#iv_medication.07.01.1"/>
+        <Literal>ringer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_name"/>
+        <NamedIndividual IRI="#iv_medication.07.01.2"/>
+        <Literal>potassium chloride</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_name"/>
+        <NamedIndividual IRI="#iv_medication.08.01.1"/>
+        <Literal>rocuronium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_name"/>
+        <NamedIndividual IRI="#iv_medication.08.01.2"/>
+        <Literal>midazolam</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_missing"/>
+        <NamedIndividual IRI="#iv_medication.08.01.2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_name"/>
+        <NamedIndividual IRI="#iv_medication.13.01"/>
+        <Literal>potassium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_missing"/>
+        <NamedIndividual IRI="#iv_medication.15.01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_name"/>
+        <NamedIndividual IRI="#iv_medication.15.02"/>
+        <Literal>infliximab</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_forgotten"/>
+        <NamedIndividual IRI="#iv_medication.15.02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#negation"/>
+        <NamedIndividual IRI="#pain.11.04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_pivc_color"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.01.01"/>
+        <Literal xml:lang="en">Green</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_pivc_color"/>
+        <NamedIndividual IRI="#peripheral_intravenous_catheter.02.01"/>
+        <Literal xml:lang="en">Green</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#relative_is"/>
+        <NamedIndividual IRI="#relative.05.02"/>
+        <Literal>wife</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_severity"/>
+        <NamedIndividual IRI="#01.01.test_blood_pressure"/>
+        <Literal xml:lang="en">Low</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_body_temperature_range"/>
+        <NamedIndividual IRI="#01.01.test_body_temperature"/>
+        <Literal xml:lang="en">Hypothermia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_conscious_state"/>
+        <NamedIndividual IRI="#01.01.test_consciousness_level"/>
+        <Literal xml:lang="en">Confusion</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_severity"/>
+        <NamedIndividual IRI="#01.01.test_respiratory_rate"/>
+        <Literal xml:lang="en">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_body_temperature_range"/>
+        <NamedIndividual IRI="#01.02.test_body_temperature"/>
+        <Literal xml:lang="en">Hyperthermia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_conscious_state"/>
+        <NamedIndividual IRI="#01.02.test_consciousness_level"/>
+        <Literal xml:lang="en">Painfully responsive</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_body_temperature_range"/>
+        <NamedIndividual IRI="#01.03.test_body_temperature"/>
+        <Literal xml:lang="en">Hypothermia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_blood_test_result"/>
+        <NamedIndividual IRI="#03.01.test_blood_test"/>
+        <Literal xml:lang="en">Positive</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_cultured_bacteria"/>
+        <NamedIndividual IRI="#03.01.test_blood_test"/>
+        <Literal>Streptococcus group A infection</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_iv_for"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_observed_with"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="#is_documented_in"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#is_combined_with"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#contains"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_combined_with"/>
+        <Class IRI="#general_iv"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_iv_for"/>
+        <Class IRI="#general_iv"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_observed_with"/>
+        <Class IRI="#observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#medication_should_have_been"/>
+        <Class IRI="#general_iv"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#patient_has"/>
+        <Class IRI="#patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <Class IRI="#procedure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_combined_with"/>
+        <Class IRI="#general_iv"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_iv_for"/>
+        <Class IRI="#infusion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#located_nearby_on_at_in"/>
+        <Class IRI="#anatomical_location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#medication_should_have_been"/>
+        <Class IRI="#general_iv"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#procedure_uses"/>
+        <Class IRI="#medical_device"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#anatomical_location_descriptor_front_or_back"/>
+        <DataProperty IRI="#anatomical_location_descriptor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#anatomical_location_descriptor_left_or_right"/>
+        <DataProperty IRI="#anatomical_location_descriptor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_blood_test_result"/>
+        <DataProperty IRI="#blood_test_result"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_body_temperature_range"/>
+        <DataProperty IRI="#observation_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_conscious_state"/>
+        <DataProperty IRI="#observation_attribute"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_cultured_bacteria"/>
+        <DataProperty IRI="#blood_test_result"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_severity"/>
+        <DataProperty IRI="#observation_attribute"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_blood_test_result"/>
+        <Class IRI="#blood_test"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_cultured_bacteria"/>
+        <Class IRI="#blood_test"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_pivc_color"/>
+        <Class IRI="#catheter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_pivc_color"/>
+        <Class IRI="#medical_device"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_pivc_color"/>
+        <Class IRI="#peripheral_intravenous_catheter"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#anatomical_location_descriptor_front_or_back"/>
+        <DataUnionOf>
+            <DataOneOf>
+                <Literal xml:lang="en">Back</Literal>
+                <Literal xml:lang="en">Front</Literal>
+            </DataOneOf>
+            <DataOneOf>
+                <Literal xml:lang="no">Bak</Literal>
+                <Literal xml:lang="no">Foran</Literal>
+            </DataOneOf>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#anatomical_location_descriptor_left_or_right"/>
+        <DataUnionOf>
+            <DataOneOf>
+                <Literal xml:lang="no">Høyre</Literal>
+                <Literal xml:lang="no">Venstre</Literal>
+            </DataOneOf>
+            <DataOneOf>
+                <Literal xml:lang="en">Left</Literal>
+                <Literal xml:lang="en">Right</Literal>
+            </DataOneOf>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_blood_test_result"/>
+        <DataUnionOf>
+            <DataOneOf>
+                <Literal xml:lang="no">Negativ</Literal>
+                <Literal xml:lang="no">Positivt</Literal>
+            </DataOneOf>
+            <DataOneOf>
+                <Literal xml:lang="en">Negative</Literal>
+                <Literal xml:lang="en">Positive</Literal>
+            </DataOneOf>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_body_temperature_range"/>
+        <DataUnionOf>
+            <DataOneOf>
+                <Literal xml:lang="no">Hypertermi</Literal>
+                <Literal xml:lang="no">Hypotermi</Literal>
+                <Literal xml:lang="no">Normal</Literal>
+            </DataOneOf>
+            <DataOneOf>
+                <Literal xml:lang="en">Hyperthermia</Literal>
+                <Literal xml:lang="en">Hypothermia</Literal>
+                <Literal xml:lang="en">Normal</Literal>
+            </DataOneOf>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_conscious_state"/>
+        <DataUnionOf>
+            <DataOneOf>
+                <Literal xml:lang="en">Alert</Literal>
+                <Literal xml:lang="en">Confusion</Literal>
+                <Literal xml:lang="en">Painfully responsive</Literal>
+                <Literal xml:lang="en">Unresponsive</Literal>
+                <Literal xml:lang="en">Verbally responsive</Literal>
+            </DataOneOf>
+            <DataOneOf>
+                <Literal xml:lang="no">Bevisstløshet</Literal>
+                <Literal xml:lang="no">Forvirring</Literal>
+                <Literal xml:lang="no">Smerte respons</Literal>
+                <Literal xml:lang="no">Verbal respons</Literal>
+                <Literal xml:lang="no">Våken</Literal>
+            </DataOneOf>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_cultured_bacteria"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_pivc_color"/>
+        <DataUnionOf>
+            <DataOneOf>
+                <Literal xml:lang="en">Blue</Literal>
+                <Literal xml:lang="en">Brown</Literal>
+                <Literal xml:lang="en">Gray</Literal>
+                <Literal xml:lang="en">Green</Literal>
+                <Literal xml:lang="en">Orange</Literal>
+                <Literal xml:lang="en">Pink</Literal>
+                <Literal xml:lang="en">Purple</Literal>
+                <Literal xml:lang="en">White</Literal>
+                <Literal xml:lang="en">Yellow</Literal>
+            </DataOneOf>
+            <DataOneOf>
+                <Literal xml:lang="no">Blå</Literal>
+                <Literal xml:lang="no">Brun</Literal>
+                <Literal xml:lang="no">Grå</Literal>
+                <Literal xml:lang="no">Grønn</Literal>
+                <Literal xml:lang="no">Gul</Literal>
+                <Literal xml:lang="no">Hvit</Literal>
+                <Literal xml:lang="no">Lilla</Literal>
+                <Literal xml:lang="no">Oransje</Literal>
+                <Literal xml:lang="no">Rosa</Literal>
+            </DataOneOf>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_severity"/>
+        <DataUnionOf>
+            <DataOneOf>
+                <Literal xml:lang="en">High</Literal>
+                <Literal xml:lang="en">Low</Literal>
+                <Literal xml:lang="en">Normal</Literal>
+            </DataOneOf>
+            <DataOneOf>
+                <Literal xml:lang="no">Høy</Literal>
+                <Literal xml:lang="no">Lav</Literal>
+                <Literal xml:lang="no">Normal</Literal>
+            </DataOneOf>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#is_forgotten"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#is_missing"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#negation"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#relative_is"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#anatomical_location</IRI>
+        <Literal xml:lang="en">Anatomical body parts, organs, or relative positions of the body.  Somewhere on the body.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#anatomical_location</IRI>
+        <Literal xml:lang="no">Anatomiske kroppsdeler, organer, eller relative posisjoner av kroppen. Et plass på kroppen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#anatomical_location</IRI>
+        <Literal xml:lang="en">Anatomical location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#anatomical_location</IRI>
+        <Literal xml:lang="no">Anatomisk plassering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#anatomical_location_descriptor</IRI>
+        <Literal xml:lang="en">Anatomical positions based on classes in the Biological Spatial Ontology (BSPO) 
+
+Anatomical body positions https://sml.snl.no/topografisk_anatomi
+
+Anatomical side (BSPO:0000054) 
+
+Back = posterior side (BSPO:0000056) https://sml.snl.no/posterior, https://sml.snl.no/dorsal
+Front = anterior side (BSPO:0000055) https://snl.no/anterior, https://sml.snl.no/ventral
+Left = left side (BSPO:0000000) https://sml.snl.no/sinister
+Right = right side (BSPO:0000007) https://sml.snl.no/dexter, https://snl.no/dekstral
+Proximal = proximal side (BSPO:0000061) https://sml.snl.no/proksimal
+Distal = distal side (BSPO:0000062) https://sml.snl.no/distal
+Medial = medial side (BSPO:0000067) https://sml.snl.no/medial
+Sideways = 
+Halfway =
+Lateral = lateral side (BSPO:0000066) https://snl.no/lateral</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#anatomical_location_descriptor</IRI>
+        <Literal xml:lang="en">Location of body parts away from center. 
+
+3 Options: 
+  1. Front
+  2. Back
+or
+  1. Left
+  2. Right
+or
+  1. Proximal (Proksimal)
+  2. Distal (Distal)
+  3. Medial (Medial)
+  4. Sideways (Sideveis)
+  5. Halfway (Halvveis)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#anatomical_location_descriptor</IRI>
+        <Literal xml:lang="en">Anatomical location descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#anatomical_location_descriptor</IRI>
+        <Literal xml:lang="no">Anatomisk plasseringsbeskrivelse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#anatomical_location_descriptor_front_or_back</IRI>
+        <Literal xml:lang="en">Anatomical location descriptor front or back</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#anatomical_location_descriptor_front_or_back</IRI>
+        <Literal xml:lang="no">Anatomisk plasseringsbeskrivelse foran eller bak</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#anatomical_location_descriptor_left_or_right</IRI>
+        <Literal xml:lang="en">Anatomical location descriptor left or right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#anatomical_location_descriptor_left_or_right</IRI>
+        <Literal xml:lang="no">Anatomisk plasseringsbeskrivelse venstre eller høyre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#arm</IRI>
+        <Literal xml:lang="en">Arm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#arm</IRI>
+        <Literal xml:lang="no">Arm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#artery</IRI>
+        <Literal xml:lang="no">Arterier er blodårer som fører blod fra hjertet og ut i kroppen. Årer som fører blod til hjertet fra kroppen kalles vener.
+
+Den største arterien er aorta, hovedpulsåren, som går ut fra hjertets venstre hovedkammer. Nest størst er lungearterien (truncus pulmonalis), som springer ut fra høyre hovedkammer og er den eneste arterien som fører oksygenfattig blod, bortsett fra navlesnorarteriene under svangerskapet.
+
+Vanligvis er arteriene i kroppen fra 0,1 til omtrent 10 millimeter i diameter. De minste arteriene (under 0,1 millimeter) før overgangen til kapillarene kalles arterioler.
+
+https://sml.snl.no/arterier
+
+Last accessed: 30. November 2021</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#artery</IRI>
+        <Literal xml:lang="no">Arterie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#artery</IRI>
+        <Literal xml:lang="en">Artery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#blood_test</IRI>
+        <Literal xml:lang="no">Blodprøve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#blood_test</IRI>
+        <Literal xml:lang="en">Blood test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#blood_test_result</IRI>
+        <Literal xml:lang="no">Blodprøveresultat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#blood_test_result</IRI>
+        <Literal xml:lang="en">Blood test result</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#body_temperature</IRI>
+        <Literal xml:lang="en">Body temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#body_temperature</IRI>
+        <Literal xml:lang="no">Kroppstemperatur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter</IRI>
+        <Literal xml:lang="en">Catheter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter</IRI>
+        <Literal xml:lang="no">Kateter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter_discontinue_use</IRI>
+        <Literal xml:lang="en">Catheter discontinuation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter_discontinue_use</IRI>
+        <Literal xml:lang="no">Kateter seponering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter_insertion</IRI>
+        <Literal xml:lang="en">Catheter insertion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter_insertion</IRI>
+        <Literal xml:lang="no">Kateter innstikking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter_procedure</IRI>
+        <Literal xml:lang="en">Catheter procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter_procedure</IRI>
+        <Literal xml:lang="no">Kateter prosedyre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter_removal</IRI>
+        <Literal xml:lang="en">Catheter removal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter_removal</IRI>
+        <Literal xml:lang="no">Kateter fjerning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter_self_removal</IRI>
+        <Literal xml:lang="en">Catheter self-removal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#catheter_self_removal</IRI>
+        <Literal xml:lang="no">Kateter selvseponering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#contains</IRI>
+        <Literal xml:lang="en">Containing documented textual content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#contains</IRI>
+        <Literal xml:lang="no">Inneholder dokumentert tekstinnhold.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contains</IRI>
+        <Literal xml:lang="en">Contains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contains</IRI>
+        <Literal xml:lang="no">Inneholder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#descriptive_sign_or_symptom</IRI>
+        <Literal xml:lang="no">Beskrivelse av et tegn eller symptom som er en del av en pasient. Slik som farge, form, temperatur, lengde, masse eller vekst.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#descriptive_sign_or_symptom</IRI>
+        <Literal xml:lang="en">Description of a sign or symptom that is part of a patient. Such as the color, shape, temperature, length, mass, or growth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#descriptive_sign_or_symptom</IRI>
+        <Literal xml:lang="no">Beskrivende tegn eller symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#descriptive_sign_or_symptom</IRI>
+        <Literal xml:lang="en">Descriptive sign or symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#descriptive_sign_or_symptom</IRI>
+        <Literal xml:lang="en">physical sign from Ontology for General Medical Science (OGMS)
+
+Definition: An abnormal material entity that is part of a patient and hypothesized to be clinically relevant.
+
+Example: an abnormal growth; an inflammatory infiltrate; swollen tissue; distension
+
+https://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000129
+
+Last accessed: 25. November 2021</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#descriptive_sign_or_symptom</IRI>
+        <Literal xml:lang="en">qualitative sign from Ontology for General Medical Science (OGMS)
+
+Definition: An abnormal observable quality of a part of a patient that is hypothesized to be clinically relevant.
+
+Example: the color of a rash; the shape of a melanoma
+
+https://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000142
+
+Last accessed: 25. November 2021</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#device_observation</IRI>
+        <Literal xml:lang="en">Device observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#device_observation</IRI>
+        <Literal xml:lang="no">Utstyrsobservasjon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#document</IRI>
+        <Literal xml:lang="en">Adverse event note from report.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#document</IRI>
+        <Literal xml:lang="no">Annoterte avviksmeldinger fra rapport.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#document</IRI>
+        <Literal xml:lang="en">Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#document</IRI>
+        <Literal xml:lang="no">Dokument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#edema</IRI>
+        <Literal xml:lang="en">Edema</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#edema</IRI>
+        <Literal xml:lang="no">Ødem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#elbow</IRI>
+        <Literal xml:lang="no">Albue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#elbow</IRI>
+        <Literal xml:lang="en">Elbow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#epidural</IRI>
+        <Literal xml:lang="en">Epidural catheter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#epidural</IRI>
+        <Literal xml:lang="no">Epidural kateter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#general_iv</IRI>
+        <Literal xml:lang="en">General IV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#general_iv</IRI>
+        <Literal xml:lang="no">Generelt IV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hand</IRI>
+        <Literal xml:lang="en">Hand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hand</IRI>
+        <Literal xml:lang="no">Hånd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hardness</IRI>
+        <Literal xml:lang="no">Hardhet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hardness</IRI>
+        <Literal xml:lang="en">Hardness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_blood_test_result</IRI>
+        <Literal xml:lang="no">Har blodprøveresultat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_blood_test_result</IRI>
+        <Literal xml:lang="en">Has blood test result</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_body_temperature_range</IRI>
+        <Literal xml:lang="en">Temperature ranges: 
+1. Hyperthermia (Hypertermi) https://sml.snl.no/hypertermi, https://sml.snl.no/feber
+2. Normal (Normal) https://sml.snl.no/kroppstemperatur
+3. Hypothermia (Hypotermi) https://sml.snl.no/hypotermi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_body_temperature_range</IRI>
+        <Literal xml:lang="no">Har kroppstemperaturområde</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_body_temperature_range</IRI>
+        <Literal xml:lang="en">Has body temperature range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_conscious_state</IRI>
+        <Literal xml:lang="en">Level of consciousness based on NEWSII conscious state (Bevissthetsnivå) ACVPU https://ehandboken.ous-hf.no/document/78636
+
+
+Levels:
+1. Alert (Våken)
+2. Confusion (Forvirring)
+3. Verbally responsive (Verbal respons)
+4. Painfully responsive (Smerte respons)
+5. Unresponsive (Bevisstløshet)
+
+https://sml.snl.no/bevissthetsforstyrrelse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_conscious_state</IRI>
+        <Literal xml:lang="no">Har bevisste tilstand av</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_conscious_state</IRI>
+        <Literal xml:lang="en">Has conscious state of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_cultured_bacteria</IRI>
+        <Literal xml:lang="no">Har dyrkede bakterier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_cultured_bacteria</IRI>
+        <Literal xml:lang="en">Has cultured bacteria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_name</IRI>
+        <Literal xml:lang="no">Har navn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_name</IRI>
+        <Literal xml:lang="en">Has name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_pivc_color</IRI>
+        <Literal xml:lang="en">Color of peripheral venous catheter (PIVC; perifert venekateter; PVK):
+1. Purple (Lilla)
+2. Yellow (Gul)
+3. Blue (Blå)
+4. Pink (Rosa)
+5. Green (Grønn)
+6. White (Hvit)
+7. Gray (Grå)
+8. Brown (Brun)
+9. Orange (Oransje)
+
+https://ehandboken.ous-hf.no/document/115280</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_pivc_color</IRI>
+        <Literal xml:lang="no">Har perifert venekateter farge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_pivc_color</IRI>
+        <Literal xml:lang="en">Has peripheral venous catheter color</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_severity</IRI>
+        <Literal xml:lang="en">Severity Levels:
+1. High (Høy)
+2. Normal (Normal)
+3. Low (Lav)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_severity</IRI>
+        <Literal xml:lang="no">Har alvorlighetsgrad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_severity</IRI>
+        <Literal xml:lang="en">Has severity level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#infusion</IRI>
+        <Literal xml:lang="en">Infusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#infusion</IRI>
+        <Literal xml:lang="no">Infusjon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#insertion_site</IRI>
+        <Literal xml:lang="en">Insertion site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#insertion_site</IRI>
+        <Literal xml:lang="no">innstikkssted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_combined_with</IRI>
+        <Literal xml:lang="en">General intravenous combined with another general intravenous.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_combined_with</IRI>
+        <Literal xml:lang="no">Generell intravenøs kombinert med en annen generell intravenøs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_combined_with</IRI>
+        <Literal xml:lang="no">Er kombinert med</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_combined_with</IRI>
+        <Literal xml:lang="en">Is combined with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_documented_in</IRI>
+        <Literal xml:lang="no">Tekstinnhold er dokumentert innenfor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_documented_in</IRI>
+        <Literal xml:lang="en">Textual content is documented within.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_documented_in</IRI>
+        <Literal xml:lang="no">Er dokumentert i</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_documented_in</IRI>
+        <Literal xml:lang="en">Is documented in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_iv_for</IRI>
+        <Literal xml:lang="en">General intravenous is for a type of infusion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_iv_for</IRI>
+        <Literal xml:lang="no">Generell intravenøs er for en type infusjon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_iv_for</IRI>
+        <Literal xml:lang="no">Er intravenøs for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_iv_for</IRI>
+        <Literal xml:lang="en">Is intravenous for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_missing</IRI>
+        <Literal xml:lang="no">Er savnet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_missing</IRI>
+        <Literal xml:lang="en">Is missing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_observed_with</IRI>
+        <Literal xml:lang="no">Er observert med</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_observed_with</IRI>
+        <Literal xml:lang="en">Is observed with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#itchy</IRI>
+        <Literal xml:lang="en">Itchy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#itchy</IRI>
+        <Literal xml:lang="no">Kløende</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#iv_antibiotics</IRI>
+        <Literal xml:lang="en">IV antibiotics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#iv_antibiotics</IRI>
+        <Literal xml:lang="no">IV antibiotika</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#iv_fluid</IRI>
+        <Literal xml:lang="en">IV fluid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#iv_fluid</IRI>
+        <Literal xml:lang="no">IV væske</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#iv_medication</IRI>
+        <Literal xml:lang="en">IV medication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#iv_medication</IRI>
+        <Literal xml:lang="no">IV medisiner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#iv_medication.08.01.1</IRI>
+        <Literal xml:lang="en">Rocuronium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#iv_medication.08.01.1</IRI>
+        <Literal xml:lang="no">Rokuronium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#leakage</IRI>
+        <Literal xml:lang="en">Leakage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#leakage</IRI>
+        <Literal xml:lang="no">Lekkasje</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#located_nearby_on_at_in</IRI>
+        <Literal xml:lang="en">Located nearby/on/at/in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#located_nearby_on_at_in</IRI>
+        <Literal xml:lang="no">Lokalisert nærheten/ved/på/i</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#location_has</IRI>
+        <Literal xml:lang="en">Location has</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#location_has</IRI>
+        <Literal xml:lang="no">Lokasjon har</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#medical_device</IRI>
+        <Literal xml:lang="en">Any instrument, device, or equipment used for a medical purpose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#medical_device</IRI>
+        <Literal xml:lang="no">Ethvert instrument, enhet eller utstyr som brukes til medisinske formål.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#medical_device</IRI>
+        <Literal xml:lang="en">Medical device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#medical_device</IRI>
+        <Literal xml:lang="no">Medisk utstyr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#medical_device</IRI>
+        <Literal xml:lang="en">Medical Device from NCI Thesaurus (NCIt).
+
+Definition: Any physical object that is useful for prevention, diagnosis, monitoring, or treatment of disease or other conditions. 
+
+http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C16830
+
+Last accessed 25. November 2021</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#medication_should_have_been</IRI>
+        <Literal xml:lang="en">Medication should have been</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#medication_should_have_been</IRI>
+        <Literal xml:lang="no">Medisiner skulle ha vært</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mobility_impairment</IRI>
+        <Literal xml:lang="no">Bevegelseshemming</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mobility_impairment</IRI>
+        <Literal xml:lang="en">Mobility impairment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#moisture</IRI>
+        <Literal xml:lang="no">Fukt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#moisture</IRI>
+        <Literal xml:lang="en">Moisture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#necrosis</IRI>
+        <Literal xml:lang="en">Necrosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#necrosis</IRI>
+        <Literal xml:lang="no">Nekrose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#negation</IRI>
+        <Literal xml:lang="no">Negasjon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#negation</IRI>
+        <Literal xml:lang="en">Negation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#observation</IRI>
+        <Literal xml:lang="en">Any sign or symptom that can be monitored.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#observation</IRI>
+        <Literal xml:lang="no">Ethvert tegn eller symptom som kan overvåkes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observation</IRI>
+        <Literal xml:lang="no">Observasjon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observation</IRI>
+        <Literal xml:lang="en">Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observation_attribute</IRI>
+        <Literal xml:lang="no">Observasjonsattributt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#observation_attribute</IRI>
+        <Literal xml:lang="en">Observation attribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pain</IRI>
+        <Literal xml:lang="en">Pain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pain</IRI>
+        <Literal xml:lang="no">Smerte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#patient</IRI>
+        <Literal xml:lang="en">Person receiving care or registered for care</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#patient</IRI>
+        <Literal xml:lang="no">Person som mottar pleie eller er registrert for pleie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#patient</IRI>
+        <Literal xml:lang="no">Pasient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#patient</IRI>
+        <Literal xml:lang="en">Patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#patient_has</IRI>
+        <Literal xml:lang="no">Pasient har</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#patient_has</IRI>
+        <Literal xml:lang="en">Patient has</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#peripheral_intravenous_catheter</IRI>
+        <Literal xml:lang="en">PIVC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#peripheral_intravenous_catheter</IRI>
+        <Literal xml:lang="no">PVK</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#peripheral_intravenous_catheter</IRI>
+        <Literal xml:lang="no">Perifert venekateter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#peripheral_intravenous_catheter</IRI>
+        <Literal xml:lang="en">Peripheral intravenous catheter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="en">An individual.  A human being.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="no">Et individ. Et menneske.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#person</IRI>
+        <Literal xml:lang="no">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#phlebitis</IRI>
+        <Literal xml:lang="no">Flebitis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#phlebitis</IRI>
+        <Literal xml:lang="en">Phlebitis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#procedure</IRI>
+        <Literal xml:lang="en">Any procedure, intervention, or activity related to catheters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#procedure</IRI>
+        <Literal xml:lang="no">Enhver prosedyre, intervensjon eller aktivitet relatert til katetre.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#procedure</IRI>
+        <Literal xml:lang="en">Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#procedure</IRI>
+        <Literal xml:lang="no">Prosedyre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#procedure_uses</IRI>
+        <Literal xml:lang="en">Procedure uses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#procedure_uses</IRI>
+        <Literal xml:lang="no">Prosedyre bruker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pulse</IRI>
+        <Literal xml:lang="no">Puls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pulse</IRI>
+        <Literal xml:lang="en">Pulse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pump</IRI>
+        <Literal xml:lang="en">Pump</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pump</IRI>
+        <Literal xml:lang="no">Pumpe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pus</IRI>
+        <Literal xml:lang="en">Pus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pus</IRI>
+        <Literal xml:lang="no">Puss</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#red</IRI>
+        <Literal xml:lang="en">Red</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#red</IRI>
+        <Literal xml:lang="no">Rød</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#relative</IRI>
+        <Literal xml:lang="en">Person related to patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#relative</IRI>
+        <Literal xml:lang="no">Person relatert til pasient.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#relative</IRI>
+        <Literal xml:lang="en">Relative of the patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#relative</IRI>
+        <Literal xml:lang="no">Slektning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#relative_is</IRI>
+        <Literal xml:lang="en">Relative is</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#relative_is</IRI>
+        <Literal xml:lang="no">Slektning er</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#respiratory_rate</IRI>
+        <Literal xml:lang="no">Respirasjons frekvens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#respiratory_rate</IRI>
+        <Literal xml:lang="en">Respiratory rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sentence</IRI>
+        <Literal xml:lang="en">Sentence from a document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sentence</IRI>
+        <Literal xml:lang="no">Setning fra et dokument.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sentence</IRI>
+        <Literal xml:lang="en">Sentence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sentence</IRI>
+        <Literal xml:lang="no">Setning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#subcutaneous_infusion</IRI>
+        <Literal xml:lang="en">Subcutaneous infusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#subcutaneous_infusion</IRI>
+        <Literal xml:lang="no">Subkutant infusjon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#subcutaneous_skin</IRI>
+        <Literal xml:lang="en">Subcutaneous skin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#subcutaneous_skin</IRI>
+        <Literal xml:lang="no">Subkutan hud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#swollen</IRI>
+        <Literal xml:lang="no">Hoven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#swollen</IRI>
+        <Literal xml:lang="en">Swollen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tenderness</IRI>
+        <Literal xml:lang="no">Følsomhet for smerte; sårhet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tenderness</IRI>
+        <Literal xml:lang="en">Sensitivity to pain; soreness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#tenderness</IRI>
+        <Literal xml:lang="en">Tenderness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#tenderness</IRI>
+        <Literal xml:lang="no">Ømhet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#vein</IRI>
+        <Literal xml:lang="no">Vener er blodårer som fører blodet fra kroppen til hjertet. Blodårer som fører blod fra hjertet til kroppen kalles arterier. Ofte følger to mindre vener en arterie i kretsløpet.
+
+De fleste venene samler oksygenfattig blod fra kroppen og fører det til hjertet og lungene. Venene i armene og beina er synlige under huden. De har veneklaffer som hindrer at blodet strømmer «feil vei», det vil si vekk fra hjertet. Blodtrykket i venene er svært lavt sammenliknet med trykket i arteriene.
+
+https://sml.snl.no/vener
+
+Last accessed: 30. November 2021</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#vein</IRI>
+        <Literal xml:lang="en">Vein</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#vein</IRI>
+        <Literal xml:lang="no">Ven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#warm</IRI>
+        <Literal xml:lang="no">Varm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#warm</IRI>
+        <Literal xml:lang="en">Warm</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
