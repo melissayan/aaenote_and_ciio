@@ -46,7 +46,7 @@ The following software was used to develop and present the terminology and ontol
 
 
 # Usage
- 1. Download files 
+ 1. Download the following files 
  ```
 .
 ├── aaenote-individuals.owl
@@ -63,6 +63,27 @@ The following software was used to develop and present the terminology and ontol
 4. To view the ontology, open ```ciio.owl``` with Protégé. 
 5. Use Protégé's SPARQL Query Tab to answer the [competency questions](https://github.com/melissayan/aaenote_and_ciio/wiki/Use-Case,-Objective,-and-Competency-Questions) using [SPARQL queries for the ontology](https://github.com/melissayan/aaenote_and_ciio/wiki/Ontology-SPARQL-Queries).  
 
+
+# Extra Files
+Wiki markdown files: 
+```
+.
+└── aaenote_and_ciio.wiki
+   ├── Catheter-Infection-Indications-Ontology-(CIIO)-Clinical-Knowledge.md
+   ├── Home.md
+   ├── Import-Individuals-for-Terminology.md
+   ├── Ontology-SPARQL-Queries.md
+   ├── Terminology-SPARQL-Queries.md
+   ├── Use-Case,-Objective,-and-Competency-Questions.md
+   └── _Sidebar.md
+```
+Where to find files used to generate HTML specifications for AAENOTE and CIIO: 
+```
+.
+└── html_specs
+    ├── aaenote
+    └── ciio
+```
 
 
 # Acknowledgements
