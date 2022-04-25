@@ -1,0 +1,2272 @@
+@prefix : <http://www.semanticweb.org/2022/04/ciio#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/2022/04/ciio#> .
+
+<http://www.semanticweb.org/2022/04/ciio> rdf:type owl:Ontology ;
+                                           rdfs:comment "Catheter Infection Indications Ontology (CIIO). This ontology is for reasoning about clinical signs and symptoms that indicate presence of a catheter or infection."@en ,
+                                                        "Date: 18. April 2022 13:25"@en ,
+                                                        "Kateter InfeksjonsIndikasjoner Ontologi (CIIO eller Catheter Infection Indications Ontology på engelsk). Denne otologien er for resonnement om kliniske tegn og symptomer som indikerer tilstedeværelsen av et kateter eller infeksjon."@no .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/2022/04/ciio#contains
+:contains rdf:type owl:ObjectProperty ;
+          owl:inverseOf :is_documented_in ;
+          rdf:type owl:TransitiveProperty ;
+          rdfs:comment "Containing documented textual content."@en ,
+                       "Inneholder dokumentert tekstinnhold."@no ;
+          rdfs:label "Contains"@en ,
+                     "Inneholder"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#is_combined_with
+:is_combined_with rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty ;
+                  rdfs:domain :general_iv ;
+                  rdfs:range :general_iv ;
+                  rdfs:comment "General intravenous combined with another general intravenous."@en ,
+                               "Generell intravenøs kombinert med en annen generell intravenøs."@no ;
+                  rdfs:label "Er kombinert med"@no ,
+                             "Is combined with"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#is_documented_in
+:is_documented_in rdf:type owl:ObjectProperty ;
+                  rdfs:comment "Tekstinnhold er dokumentert innenfor."@no ,
+                               "Textual content is documented within."@en ;
+                  rdfs:label "Er dokumentert i"@no ,
+                             "Is documented in"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#is_iv_for
+:is_iv_for rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :general_iv ;
+           rdfs:range :infusion ;
+           rdfs:comment "General intravenous is for a type of infusion."@en ,
+                        "Generell intravenøs er for en type infusjon."@no ;
+           rdfs:label "Er intravenøs for"@no ,
+                      "Is intravenous for"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#is_observed_with
+:is_observed_with rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :observation ;
+                  rdfs:label "Er observert med"@no ,
+                             "Is observed with"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#located_nearby_on_at_in
+:located_nearby_on_at_in rdf:type owl:ObjectProperty ;
+                         rdfs:range :anatomical_location ;
+                         rdfs:label "Located nearby/on/at/in"@en ,
+                                    "Lokalisert nærheten/ved/på/i"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#location_has
+:location_has rdf:type owl:ObjectProperty ;
+              rdfs:label "Location has"@en ,
+                         "Lokasjon har"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#medication_should_have_been
+:medication_should_have_been rdf:type owl:ObjectProperty ;
+                             rdfs:domain :general_iv ;
+                             rdfs:range :general_iv ;
+                             rdfs:label "Medication should have been"@en ,
+                                        "Medisiner skulle ha vært"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient_has
+:patient_has rdf:type owl:ObjectProperty ;
+             rdfs:domain :patient ;
+             rdfs:label "Pasient har"@no ,
+                        "Patient has"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#procedure_uses
+:procedure_uses rdf:type owl:ObjectProperty ;
+                rdfs:domain :procedure ;
+                rdfs:range :medical_device ;
+                rdfs:label "Procedure uses"@en ,
+                           "Prosedyre bruker"@no .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/2022/04/ciio#anatomical_location_descriptor
+:anatomical_location_descriptor rdf:type owl:DatatypeProperty ;
+                                rdfs:comment """Anatomical positions based on classes in the Biological Spatial Ontology (BSPO) 
+
+Anatomical body positions https://sml.snl.no/topografisk_anatomi
+
+Anatomical side (BSPO:0000054) 
+
+Back = posterior side (BSPO:0000056) https://sml.snl.no/posterior, https://sml.snl.no/dorsal
+Front = anterior side (BSPO:0000055) https://snl.no/anterior, https://sml.snl.no/ventral
+Left = left side (BSPO:0000000) https://sml.snl.no/sinister
+Right = right side (BSPO:0000007) https://sml.snl.no/dexter, https://snl.no/dekstral
+Proximal = proximal side (BSPO:0000061) https://sml.snl.no/proksimal
+Distal = distal side (BSPO:0000062) https://sml.snl.no/distal
+Medial = medial side (BSPO:0000067) https://sml.snl.no/medial
+Sideways = 
+Halfway =
+Lateral = lateral side (BSPO:0000066) https://snl.no/lateral"""@en ,
+                                             """Location of body parts away from center. 
+
+3 Options: 
+  1. Front
+  2. Back
+or
+  1. Left
+  2. Right
+or
+  1. Proximal (Proksimal)
+  2. Distal (Distal)
+  3. Medial (Medial)
+  4. Sideways (Sideveis)
+  5. Halfway (Halvveis)"""@en ;
+                                rdfs:label "Anatomical location descriptor"@en ,
+                                           "Anatomisk plasseringsbeskrivelse"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#anatomical_location_descriptor_front_or_back
+:anatomical_location_descriptor_front_or_back rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf :anatomical_location_descriptor ;
+                                              rdfs:range [ rdf:type rdfs:Datatype ;
+                                                           owl:unionOf ( [ rdf:type rdfs:Datatype ;
+                                                                           owl:oneOf [ rdf:type rdf:List ;
+                                                                                       rdf:first "Back"@en ;
+                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                  rdf:first "Front"@en ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                         ]
+                                                                         [ rdf:type rdfs:Datatype ;
+                                                                           owl:oneOf [ rdf:type rdf:List ;
+                                                                                       rdf:first "Bak"@no ;
+                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                  rdf:first "Foran"@no ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                         ]
+                                                                       )
+                                                         ] ;
+                                              rdfs:label "Anatomical location descriptor front or back"@en ,
+                                                         "Anatomisk plasseringsbeskrivelse foran eller bak"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#anatomical_location_descriptor_left_or_right
+:anatomical_location_descriptor_left_or_right rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf :anatomical_location_descriptor ;
+                                              rdfs:range [ rdf:type rdfs:Datatype ;
+                                                           owl:unionOf ( [ rdf:type rdfs:Datatype ;
+                                                                           owl:oneOf [ rdf:type rdf:List ;
+                                                                                       rdf:first "Høyre"@no ;
+                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                  rdf:first "Venstre"@no ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                         ]
+                                                                         [ rdf:type rdfs:Datatype ;
+                                                                           owl:oneOf [ rdf:type rdf:List ;
+                                                                                       rdf:first "Left"@en ;
+                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                  rdf:first "Right"@en ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                         ]
+                                                                       )
+                                                         ] ;
+                                              rdfs:label "Anatomical location descriptor left or right"@en ,
+                                                         "Anatomisk plasseringsbeskrivelse venstre eller høyre"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#blood_test_result
+:blood_test_result rdf:type owl:DatatypeProperty ;
+                   rdfs:label "Blodprøveresultat"@no ,
+                              "Blood test result"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#has_blood_test_result
+:has_blood_test_result rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :blood_test_result ;
+                       rdfs:domain :blood_test ;
+                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                    owl:unionOf ( [ rdf:type rdfs:Datatype ;
+                                                    owl:oneOf [ rdf:type rdf:List ;
+                                                                rdf:first "Negativ"@no ;
+                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                           rdf:first "Positivt"@no ;
+                                                                           rdf:rest rdf:nil
+                                                                         ]
+                                                              ]
+                                                  ]
+                                                  [ rdf:type rdfs:Datatype ;
+                                                    owl:oneOf [ rdf:type rdf:List ;
+                                                                rdf:first "Negative"@en ;
+                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                           rdf:first "Positive"@en ;
+                                                                           rdf:rest rdf:nil
+                                                                         ]
+                                                              ]
+                                                  ]
+                                                )
+                                  ] ;
+                       rdfs:label "Har blodprøveresultat"@no ,
+                                  "Has blood test result"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#has_body_temperature_range
+:has_body_temperature_range rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :observation_attribute ;
+                            rdfs:range [ rdf:type rdfs:Datatype ;
+                                         owl:unionOf ( [ rdf:type rdfs:Datatype ;
+                                                         owl:oneOf [ rdf:type rdf:List ;
+                                                                     rdf:first "Hypertermi"@no ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "Hypotermi"@no ;
+                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                           rdf:first "Normal"@no ;
+                                                                                           rdf:rest rdf:nil
+                                                                                         ]
+                                                                              ]
+                                                                   ]
+                                                       ]
+                                                       [ rdf:type rdfs:Datatype ;
+                                                         owl:oneOf [ rdf:type rdf:List ;
+                                                                     rdf:first "Hyperthermia"@en ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "Hypothermia"@en ;
+                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                           rdf:first "Normal"@en ;
+                                                                                           rdf:rest rdf:nil
+                                                                                         ]
+                                                                              ]
+                                                                   ]
+                                                       ]
+                                                     )
+                                       ] ;
+                            rdfs:comment """Temperature ranges: 
+1. Hyperthermia (Hypertermi) https://sml.snl.no/hypertermi, https://sml.snl.no/feber
+2. Normal (Normal) https://sml.snl.no/kroppstemperatur
+3. Hypothermia (Hypotermi) https://sml.snl.no/hypotermi"""@en ;
+                            rdfs:label "Har kroppstemperaturområde"@no ,
+                                       "Has body temperature range"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#has_conscious_state
+:has_conscious_state rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :observation_attribute ;
+                     rdfs:range [ rdf:type rdfs:Datatype ;
+                                  owl:unionOf ( [ rdf:type rdfs:Datatype ;
+                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                              rdf:first "Alert"@en ;
+                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                         rdf:first "Confusion"@en ;
+                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                    rdf:first "Painfully responsive"@en ;
+                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                               rdf:first "Unresponsive"@en ;
+                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                          rdf:first "Verbally responsive"@en ;
+                                                                                                          rdf:rest rdf:nil
+                                                                                                        ]
+                                                                                             ]
+                                                                                  ]
+                                                                       ]
+                                                            ]
+                                                ]
+                                                [ rdf:type rdfs:Datatype ;
+                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                              rdf:first "Bevisstløshet"@no ;
+                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                         rdf:first "Forvirring"@no ;
+                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                    rdf:first "Smerte respons"@no ;
+                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                               rdf:first "Verbal respons"@no ;
+                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                          rdf:first "Våken"@no ;
+                                                                                                          rdf:rest rdf:nil
+                                                                                                        ]
+                                                                                             ]
+                                                                                  ]
+                                                                       ]
+                                                            ]
+                                                ]
+                                              )
+                                ] ;
+                     rdfs:comment """Level of consciousness based on NEWSII conscious state (Bevissthetsnivå) ACVPU https://ehandboken.ous-hf.no/document/78636
+
+
+Levels:
+1. Alert (Våken)
+2. Confusion (Forvirring)
+3. Verbally responsive (Verbal respons)
+4. Painfully responsive (Smerte respons)
+5. Unresponsive (Bevisstløshet)
+
+https://sml.snl.no/bevissthetsforstyrrelse"""@en ;
+                     rdfs:label "Har bevisste tilstand av"@no ,
+                                "Has conscious state of"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#has_cultured_bacteria
+:has_cultured_bacteria rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :blood_test_result ;
+                       rdfs:domain :blood_test ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "Har dyrkede bakterier"@no ,
+                                  "Has cultured bacteria"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#has_name
+:has_name rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "Har navn"@no ,
+                     "Has name"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#has_pivc_color
+:has_pivc_color rdf:type owl:DatatypeProperty ;
+                rdfs:domain :catheter ,
+                            :medical_device ,
+                            :peripheral_intravenous_catheter ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:unionOf ( [ rdf:type rdfs:Datatype ;
+                                             owl:oneOf [ rdf:type rdf:List ;
+                                                         rdf:first "Blue"@en ;
+                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                    rdf:first "Brown"@en ;
+                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                               rdf:first "Gray"@en ;
+                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                          rdf:first "Green"@en ;
+                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                     rdf:first "Orange"@en ;
+                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                rdf:first "Pink"@en ;
+                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                           rdf:first "Purple"@en ;
+                                                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                      rdf:first "White"@en ;
+                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                 rdf:first "Yellow"@en ;
+                                                                                                                                                 rdf:rest rdf:nil
+                                                                                                                                               ]
+                                                                                                                                    ]
+                                                                                                                         ]
+                                                                                                              ]
+                                                                                                   ]
+                                                                                        ]
+                                                                             ]
+                                                                  ]
+                                                       ]
+                                           ]
+                                           [ rdf:type rdfs:Datatype ;
+                                             owl:oneOf [ rdf:type rdf:List ;
+                                                         rdf:first "Blå"@no ;
+                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                    rdf:first "Brun"@no ;
+                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                               rdf:first "Grå"@no ;
+                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                          rdf:first "Grønn"@no ;
+                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                     rdf:first "Gul"@no ;
+                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                rdf:first "Hvit"@no ;
+                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                           rdf:first "Lilla"@no ;
+                                                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                      rdf:first "Oransje"@no ;
+                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                 rdf:first "Rosa"@no ;
+                                                                                                                                                 rdf:rest rdf:nil
+                                                                                                                                               ]
+                                                                                                                                    ]
+                                                                                                                         ]
+                                                                                                              ]
+                                                                                                   ]
+                                                                                        ]
+                                                                             ]
+                                                                  ]
+                                                       ]
+                                           ]
+                                         )
+                           ] ;
+                rdfs:comment """Color of peripheral venous catheter (PIVC; perifert venekateter; PVK):
+1. Purple (Lilla)
+2. Yellow (Gul)
+3. Blue (Blå)
+4. Pink (Rosa)
+5. Green (Grønn)
+6. White (Hvit)
+7. Gray (Grå)
+8. Brown (Brun)
+9. Orange (Oransje)
+
+https://ehandboken.ous-hf.no/document/115280"""@en ;
+                rdfs:label "Har perifert venekateter farge"@no ,
+                           "Has peripheral venous catheter color"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#has_severity
+:has_severity rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :observation_attribute ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:unionOf ( [ rdf:type rdfs:Datatype ;
+                                           owl:oneOf [ rdf:type rdf:List ;
+                                                       rdf:first "High"@en ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "Low"@en ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first "Normal"@en ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                                     ]
+                                         ]
+                                         [ rdf:type rdfs:Datatype ;
+                                           owl:oneOf [ rdf:type rdf:List ;
+                                                       rdf:first "Høy"@no ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "Lav"@no ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first "Normal"@no ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                                     ]
+                                         ]
+                                       )
+                         ] ;
+              rdfs:comment """Severity Levels:
+1. High (Høy)
+2. Normal (Normal)
+3. Low (Lav)"""@en ;
+              rdfs:label "Har alvorlighetsgrad"@no ,
+                         "Has severity level"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#is_forgotten
+:is_forgotten rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#is_missing
+:is_missing rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:boolean ;
+            rdfs:label "Er savnet"@no ,
+                       "Is missing"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#negation
+:negation rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:boolean ;
+          rdfs:label "Negasjon"@no ,
+                     "Negation"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#observation_attribute
+:observation_attribute rdf:type owl:DatatypeProperty ;
+                       rdfs:label "Observasjonsattributt"@no ,
+                                  "Observation attribute"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#relative_is
+:relative_is rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string ;
+             rdfs:label "Relative is"@en ,
+                        "Slektning er"@no .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/2022/04/ciio#anatomical_location
+:anatomical_location rdf:type owl:Class ;
+                     rdfs:comment "Anatomical body parts, organs, or relative positions of the body.  Somewhere on the body."@en ,
+                                  "Anatomiske kroppsdeler, organer, eller relative posisjoner av kroppen. Et plass på kroppen."@no ;
+                     rdfs:label "Anatomical location"@en ,
+                                "Anatomisk plassering"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#arm
+:arm rdf:type owl:Class ;
+     rdfs:subClassOf :anatomical_location ;
+     rdfs:label "Arm"@en ,
+                "Arm"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#artery
+:artery rdf:type owl:Class ;
+        rdfs:subClassOf :circulatory_system ;
+        owl:disjointWith :vein ;
+        rdfs:comment """Arterier er blodårer som fører blod fra hjertet og ut i kroppen. Årer som fører blod til hjertet fra kroppen kalles vener.
+
+Den største arterien er aorta, hovedpulsåren, som går ut fra hjertets venstre hovedkammer. Nest størst er lungearterien (truncus pulmonalis), som springer ut fra høyre hovedkammer og er den eneste arterien som fører oksygenfattig blod, bortsett fra navlesnorarteriene under svangerskapet.
+
+Vanligvis er arteriene i kroppen fra 0,1 til omtrent 10 millimeter i diameter. De minste arteriene (under 0,1 millimeter) før overgangen til kapillarene kalles arterioler.
+
+https://sml.snl.no/arterier
+
+Last accessed: 30. November 2021"""@no ;
+        rdfs:label "Arterie"@no ,
+                   "Artery"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#blood_pressure
+:blood_pressure rdf:type owl:Class ;
+                rdfs:subClassOf :vital_sign .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#blood_test
+:blood_test rdf:type owl:Class ;
+            rdfs:subClassOf :procedure ;
+            rdfs:label "Blodprøve"@no ,
+                       "Blood test"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#body_temperature
+:body_temperature rdf:type owl:Class ;
+                  rdfs:subClassOf :vital_sign ;
+                  rdfs:label "Body temperature"@en ,
+                             "Kroppstemperatur"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter
+:catheter rdf:type owl:Class ;
+          rdfs:subClassOf :medical_device ;
+          owl:disjointWith :pump ;
+          rdfs:label "Catheter"@en ,
+                     "Kateter"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_discontinue_use
+:catheter_discontinue_use rdf:type owl:Class ;
+                          rdfs:subClassOf :catheter_procedure ;
+                          rdfs:label "Catheter discontinuation"@en ,
+                                     "Kateter seponering"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_insertion
+:catheter_insertion rdf:type owl:Class ;
+                    rdfs:subClassOf :catheter_procedure ;
+                    rdfs:label "Catheter insertion"@en ,
+                               "Kateter innstikking"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_procedure
+:catheter_procedure rdf:type owl:Class ;
+                    rdfs:subClassOf :procedure ;
+                    rdfs:label "Catheter procedure"@en ,
+                               "Kateter prosedyre"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_removal
+:catheter_removal rdf:type owl:Class ;
+                  rdfs:subClassOf :catheter_procedure ;
+                  rdfs:label "Catheter removal"@en ,
+                             "Kateter fjerning"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_self_removal
+:catheter_self_removal rdf:type owl:Class ;
+                       rdfs:subClassOf :catheter_procedure ;
+                       rdfs:label "Catheter self-removal"@en ,
+                                  "Kateter selvseponering"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#circulatory_system
+:circulatory_system rdf:type owl:Class ;
+                    rdfs:subClassOf :anatomical_location .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#consciousness_level
+:consciousness_level rdf:type owl:Class ;
+                     rdfs:subClassOf :vital_sign .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom
+:descriptive_sign_or_symptom rdf:type owl:Class ;
+                             rdfs:subClassOf :observation ;
+                             rdfs:comment "Beskrivelse av et tegn eller symptom som er en del av en pasient. Slik som farge, form, temperatur, lengde, masse eller vekst."@no ,
+                                          "Description of a sign or symptom that is part of a patient. Such as the color, shape, temperature, length, mass, or growth."@en ;
+                             rdfs:label "Beskrivende tegn eller symptom"@no ,
+                                        "Descriptive sign or symptom"@en ;
+                             rdfs:seeAlso """physical sign from Ontology for General Medical Science (OGMS)
+
+Definition: An abnormal material entity that is part of a patient and hypothesized to be clinically relevant.
+
+Example: an abnormal growth; an inflammatory infiltrate; swollen tissue; distension
+
+https://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000129
+
+Last accessed: 25. November 2021"""@en ,
+                                          """qualitative sign from Ontology for General Medical Science (OGMS)
+
+Definition: An abnormal observable quality of a part of a patient that is hypothesized to be clinically relevant.
+
+Example: the color of a rash; the shape of a melanoma
+
+https://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000142
+
+Last accessed: 25. November 2021"""@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#device_observation
+:device_observation rdf:type owl:Class ;
+                    rdfs:subClassOf :observation ;
+                    rdfs:label "Device observation"@en ,
+                               "Utstyrsobservasjon"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document
+:document rdf:type owl:Class ;
+          rdfs:comment "Adverse event note from report."@en ,
+                       "Annoterte avviksmeldinger fra rapport."@no ;
+          rdfs:label "Document"@en ,
+                     "Dokument"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#edema
+:edema rdf:type owl:Class ;
+       rdfs:subClassOf :descriptive_sign_or_symptom ;
+       rdfs:label "Edema"@en ,
+                  "Ødem"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#elbow
+:elbow rdf:type owl:Class ;
+       rdfs:subClassOf :arm ;
+       owl:disjointWith :hand ;
+       rdfs:label "Albue"@no ,
+                  "Elbow"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#epidural
+:epidural rdf:type owl:Class ;
+          rdfs:subClassOf :catheter ;
+          owl:disjointWith :peripheral_intravenous_catheter ;
+          rdfs:label "Epidural catheter"@en ,
+                     "Epidural kateter"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#frostbite
+:frostbite rdf:type owl:Class ;
+           rdfs:subClassOf :descriptive_sign_or_symptom .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#general_iv
+:general_iv rdf:type owl:Class ;
+            rdfs:subClassOf :procedure ;
+            rdfs:label "General IV"@en ,
+                       "Generelt IV"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#hand
+:hand rdf:type owl:Class ;
+      rdfs:subClassOf :arm ;
+      rdfs:label "Hand"@en ,
+                 "Hånd"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#hardness
+:hardness rdf:type owl:Class ;
+          rdfs:subClassOf :descriptive_sign_or_symptom ;
+          rdfs:label "Hardhet"@no ,
+                     "Hardness"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#infusion
+:infusion rdf:type owl:Class ;
+          rdfs:subClassOf :procedure ;
+          rdfs:label "Infusion"@en ,
+                     "Infusjon"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#injury
+:injury rdf:type owl:Class ;
+        rdfs:subClassOf :descriptive_sign_or_symptom .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#insertion_site
+:insertion_site rdf:type owl:Class ;
+                rdfs:subClassOf :anatomical_location ;
+                rdfs:label "Insertion site"@en ,
+                           "innstikkssted"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#itchy
+:itchy rdf:type owl:Class ;
+       rdfs:subClassOf :descriptive_sign_or_symptom ;
+       rdfs:label "Itchy"@en ,
+                  "Kløende"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_antibiotics
+:iv_antibiotics rdf:type owl:Class ;
+                rdfs:subClassOf :general_iv ;
+                rdfs:label "IV antibiotics"@en ,
+                           "IV antibiotika"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_fluid
+:iv_fluid rdf:type owl:Class ;
+          rdfs:subClassOf :general_iv ;
+          rdfs:label "IV fluid"@en ,
+                     "IV væske"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_medication
+:iv_medication rdf:type owl:Class ;
+               rdfs:subClassOf :general_iv ;
+               rdfs:label "IV medication"@en ,
+                          "IV medisiner"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#leakage
+:leakage rdf:type owl:Class ;
+         rdfs:subClassOf :device_observation ;
+         owl:disjointWith :moisture ;
+         rdfs:label "Leakage"@en ,
+                    "Lekkasje"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#medical_device
+:medical_device rdf:type owl:Class ;
+                rdfs:comment "Any instrument, device, or equipment used for a medical purpose."@en ,
+                             "Ethvert instrument, enhet eller utstyr som brukes til medisinske formål."@no ;
+                rdfs:label "Medical device"@en ,
+                           "Medisk utstyr"@no ;
+                rdfs:seeAlso """Medical Device from NCI Thesaurus (NCIt).
+
+Definition: Any physical object that is useful for prevention, diagnosis, monitoring, or treatment of disease or other conditions. 
+
+http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C16830
+
+Last accessed 25. November 2021"""@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#mobility_impairment
+:mobility_impairment rdf:type owl:Class ;
+                     rdfs:subClassOf :observation ;
+                     rdfs:label "Bevegelseshemming"@no ,
+                                "Mobility impairment"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#moisture
+:moisture rdf:type owl:Class ;
+          rdfs:subClassOf :device_observation ;
+          rdfs:label "Fukt"@no ,
+                     "Moisture"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#necrosis
+:necrosis rdf:type owl:Class ;
+          rdfs:subClassOf :descriptive_sign_or_symptom ;
+          rdfs:label "Necrosis"@en ,
+                     "Nekrose"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#observation
+:observation rdf:type owl:Class ;
+             rdfs:comment "Any sign or symptom that can be monitored."@en ,
+                          "Ethvert tegn eller symptom som kan overvåkes."@no ;
+             rdfs:label "Observasjon"@no ,
+                        "Observation"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#pain
+:pain rdf:type owl:Class ;
+      rdfs:subClassOf :descriptive_sign_or_symptom ;
+      rdfs:label "Pain"@en ,
+                 "Smerte"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient
+:patient rdf:type owl:Class ;
+         rdfs:subClassOf :person ;
+         owl:disjointWith :relative ;
+         rdfs:comment "Person receiving care or registered for care"@en ,
+                      "Person som mottar pleie eller er registrert for pleie."@no ;
+         rdfs:label "Pasient"@no ,
+                    "Patient"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter
+:peripheral_intravenous_catheter rdf:type owl:Class ;
+                                 rdfs:subClassOf :catheter ;
+                                 rdfs:label "PIVC"@en ,
+                                            "PVK"@no ,
+                                            "Perifert venekateter"@no ,
+                                            "Peripheral intravenous catheter"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#person
+:person rdf:type owl:Class ;
+        rdfs:comment "An individual.  A human being."@en ,
+                     "Et individ. Et menneske."@no ;
+        rdfs:label "Person"@en ,
+                   "Person"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#phlebitis
+:phlebitis rdf:type owl:Class ;
+           rdfs:subClassOf :descriptive_sign_or_symptom ;
+           rdfs:label "Flebitis"@no ,
+                      "Phlebitis"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#procedure
+:procedure rdf:type owl:Class ;
+           rdfs:comment "Any procedure, intervention, or activity related to catheters."@en ,
+                        "Enhver prosedyre, intervensjon eller aktivitet relatert til katetre."@no ;
+           rdfs:label "Procedure"@en ,
+                      "Prosedyre"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#pulse
+:pulse rdf:type owl:Class ;
+       rdfs:subClassOf :vital_sign ;
+       rdfs:label "Puls"@no ,
+                  "Pulse"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#pump
+:pump rdf:type owl:Class ;
+      rdfs:subClassOf :medical_device ;
+      rdfs:label "Pump"@en ,
+                 "Pumpe"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#pus
+:pus rdf:type owl:Class ;
+     rdfs:subClassOf :descriptive_sign_or_symptom ;
+     rdfs:label "Pus"@en ,
+                "Puss"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#red
+:red rdf:type owl:Class ;
+     rdfs:subClassOf :descriptive_sign_or_symptom ;
+     rdfs:label "Red"@en ,
+                "Rød"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#relative
+:relative rdf:type owl:Class ;
+          rdfs:subClassOf :person ;
+          rdfs:comment "Person related to patient"@en ,
+                       "Person relatert til pasient."@no ;
+          rdfs:label "Relative of the patient"@en ,
+                     "Slektning"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#respiratory_rate
+:respiratory_rate rdf:type owl:Class ;
+                  rdfs:subClassOf :vital_sign ;
+                  rdfs:label "Respirasjons frekvens"@no ,
+                             "Respiratory rate"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence
+:sentence rdf:type owl:Class ;
+          rdfs:comment "Sentence from a document."@en ,
+                       "Setning fra et dokument."@no ;
+          rdfs:label "Sentence"@en ,
+                     "Setning"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion
+:subcutaneous_infusion rdf:type owl:Class ;
+                       rdfs:subClassOf :infusion ;
+                       rdfs:label "Subcutaneous infusion"@en ,
+                                  "Subkutant infusjon"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin
+:subcutaneous_skin rdf:type owl:Class ;
+                   rdfs:subClassOf :anatomical_location ;
+                   rdfs:label "Subcutaneous skin"@en ,
+                              "Subkutan hud"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#swollen
+:swollen rdf:type owl:Class ;
+         rdfs:subClassOf :descriptive_sign_or_symptom ;
+         rdfs:label "Hoven"@no ,
+                    "Swollen"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#tenderness
+:tenderness rdf:type owl:Class ;
+            rdfs:subClassOf :descriptive_sign_or_symptom ;
+            rdfs:comment "Følsomhet for smerte; sårhet"@no ,
+                         "Sensitivity to pain; soreness"@en ;
+            rdfs:label "Tenderness"@en ,
+                       "Ømhet"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#vein
+:vein rdf:type owl:Class ;
+      rdfs:subClassOf :circulatory_system ;
+      rdfs:comment """Vener er blodårer som fører blodet fra kroppen til hjertet. Blodårer som fører blod fra hjertet til kroppen kalles arterier. Ofte følger to mindre vener en arterie i kretsløpet.
+
+De fleste venene samler oksygenfattig blod fra kroppen og fører det til hjertet og lungene. Venene i armene og beina er synlige under huden. De har veneklaffer som hindrer at blodet strømmer «feil vei», det vil si vekk fra hjertet. Blodtrykket i venene er svært lavt sammenliknet med trykket i arteriene.
+
+https://sml.snl.no/vener
+
+Last accessed: 30. November 2021"""@no ;
+      rdfs:label "Vein"@en ,
+                 "Ven"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#vital_sign
+:vital_sign rdf:type owl:Class ;
+            rdfs:subClassOf :observation .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#warm
+:warm rdf:type owl:Class ;
+      rdfs:subClassOf :descriptive_sign_or_symptom ;
+      rdfs:label "Varm"@no ,
+                 "Warm"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/2022/04/ciio#arm.09.02
+:arm.09.02 rdf:type owl:NamedIndividual ,
+                    :arm .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#arm.09.04
+:arm.09.04 rdf:type owl:NamedIndividual ,
+                    :arm .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#arm.10.01
+:arm.10.01 rdf:type owl:NamedIndividual ,
+                    :arm ;
+           :anatomical_location_descriptor_left_or_right "Left"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#arm.10.02
+:arm.10.02 rdf:type owl:NamedIndividual ,
+                    :arm .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#arm.13.01
+:arm.13.01 rdf:type owl:NamedIndividual ,
+                    :arm .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#body_temp.10.03
+:body_temp.10.03 rdf:type owl:NamedIndividual ,
+                          :body_temperature ;
+                 :has_body_temperature_range "Hyperthermia"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_discontinue_use.10.01
+:catheter_discontinue_use.10.01 rdf:type owl:NamedIndividual ,
+                                         :catheter_discontinue_use ;
+                                :procedure_uses :peripheral_intravenous_catheter.10.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_insertion.10.05
+:catheter_insertion.10.05 rdf:type owl:NamedIndividual ,
+                                   :catheter_insertion ;
+                          :procedure_uses :peripheral_intravenous_catheter.10.05 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_insertion.11.01
+:catheter_insertion.11.01 rdf:type owl:NamedIndividual ,
+                                   :catheter_insertion ;
+                          :procedure_uses :peripheral_intravenous_catheter.11.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_procedure.09.03
+:catheter_procedure.09.03 rdf:type owl:NamedIndividual ,
+                                   :catheter_procedure ;
+                          :procedure_uses :peripheral_intravenous_catheter.09.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_removal.04.03
+:catheter_removal.04.03 rdf:type owl:NamedIndividual ,
+                                 :catheter_removal ;
+                        :procedure_uses :peripheral_intravenous_catheter.04.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_removal.06.01
+:catheter_removal.06.01 rdf:type owl:NamedIndividual ,
+                                 :catheter_removal ;
+                        :procedure_uses :peripheral_intravenous_catheter.06.01 ;
+                        :is_forgotten "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#catheter_self_removal.06.02
+:catheter_self_removal.06.02 rdf:type owl:NamedIndividual ,
+                                      :catheter_self_removal .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.01
+:document.01 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.01.01 ,
+                       :sentence.01.02 ,
+                       :sentence.01.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.02
+:document.02 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.02.01 ,
+                       :sentence.02.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.03
+:document.03 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.03.02 ,
+                       :sentence.03.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.04
+:document.04 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.04.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.05
+:document.05 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.05.01 ,
+                       :sentence.05.02 ,
+                       :sentence.05.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.06
+:document.06 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.06.01 ,
+                       :sentence.06.02 ,
+                       :sentence.06.03 ,
+                       :sentence.06.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.07
+:document.07 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.07.01 ,
+                       :sentence.07.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.08
+:document.08 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.08.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.09
+:document.09 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.09.01 ,
+                       :sentence.09.02 ,
+                       :sentence.09.03 ,
+                       :sentence.09.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.10
+:document.10 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.10.01 ,
+                       :sentence.10.02 ,
+                       :sentence.10.03 ,
+                       :sentence.10.04 ,
+                       :sentence.10.05 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.11
+:document.11 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.11.01 ,
+                       :sentence.11.03 ,
+                       :sentence.11.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.12
+:document.12 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.12.01 ,
+                       :sentence.12.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.13
+:document.13 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.13.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.14
+:document.14 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.14.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#document.15
+:document.15 rdf:type owl:NamedIndividual ,
+                      :document ;
+             :contains :sentence.15.01 ,
+                       :sentence.15.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#elbow.01.01
+:elbow.01.01 rdf:type owl:NamedIndividual ,
+                      :elbow ;
+             :anatomical_location_descriptor_left_or_right "Right"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#elbow.02.01
+:elbow.02.01 rdf:type owl:NamedIndividual ,
+                      :elbow ;
+             :anatomical_location_descriptor_left_or_right "Left"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#elbow.05.01
+:elbow.05.01 rdf:type owl:NamedIndividual ,
+                      :elbow ;
+             :anatomical_location_descriptor_left_or_right "Left"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#elbow.05.02
+:elbow.05.02 rdf:type owl:NamedIndividual ,
+                      :elbow .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#elbow.05.03
+:elbow.05.03 rdf:type owl:NamedIndividual ,
+                      :elbow .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#elbow.06.03
+:elbow.06.03 rdf:type owl:NamedIndividual ,
+                      :elbow .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#elbow.06.04
+:elbow.06.04 rdf:type owl:NamedIndividual ,
+                      :elbow .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#elbow.07.01
+:elbow.07.01 rdf:type owl:NamedIndividual ,
+                      :elbow ;
+             :anatomical_location_descriptor_left_or_right "Left"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#elbow.09.02
+:elbow.09.02 rdf:type owl:NamedIndividual ,
+                      :elbow .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#epidural.08.01
+:epidural.08.01 rdf:type owl:NamedIndividual ,
+                         :epidural .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#frostbite.10.04
+:frostbite.10.04 rdf:type owl:NamedIndividual ,
+                          :frostbite .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#general_iv.03.02
+:general_iv.03.02 rdf:type owl:NamedIndividual ,
+                           :general_iv ;
+                  :is_missing "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#hand.06.03
+:hand.06.03 rdf:type owl:NamedIndividual ,
+                     :hand ;
+            :anatomical_location_descriptor_front_or_back "Back"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#hand.06.04
+:hand.06.04 rdf:type owl:NamedIndividual ,
+                     :hand .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#hand.12.01
+:hand.12.01 rdf:type owl:NamedIndividual ,
+                     :hand .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#infusion.07.02
+:infusion.07.02 rdf:type owl:NamedIndividual ,
+                         :infusion ;
+                :located_nearby_on_at_in :subcutaneous_skin.07.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#infusion.09.01
+:infusion.09.01 rdf:type owl:NamedIndividual ,
+                         :infusion .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#infusion.09.04
+:infusion.09.04 rdf:type owl:NamedIndividual ,
+                         :infusion .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#infusion.14.01
+:infusion.14.01 rdf:type owl:NamedIndividual ,
+                         :infusion ;
+                :located_nearby_on_at_in :insertion_site.14.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#injury.12.01
+:injury.12.01 rdf:type owl:NamedIndividual ,
+                       :injury ;
+              :located_nearby_on_at_in :hand.12.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#insertion_site.10.01
+:insertion_site.10.01 rdf:type owl:NamedIndividual ,
+                               :insertion_site .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#insertion_site.10.02
+:insertion_site.10.02 rdf:type owl:NamedIndividual ,
+                               :insertion_site .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#insertion_site.11.03
+:insertion_site.11.03 rdf:type owl:NamedIndividual ,
+                               :insertion_site .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#insertion_site.14.01
+:insertion_site.14.01 rdf:type owl:NamedIndividual ,
+                               :insertion_site .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#itchy.06.03
+:itchy.06.03 rdf:type owl:NamedIndividual ,
+                      :itchy ;
+             :located_nearby_on_at_in :hand.06.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_antibiotics.01.02
+:iv_antibiotics.01.02 rdf:type owl:NamedIndividual ,
+                               :iv_antibiotics ;
+                      :is_combined_with :iv_fluid.01.02 ;
+                      :is_iv_for :subcutaneous_infusion.01.02 ;
+                      :has_name "penicillin" .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_antibiotics.02.02
+:iv_antibiotics.02.02 rdf:type owl:NamedIndividual ,
+                               :iv_antibiotics ;
+                      :is_iv_for :subcutaneous_infusion.02.02 ;
+                      :has_name "diclocil" .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_fluid.01.02
+:iv_fluid.01.02 rdf:type owl:NamedIndividual ,
+                         :iv_fluid ;
+                :is_combined_with :iv_antibiotics.01.02 ;
+                :has_name "NaCl" .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_fluid.03.02
+:iv_fluid.03.02 rdf:type owl:NamedIndividual ,
+                         :iv_fluid ;
+                :is_missing "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_fluid.03.03
+:iv_fluid.03.03 rdf:type owl:NamedIndividual ,
+                         :iv_fluid ;
+                :procedure_uses :peripheral_intravenous_catheter.03.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_fluid.09.02
+:iv_fluid.09.02 rdf:type owl:NamedIndividual ,
+                         :iv_fluid ;
+                :located_nearby_on_at_in :elbow.09.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_fluid.15.01
+:iv_fluid.15.01 rdf:type owl:NamedIndividual ,
+                         :iv_fluid ;
+                :has_name "sodium_chloride" .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_fluid.15.02
+:iv_fluid.15.02 rdf:type owl:NamedIndividual ,
+                         :iv_fluid ;
+                :is_documented_in :sentence.15.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_medication.03.02
+:iv_medication.03.02 rdf:type owl:NamedIndividual ,
+                              :iv_medication ;
+                     :is_missing "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_medication.03.03
+:iv_medication.03.03 rdf:type owl:NamedIndividual ,
+                              :iv_medication ;
+                     :is_missing "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_medication.07.01.1
+:iv_medication.07.01.1 rdf:type owl:NamedIndividual ,
+                                :iv_medication ;
+                       :procedure_uses :peripheral_intravenous_catheter.07.01 ,
+                                       :pump.07.01 ;
+                       :has_name "ringer" .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_medication.07.01.2
+:iv_medication.07.01.2 rdf:type owl:NamedIndividual ,
+                                :iv_medication ;
+                       :procedure_uses :peripheral_intravenous_catheter.07.01 ,
+                                       :pump.07.01 ;
+                       :has_name "potassium chloride" .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_medication.08.01.1
+:iv_medication.08.01.1 rdf:type owl:NamedIndividual ,
+                                :iv_medication ;
+                       :medication_should_have_been :iv_medication.08.01.2 ;
+                       :has_name "rocuronium" ;
+                       rdfs:comment "Rocuronium"@en ,
+                                    "Rokuronium"@no .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_medication.08.01.2
+:iv_medication.08.01.2 rdf:type owl:NamedIndividual ,
+                                :iv_medication ;
+                       :has_name "midazolam" ;
+                       :is_missing "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_medication.13.01
+:iv_medication.13.01 rdf:type owl:NamedIndividual ,
+                              :iv_medication ;
+                     :located_nearby_on_at_in :subcutaneous_skin.13.01 ;
+                     :has_name "potassium" .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_medication.15.01
+:iv_medication.15.01 rdf:type owl:NamedIndividual ,
+                              :iv_medication ;
+                     :is_missing "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#iv_medication.15.02
+:iv_medication.15.02 rdf:type owl:NamedIndividual ,
+                              :iv_medication ;
+                     :has_name "infliximab" ;
+                     :is_forgotten "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#leakage.09.02
+:leakage.09.02 rdf:type owl:NamedIndividual ,
+                        :leakage ;
+               :is_observed_with :iv_fluid.09.02 ;
+               :located_nearby_on_at_in :elbow.09.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#leakage.09.04
+:leakage.09.04 rdf:type owl:NamedIndividual ,
+                        :leakage ;
+               :is_observed_with :infusion.09.04 ;
+               :located_nearby_on_at_in :arm.09.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#mobility_impairment.10.02
+:mobility_impairment.10.02 rdf:type owl:NamedIndividual ,
+                                    :mobility_impairment ;
+                           :located_nearby_on_at_in :arm.10.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#moisture.07.01
+:moisture.07.01 rdf:type owl:NamedIndividual ,
+                         :moisture .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#moisture.09.04
+:moisture.09.04 rdf:type owl:NamedIndividual ,
+                         :moisture ;
+                :located_nearby_on_at_in :arm.09.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#necrosis.13.01
+:necrosis.13.01 rdf:type owl:NamedIndividual ,
+                         :necrosis .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#pain.05.02
+:pain.05.02 rdf:type owl:NamedIndividual ,
+                     :pain ;
+            :located_nearby_on_at_in :elbow.05.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#pain.05.03
+:pain.05.03 rdf:type owl:NamedIndividual ,
+                     :pain ;
+            :located_nearby_on_at_in :elbow.05.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#pain.09.02
+:pain.09.02 rdf:type owl:NamedIndividual ,
+                     :pain ;
+            :located_nearby_on_at_in :arm.09.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#pain.10.01
+:pain.10.01 rdf:type owl:NamedIndividual ,
+                     :pain ;
+            :located_nearby_on_at_in :insertion_site.10.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#pain.11.04
+:pain.11.04 rdf:type owl:NamedIndividual ,
+                     :pain ;
+            :negation "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.03.03
+:patient.03.03 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :iv_fluid.03.03 ,
+                            :iv_medication.03.03 ,
+                            :peripheral_intravenous_catheter.03.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.05.02
+:patient.05.02 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :relative.05.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.06.01
+:patient.06.01 rdf:type owl:NamedIndividual ,
+                        :patient .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.06.02
+:patient.06.02 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :catheter_self_removal.06.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.06.03
+:patient.06.03 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :elbow.06.03 ,
+                            :hand.06.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.08.01
+:patient.08.01 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :epidural.08.01 ,
+                            :iv_medication.08.01.1 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.09.01
+:patient.09.01 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :infusion.09.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.09.02
+:patient.09.02 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :arm.09.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.10.01
+:patient.10.01 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :pain.10.01 ,
+                            :red.10.01 ,
+                            :swollen.10.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.10.02
+:patient.10.02 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :arm.10.02 ,
+                            :body_temp.10.03 ,
+                            :frostbite.10.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.10.03
+:patient.10.03 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :body_temp.10.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.10.04
+:patient.10.04 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :frostbite.10.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.12.01
+:patient.12.01 rdf:type owl:NamedIndividual ,
+                        :patient .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#patient.15.01
+:patient.15.01 rdf:type owl:NamedIndividual ,
+                        :patient ;
+               :patient_has :iv_fluid.15.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.01.01
+:peripheral_intravenous_catheter.01.01 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter ;
+                                       :located_nearby_on_at_in :elbow.01.01 ;
+                                       :has_pivc_color "Green"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.01.03
+:peripheral_intravenous_catheter.01.03 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.02.01
+:peripheral_intravenous_catheter.02.01 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter ;
+                                       :located_nearby_on_at_in :elbow.02.01 ;
+                                       :has_pivc_color "Green"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.03.03
+:peripheral_intravenous_catheter.03.03 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.04.03
+:peripheral_intravenous_catheter.04.03 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.05.01
+:peripheral_intravenous_catheter.05.01 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter ;
+                                       :located_nearby_on_at_in :elbow.05.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.06.01
+:peripheral_intravenous_catheter.06.01 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.07.01
+:peripheral_intravenous_catheter.07.01 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter ;
+                                       :located_nearby_on_at_in :elbow.07.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.09.03
+:peripheral_intravenous_catheter.09.03 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.10.01
+:peripheral_intravenous_catheter.10.01 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.10.05
+:peripheral_intravenous_catheter.10.05 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.11.01
+:peripheral_intravenous_catheter.11.01 rdf:type owl:NamedIndividual ,
+                                                :peripheral_intravenous_catheter .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#pump.07.01
+:pump.07.01 rdf:type owl:NamedIndividual ,
+                     :pump .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#pus.10.02
+:pus.10.02 rdf:type owl:NamedIndividual ,
+                    :pus ;
+           :located_nearby_on_at_in :insertion_site.10.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#red.05.03
+:red.05.03 rdf:type owl:NamedIndividual ,
+                    :red ;
+           :located_nearby_on_at_in :elbow.05.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#red.06.04
+:red.06.04 rdf:type owl:NamedIndividual ,
+                    :red ;
+           :located_nearby_on_at_in :elbow.06.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#red.10.01
+:red.10.01 rdf:type owl:NamedIndividual ,
+                    :red ;
+           :located_nearby_on_at_in :arm.10.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#red.11.03
+:red.11.03 rdf:type owl:NamedIndividual ,
+                    :red ;
+           :located_nearby_on_at_in :insertion_site.11.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#red.12.02
+:red.12.02 rdf:type owl:NamedIndividual ,
+                    :red .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#red.14.01
+:red.14.01 rdf:type owl:NamedIndividual ,
+                    :red ;
+           :located_nearby_on_at_in :insertion_site.14.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#relative.05.02
+:relative.05.02 rdf:type owl:NamedIndividual ,
+                         :relative ;
+                :relative_is "wife" .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.01.01
+:sentence.01.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :elbow.01.01 ,
+                          :peripheral_intravenous_catheter.01.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.01.02
+:sentence.01.02 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :iv_antibiotics.01.02 ,
+                          :iv_fluid.01.02 ,
+                          :subcutaneous_infusion.01.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.01.03
+:sentence.01.03 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :peripheral_intravenous_catheter.01.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.02.01
+:sentence.02.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :elbow.02.01 ,
+                          :peripheral_intravenous_catheter.02.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.02.02
+:sentence.02.02 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :iv_antibiotics.02.02 ,
+                          :subcutaneous_infusion.02.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.03.02
+:sentence.03.02 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :general_iv.03.02 ,
+                          :iv_fluid.03.02 ,
+                          :iv_medication.03.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.03.03
+:sentence.03.03 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :iv_fluid.03.03 ,
+                          :iv_medication.03.03 ,
+                          :patient.03.03 ,
+                          :peripheral_intravenous_catheter.03.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.04.03
+:sentence.04.03 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :catheter_removal.04.03 ,
+                          :peripheral_intravenous_catheter.04.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.05.01
+:sentence.05.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :peripheral_intravenous_catheter.05.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.05.02
+:sentence.05.02 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :elbow.05.02 ,
+                          :pain.05.02 ,
+                          :patient.05.02 ,
+                          :relative.05.02 ,
+                          :swollen.05.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.05.03
+:sentence.05.03 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :elbow.05.03 ,
+                          :pain.05.03 ,
+                          :red.05.03 ,
+                          :swollen.05.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.06.01
+:sentence.06.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :catheter_removal.06.01 ,
+                          :patient.06.01 ,
+                          :peripheral_intravenous_catheter.06.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.06.02
+:sentence.06.02 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :catheter_self_removal.06.02 ,
+                          :patient.06.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.06.03
+:sentence.06.03 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :elbow.06.03 ,
+                          :hand.06.03 ,
+                          :itchy.06.03 ,
+                          :patient.06.03 ,
+                          :warm.06.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.06.04
+:sentence.06.04 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :elbow.06.04 ,
+                          :hand.06.04 ,
+                          :red.06.04 ,
+                          :swollen.06.04 ,
+                          :warm.06.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.07.01
+:sentence.07.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :elbow.07.01 ,
+                          :iv_medication.07.01.1 ,
+                          :iv_medication.07.01.2 ,
+                          :moisture.07.01 ,
+                          :peripheral_intravenous_catheter.07.01 ,
+                          :pump.07.01 ,
+                          :swollen.07.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.07.02
+:sentence.07.02 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :infusion.07.02 ,
+                          :subcutaneous_skin.07.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.08.01
+:sentence.08.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :epidural.08.01 ,
+                          :iv_medication.08.01.1 ,
+                          :iv_medication.08.01.2 ,
+                          :patient.08.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.09.01
+:sentence.09.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :infusion.09.01 ,
+                          :patient.09.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.09.02
+:sentence.09.02 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :arm.09.02 ,
+                          :elbow.09.02 ,
+                          :iv_fluid.09.02 ,
+                          :leakage.09.02 ,
+                          :pain.09.02 ,
+                          :patient.09.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.09.03
+:sentence.09.03 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :catheter_procedure.09.03 ,
+                          :peripheral_intravenous_catheter.09.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.09.04
+:sentence.09.04 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :arm.09.04 ,
+                          :infusion.09.04 ,
+                          :leakage.09.04 ,
+                          :moisture.09.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.10.01
+:sentence.10.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :arm.10.01 ,
+                          :catheter_discontinue_use.10.01 ,
+                          :insertion_site.10.01 ,
+                          :pain.10.01 ,
+                          :patient.10.01 ,
+                          :peripheral_intravenous_catheter.10.01 ,
+                          :red.10.01 ,
+                          :swollen.10.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.10.02
+:sentence.10.02 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :arm.10.02 ,
+                          :catheter_insertion.10.05 ,
+                          :insertion_site.10.02 ,
+                          :mobility_impairment.10.02 ,
+                          :patient.10.02 ,
+                          :pus.10.02 ,
+                          :tenderness.10.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.10.03
+:sentence.10.03 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :body_temp.10.03 ,
+                          :patient.10.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.10.04
+:sentence.10.04 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :frostbite.10.04 ,
+                          :patient.10.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.10.05
+:sentence.10.05 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :catheter_insertion.10.05 ,
+                          :peripheral_intravenous_catheter.10.05 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.11.01
+:sentence.11.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :catheter_insertion.11.01 ,
+                          :peripheral_intravenous_catheter.11.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.11.03
+:sentence.11.03 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :insertion_site.11.03 ,
+                          :red.11.03 ,
+                          :warm.11.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.11.04
+:sentence.11.04 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :pain.11.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.12.01
+:sentence.12.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :hand.12.01 ,
+                          :injury.12.01 ,
+                          :patient.12.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.12.02
+:sentence.12.02 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :red.12.02 ,
+                          :swollen.12.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.13.01
+:sentence.13.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :arm.13.01 ,
+                          :iv_medication.13.01 ,
+                          :necrosis.13.01 ,
+                          :subcutaneous_skin.13.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.14.01
+:sentence.14.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :infusion.14.01 ,
+                          :insertion_site.14.01 ,
+                          :red.14.01 ,
+                          :swollen.14.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.15.01
+:sentence.15.01 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :iv_fluid.15.01 ,
+                          :iv_medication.15.01 ,
+                          :patient.15.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#sentence.15.02
+:sentence.15.02 rdf:type owl:NamedIndividual ,
+                         :sentence ;
+                :contains :iv_fluid.15.02 ,
+                          :iv_medication.15.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion.01.02
+:subcutaneous_infusion.01.02 rdf:type owl:NamedIndividual ,
+                                      :subcutaneous_infusion .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion.02.02
+:subcutaneous_infusion.02.02 rdf:type owl:NamedIndividual ,
+                                      :subcutaneous_infusion .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin.07.02
+:subcutaneous_skin.07.02 rdf:type owl:NamedIndividual ,
+                                  :subcutaneous_skin .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin.13.01
+:subcutaneous_skin.13.01 rdf:type owl:NamedIndividual ,
+                                  :subcutaneous_skin .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#swollen.05.02
+:swollen.05.02 rdf:type owl:NamedIndividual ,
+                        :swollen ;
+               :located_nearby_on_at_in :elbow.05.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#swollen.05.03
+:swollen.05.03 rdf:type owl:NamedIndividual ,
+                        :swollen ;
+               :located_nearby_on_at_in :elbow.05.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#swollen.06.04
+:swollen.06.04 rdf:type owl:NamedIndividual ,
+                        :swollen ;
+               :located_nearby_on_at_in :elbow.06.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#swollen.07.01
+:swollen.07.01 rdf:type owl:NamedIndividual ,
+                        :swollen ;
+               :is_observed_with :peripheral_intravenous_catheter.07.01 ;
+               :located_nearby_on_at_in :elbow.07.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#swollen.10.01
+:swollen.10.01 rdf:type owl:NamedIndividual ,
+                        :swollen ;
+               :located_nearby_on_at_in :arm.10.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#swollen.12.02
+:swollen.12.02 rdf:type owl:NamedIndividual ,
+                        :swollen .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#swollen.14.01
+:swollen.14.01 rdf:type owl:NamedIndividual ,
+                        :swollen ;
+               :located_nearby_on_at_in :insertion_site.14.01 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#tenderness.10.02
+:tenderness.10.02 rdf:type owl:NamedIndividual ,
+                           :tenderness ;
+                  :located_nearby_on_at_in :arm.10.02 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#warm.06.03
+:warm.06.03 rdf:type owl:NamedIndividual ,
+                     :warm ;
+            :located_nearby_on_at_in :elbow.06.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#warm.06.04
+:warm.06.04 rdf:type owl:NamedIndividual ,
+                     :warm ;
+            :located_nearby_on_at_in :elbow.06.04 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#warm.11.03
+:warm.11.03 rdf:type owl:NamedIndividual ,
+                     :warm ;
+            :located_nearby_on_at_in :insertion_site.11.03 .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.test_document
+<http://www.semanticweb.org/2022/04/ciio#01.test_document> rdf:type owl:NamedIndividual ,
+                                                                    :document ;
+                                                           :contains <http://www.semanticweb.org/2022/04/ciio#01.01.test_sentence> ,
+                                                                     <http://www.semanticweb.org/2022/04/ciio#01.02.test_sentence> ,
+                                                                     <http://www.semanticweb.org/2022/04/ciio#01.03.test_sentence> .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.01.test_blood_pressure
+<http://www.semanticweb.org/2022/04/ciio#01.01.test_blood_pressure> rdf:type owl:NamedIndividual ,
+                                                                             :blood_pressure ;
+                                                                    :has_severity "Low"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.01.test_body_temperature
+<http://www.semanticweb.org/2022/04/ciio#01.01.test_body_temperature> rdf:type owl:NamedIndividual ,
+                                                                               :body_temperature ;
+                                                                      :has_body_temperature_range "Hypothermia"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.01.test_consciousness_level
+<http://www.semanticweb.org/2022/04/ciio#01.01.test_consciousness_level> rdf:type owl:NamedIndividual ,
+                                                                                  :consciousness_level ;
+                                                                         :has_conscious_state "Confusion"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.01.test_pulse
+<http://www.semanticweb.org/2022/04/ciio#01.01.test_pulse> rdf:type owl:NamedIndividual ,
+                                                                    :pulse .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.01.test_respiratory_rate
+<http://www.semanticweb.org/2022/04/ciio#01.01.test_respiratory_rate> rdf:type owl:NamedIndividual ,
+                                                                               :respiratory_rate ;
+                                                                      :has_severity "High"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.01.test_sentence
+<http://www.semanticweb.org/2022/04/ciio#01.01.test_sentence> rdf:type owl:NamedIndividual ,
+                                                                       :sentence ;
+                                                              :contains <http://www.semanticweb.org/2022/04/ciio#01.01.test_blood_pressure> ,
+                                                                        <http://www.semanticweb.org/2022/04/ciio#01.01.test_body_temperature> ,
+                                                                        <http://www.semanticweb.org/2022/04/ciio#01.01.test_consciousness_level> ,
+                                                                        <http://www.semanticweb.org/2022/04/ciio#01.01.test_respiratory_rate> .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.02.test_body_temperature
+<http://www.semanticweb.org/2022/04/ciio#01.02.test_body_temperature> rdf:type owl:NamedIndividual ,
+                                                                               :body_temperature ;
+                                                                      :has_body_temperature_range "Hyperthermia"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.02.test_consciousness_level
+<http://www.semanticweb.org/2022/04/ciio#01.02.test_consciousness_level> rdf:type owl:NamedIndividual ,
+                                                                                  :consciousness_level ;
+                                                                         :has_conscious_state "Painfully responsive"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.02.test_sentence
+<http://www.semanticweb.org/2022/04/ciio#01.02.test_sentence> rdf:type owl:NamedIndividual ,
+                                                                       :sentence ;
+                                                              :contains <http://www.semanticweb.org/2022/04/ciio#01.02.test_body_temperature> ,
+                                                                        <http://www.semanticweb.org/2022/04/ciio#01.02.test_consciousness_level> .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.03.test_body_temperature
+<http://www.semanticweb.org/2022/04/ciio#01.03.test_body_temperature> rdf:type owl:NamedIndividual ,
+                                                                               :body_temperature ;
+                                                                      :has_body_temperature_range "Hypothermia"@en .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#01.03.test_sentence
+<http://www.semanticweb.org/2022/04/ciio#01.03.test_sentence> rdf:type owl:NamedIndividual ,
+                                                                       :sentence ;
+                                                              :contains <http://www.semanticweb.org/2022/04/ciio#01.03.test_body_temperature> .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#02.test_document
+<http://www.semanticweb.org/2022/04/ciio#02.test_document> rdf:type owl:NamedIndividual ,
+                                                                    :document ;
+                                                           :contains <http://www.semanticweb.org/2022/04/ciio#02.01.test_sentence> .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#02.01.test_hardness
+<http://www.semanticweb.org/2022/04/ciio#02.01.test_hardness> rdf:type owl:NamedIndividual ,
+                                                                       :hardness ;
+                                                              :located_nearby_on_at_in <http://www.semanticweb.org/2022/04/ciio#02.01.test_vein> .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#02.01.test_sentence
+<http://www.semanticweb.org/2022/04/ciio#02.01.test_sentence> rdf:type owl:NamedIndividual ,
+                                                                       :sentence ;
+                                                              :contains <http://www.semanticweb.org/2022/04/ciio#02.01.test_hardness> ,
+                                                                        <http://www.semanticweb.org/2022/04/ciio#02.01.test_tenderness> ,
+                                                                        <http://www.semanticweb.org/2022/04/ciio#02.01.test_vein> .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#02.01.test_tenderness
+<http://www.semanticweb.org/2022/04/ciio#02.01.test_tenderness> rdf:type owl:NamedIndividual ,
+                                                                         :tenderness ;
+                                                                :located_nearby_on_at_in <http://www.semanticweb.org/2022/04/ciio#02.01.test_vein> .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#02.01.test_vein
+<http://www.semanticweb.org/2022/04/ciio#02.01.test_vein> rdf:type owl:NamedIndividual ,
+                                                                   :vein .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#03.01.test_blood_test
+<http://www.semanticweb.org/2022/04/ciio#03.01.test_blood_test> rdf:type owl:NamedIndividual ,
+                                                                         :blood_test ;
+                                                                :has_blood_test_result "Positive"@en ;
+                                                                :has_cultured_bacteria "Streptococcus group A infection" .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#03.01.test_document
+<http://www.semanticweb.org/2022/04/ciio#03.01.test_document> rdf:type owl:NamedIndividual ,
+                                                                       :document ;
+                                                              :contains <http://www.semanticweb.org/2022/04/ciio#03.01.test_sentence> .
+
+
+###  http://www.semanticweb.org/2022/04/ciio#03.01.test_sentence
+<http://www.semanticweb.org/2022/04/ciio#03.01.test_sentence> rdf:type owl:NamedIndividual ,
+                                                                       :sentence ;
+                                                              :contains <http://www.semanticweb.org/2022/04/ciio#03.01.test_blood_test> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :anatomical_location
+                :document
+                :medical_device
+                :observation
+                :person
+                :procedure
+                :sentence
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :arm
+                :circulatory_system
+                :insertion_site
+                :subcutaneous_skin
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :blood_pressure
+                :body_temperature
+                :consciousness_level
+                :pulse
+                :respiratory_rate
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :blood_test
+                :catheter_procedure
+                :general_iv
+                :infusion
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :catheter_discontinue_use
+                :catheter_insertion
+                :catheter_removal
+                :catheter_self_removal
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :descriptive_sign_or_symptom
+                :device_observation
+                :mobility_impairment
+                :vital_sign
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :edema
+                :frostbite
+                :hardness
+                :injury
+                :itchy
+                :necrosis
+                :pain
+                :phlebitis
+                :pus
+                :red
+                :swollen
+                :tenderness
+                :warm
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :iv_antibiotics
+                :iv_fluid
+                :iv_medication
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

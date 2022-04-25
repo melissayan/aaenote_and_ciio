@@ -1,0 +1,3196 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/2022/04/aaenote#"
+     xml:base="http://www.semanticweb.org/2022/04/aaenote"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/2022/04/aaenote">
+        <rdfs:comment xml:lang="en">Annotated Adverse Event NOte TErminology (AAENOTE). This terminology is for reasoning about labels provided by annotators within an adverse event note. It is not for reasoning about patient states.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Annotert AvviksmEldingsNOtat TErminologi (AAENOTE). Denne terminologien er for resonnement om marking levert av annotatorer i et notat om avviksmeldinger. Det er ikke for fesonnement om pasienttilstander.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date: 17. April 2022 22:38</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#has_label -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#has_label">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+        <rdfs:comment xml:lang="en">An annotated document has an annotated label.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Et annotert dokument har et annotert merking.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Har merking</rdfs:comment>
+        <rdfs:label xml:lang="en">Has label</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#is_observed_with -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#is_observed_with">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#observation"/>
+        <rdfs:label xml:lang="no">Er observert med</rdfs:label>
+        <rdfs:label xml:lang="en">Is observed with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#located_nearby_on_at_in -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#located_nearby_on_at_in">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/2022/04/aaenote#anatomical_location"/>
+        <rdfs:label xml:lang="en">Located nearby/on/at/in</rdfs:label>
+        <rdfs:label xml:lang="no">Lokalisert nærheten/ved/på/i</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#person_has -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#person_has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#person"/>
+        <rdfs:label xml:lang="no">Person har</rdfs:label>
+        <rdfs:label xml:lang="en">Person has</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#procedure_uses -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#procedure_uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#procedure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/2022/04/aaenote#medical_device"/>
+        <rdfs:label xml:lang="en">Procedure uses</rdfs:label>
+        <rdfs:label xml:lang="no">Prosedyre bruker</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#anatomical_location"/>
+        <rdfs:comment xml:lang="en">Anatomical positions based on classes in the Biological Spatial Ontology (BSPO) 
+
+Anatomical body positions https://sml.snl.no/topografisk_anatomi
+
+Anatomical side (BSPO:0000054) 
+
+Back = posterior side (BSPO:0000056) https://sml.snl.no/posterior, https://sml.snl.no/dorsal
+Front = anterior side (BSPO:0000055) https://snl.no/anterior, https://sml.snl.no/ventral
+Left = left side (BSPO:0000000) https://sml.snl.no/sinister
+Right = right side (BSPO:0000007) https://sml.snl.no/dexter, https://snl.no/dekstral
+Proximal = proximal side (BSPO:0000061) https://sml.snl.no/proksimal
+Distal = distal side (BSPO:0000062) https://sml.snl.no/distal
+Medial = medial side (BSPO:0000067) https://sml.snl.no/medial
+Sideways = 
+Halfway =
+Lateral = lateral side (BSPO:0000066) https://snl.no/lateral</rdfs:comment>
+        <rdfs:comment xml:lang="en">Location of body parts away from center.
+
+3 Options: 
+  1. Front
+  2. Back
+or
+  1. Left
+  2. Right
+or
+  1. Proximal (Proksimal)
+  2. Distal (Distal)
+  3. Medial (Medial)
+  4. Sideways (Sideveis)
+  5. Halfway (Halvveis)</rdfs:comment>
+        <rdfs:label xml:lang="en">Anatomical location descriptor</rdfs:label>
+        <rdfs:label xml:lang="no">Anatomisk plasseringsbeskrivelse</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_distance -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_distance">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#anatomical_location"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Distal</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Halvveis</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="no">Medial</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first xml:lang="no">Proksimal</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first xml:lang="no">Sideveis</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Distal</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Halfway</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Medial</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Proximal</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Sideways</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">Anatomical location descriptor distance</rdfs:label>
+        <rdfs:label xml:lang="no">Anatomisk plasseringsbeskrivelse avstand</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_front_or_back -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_front_or_back">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#anatomical_location"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Bak</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Foran</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Back</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Front</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">Anatomical location descriptor front or back</rdfs:label>
+        <rdfs:label xml:lang="no">Anatomisk plasseringsbeskrivelse foran eller bak</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_left_or_right -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_left_or_right">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#anatomical_location"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Høyre</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Venstre</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Left</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Right</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">Anatomical location descriptor left or right</rdfs:label>
+        <rdfs:label xml:lang="no">Anatomisk plasseringsbeskrivelse venstre eller høyre</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#document_contains -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#document_contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+        <rdfs:label xml:lang="no">Notat inneholder</rdfs:label>
+        <rdfs:label xml:lang="en">Note contains</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#document_id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#document_id">
+        <rdfs:label xml:lang="en">Document identification</rdfs:label>
+        <rdfs:label xml:lang="no">Dokument identifikasjon</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#has_annotator_id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#has_annotator_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#document_id"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="no">har annotator ID</rdfs:label>
+        <rdfs:label xml:lang="en">has annotator ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#has_body_temperature_range -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#has_body_temperature_range">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#body_temperature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#observation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#vital_sign"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Hypertermi</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Hypotermi</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="no">Normal</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Hyperthermia</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Hypothermia</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Normal</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Temperature ranges: 
+1. Hyperthermia (Hypertermi) https://sml.snl.no/hypertermi, https://sml.snl.no/feber
+2. Normal (Normal) https://sml.snl.no/kroppstemperatur
+3. Hypothermia (Hypotermi) https://sml.snl.no/hypotermi</rdfs:comment>
+        <rdfs:label xml:lang="no">Har kroppstemperaturområde</rdfs:label>
+        <rdfs:label xml:lang="en">Has body temperature range</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#has_conscious_state -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#has_conscious_state">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#consciousness_level"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#observation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#vital_sign"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Bevisstløshet</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Forvirring</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="no">Smerte respons</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first xml:lang="no">Verbal respons</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first xml:lang="no">Våken</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Alert</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Confusion</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Painfully responsive</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Unresponsive</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Verbally responsive</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Level of consciousness based on NEWSII conscious state (Bevissthetsnivå) ACVPU https://ehandboken.ous-hf.no/document/78636
+
+
+Levels:
+1. Alert (Våken)
+2. Confusion (Forvirring)
+3. Verbally responsive (Verbal respons)
+4. Painfully responsive (Smerte respons)
+5. Unresponsive (Bevisstløshet)
+
+https://sml.snl.no/bevissthetsforstyrrelse</rdfs:comment>
+        <rdfs:label xml:lang="no">Har bevisste tilstand av</rdfs:label>
+        <rdfs:label xml:lang="en">Has conscious state of</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#has_document_filename -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#has_document_filename">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#document_id"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="no">Har dokumentfilnavn</rdfs:label>
+        <rdfs:label xml:lang="en">Has document filename</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#has_identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#has_identifier">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#document_contains"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Har identifikator</rdfs:label>
+        <rdfs:label xml:lang="en">Has identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#has_medical_device_malfunction -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#has_medical_device_malfunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#document_contains"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Har medisink utstyrsfeil</rdfs:label>
+        <rdfs:label xml:lang="en">Has medical device malfunction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#has_pivc_color -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#has_pivc_color">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#medical_device"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#peripheral_intravenous_catheter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#venous_catheter"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Blå</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Brun</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="no">Grå</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first xml:lang="no">Grønn</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first xml:lang="no">Gul</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first xml:lang="no">Hvit</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first xml:lang="no">Lilla</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first xml:lang="no">Oransje</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first xml:lang="no">Rosa</rdf:first>
+                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Blue</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Brown</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Gray</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Green</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Orange</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>Pink</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>Purple</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first>White</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first>Yellow</rdf:first>
+                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Color of peripheral venous catheter (PIVC; perifert venekateter; PVK):
+1. Purple (Lilla)
+2. Yellow (Gul)
+3. Blue (Blå)
+4. Pink (Rosa)
+5. Green (Grønn)
+6. White (Hvit)
+7. Gray (Grå)
+8. Brown (Brun)
+9. Orange (Oransje)
+
+https://ehandboken.ous-hf.no/document/115280</rdfs:comment>
+        <rdfs:label xml:lang="no">Har perifert venekateter farge</rdfs:label>
+        <rdfs:label xml:lang="en">Has peripheral venous catheter color</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#has_session_number -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#has_session_number">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#document_id"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">Has annotation session number</rdfs:label>
+        <rdfs:label xml:lang="no">har annoteringssesjonsnummer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#has_severity_level -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#has_severity_level">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#blood_pressure"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#observation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#pulse"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#respiratory_rate"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#vital_sign"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Høy</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Lav</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="no">Normal</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>High</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Low</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Normal</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Severity Levels:
+1. High (Høy)
+2. Normal (Normal)
+3. Low (Lav)</rdfs:comment>
+        <rdfs:label xml:lang="no">Har alvorlighetsgrad</rdfs:label>
+        <rdfs:label xml:lang="en">Has severity level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#incorrect_procedure_action -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#incorrect_procedure_action">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#procedure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Er feil prosedyre handling</rdfs:label>
+        <rdfs:label xml:lang="en">Is incorrect procedure action</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#is_bandage_of -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#is_bandage_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#medical_device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Er bandasje av</rdfs:label>
+        <rdfs:label xml:lang="en">Is bandage of</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#is_bsi_related -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#is_bsi_related">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#document_contains"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Er BSI-relatert</rdfs:label>
+        <rdfs:label xml:lang="en">Is BSI-related</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#is_catheter_related -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#is_catheter_related">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#document_contains"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Er kateterrelatert</rdfs:label>
+        <rdfs:label xml:lang="en">Is catheter-related</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#is_infection_related -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#is_infection_related">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#document_contains"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Er infeksjonsrelatert</rdfs:label>
+        <rdfs:label xml:lang="en">Is infection-related</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#is_medical_device_malfunction -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#is_medical_device_malfunction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#medical_device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Er medisinsk utstyrsfeil</rdfs:label>
+        <rdfs:label xml:lang="en">Is medical device malfunction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#is_name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#is_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Er navn</rdfs:label>
+        <rdfs:label xml:lang="en">Is name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#is_pivc_related -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#is_pivc_related">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#document_contains"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Er PVK-relatert</rdfs:label>
+        <rdfs:label xml:lang="en">Is PIVC-related</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#is_sepsis_related -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#is_sepsis_related">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#document_contains"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Er sepsis-relatert</rdfs:label>
+        <rdfs:label xml:lang="en">Is sepsis-related</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#negation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#negation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Negasjon</rdfs:label>
+        <rdfs:label xml:lang="en">Negation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#observation_is_diagnosis -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#observation_is_diagnosis">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Observasjon er diagnose</rdfs:label>
+        <rdfs:label xml:lang="en">Observation is diagnosis</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#observation_said_by -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/aaenote#observation_said_by">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Helsepersonell</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Pasient</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Healthcare provider</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Patient</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="no">Observasjon sagt av</rdfs:label>
+        <rdfs:label xml:lang="en">Observation said by</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#abrasion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#abrasion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#wound"/>
+        <rdfs:isDefinedBy xml:lang="no">Skrubbsår er en overflatisk skade av huden med punktformede blødninger fra blodkarene i lærhudens papiller som stikker opp under overhuden. Skrubbsår kan bli infisert, og såret bør derfor renses omhyggelig. Også huden omkring skal rengjøres, og såret dekkes med en ren forbinding.
+
+https://sml.snl.no/skrubbs%C3%A5r
+
+Last accessed: 22. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Abrasion</rdfs:label>
+        <rdfs:label xml:lang="no">Skrubbsår</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#account_number -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#account_number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"/>
+        <rdfs:label xml:lang="en">Account number</rdfs:label>
+        <rdfs:label xml:lang="no">Kontonummer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#administration_purpose -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#administration_purpose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#procedure"/>
+        <rdfs:label xml:lang="no">Administrasjonsformål</rdfs:label>
+        <rdfs:label xml:lang="en">Administration purpose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#administration_way -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#administration_way">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#procedure"/>
+        <rdfs:isDefinedBy xml:lang="no">https://volven.no/produkt.asp?id=462607&amp;catID=3&amp;subID=8</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="no">Administrasjonsvei</rdfs:label>
+        <rdfs:label xml:lang="en">Administration way</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#anatomical_location -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#anatomical_location">
+        <rdfs:comment xml:lang="en">Anatomical body parts, organs, or relative positions of the body.  Somewhere on the body.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Anatomiske kroppsdeler, organer, eller relative posisjoner av kroppen. Et plass på kroppen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Anatomical location</rdfs:label>
+        <rdfs:label xml:lang="no">Anatomisk plassering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#ankle -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#ankle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#leg"/>
+        <rdfs:label xml:lang="no">Ankel</rdfs:label>
+        <rdfs:label xml:lang="en">Ankle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#annotated_document -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document">
+        <rdfs:comment xml:lang="en">Annotated adverse event note with metadata and labeling.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Annotert avviksmelding med metadata og merking.</rdfs:comment>
+        <rdfs:label xml:lang="en">Annotated document</rdfs:label>
+        <rdfs:label xml:lang="no">Annotert dokument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_1 -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Annotated adverse event notes from annotation session 1.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Annotert avvikshendelse notater fra sesjon 1.</rdfs:comment>
+        <rdfs:label xml:lang="en">Annotated document session 1</rdfs:label>
+        <rdfs:label xml:lang="no">Annotert dokument sesjon 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_2 -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Annotated adverse event notes from annotation session 2.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Annotert avvikshendelse notater fra sesjon 2.</rdfs:comment>
+        <rdfs:label xml:lang="en">Annotated document session 2</rdfs:label>
+        <rdfs:label xml:lang="no">Annotert dokument sesjon 2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_3 -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_3">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Annotated adverse event notes from annotation session 3.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Annotert avvikshendelse notater fra sesjon 3.</rdfs:comment>
+        <rdfs:label xml:lang="en">Annotated document session 3</rdfs:label>
+        <rdfs:label xml:lang="no">Annotert dokument sesjon 3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_4 -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_4">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Annotated adverse event notes from annotation session 4.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Annotert avvikshendelse notater fra sesjon 4.</rdfs:comment>
+        <rdfs:label xml:lang="en">Annotated document session 4</rdfs:label>
+        <rdfs:label xml:lang="no">Annotert dokument sesjon 4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#arm -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#arm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#limb"/>
+        <rdfs:label xml:lang="en">Arm</rdfs:label>
+        <rdfs:label xml:lang="no">Arm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#arrived_by_ambulance -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#arrived_by_ambulance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#procedure"/>
+        <rdfs:label xml:lang="no">Ankom med ambulanse</rdfs:label>
+        <rdfs:label xml:lang="en">Arrived by Ambulance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#arterial_catether -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#arterial_catether">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter"/>
+        <rdfs:label xml:lang="en">Arterial catheter</rdfs:label>
+        <rdfs:label xml:lang="no">Arteriekateter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#artery -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#artery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#circulatory_system"/>
+        <rdfs:isDefinedBy xml:lang="no">Arterier er blodårer som fører blod fra hjertet og ut i kroppen. Årer som fører blod til hjertet fra kroppen kalles vener.
+
+Den største arterien er aorta, hovedpulsåren, som går ut fra hjertets venstre hovedkammer. Nest størst er lungearterien (truncus pulmonalis), som springer ut fra høyre hovedkammer og er den eneste arterien som fører oksygenfattig blod, bortsett fra navlesnorarteriene under svangerskapet.
+
+Vanligvis er arteriene i kroppen fra 0,1 til omtrent 10 millimeter i diameter. De minste arteriene (under 0,1 millimeter) før overgangen til kapillarene kalles arterioler.
+
+https://sml.snl.no/arterier
+
+Last accessed: 30. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="no">Arterie</rdfs:label>
+        <rdfs:label xml:lang="en">Artery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#back -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#back">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#trunk"/>
+        <rdfs:label xml:lang="en">Back</rdfs:label>
+        <rdfs:label xml:lang="no">Rygg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#biometric_identifier -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#biometric_identifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#identifier"/>
+        <rdfs:label xml:lang="en">Biometric identifier</rdfs:label>
+        <rdfs:label xml:lang="no">Biometrisk identifikator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#bleeding -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#bleeding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Bleeding</rdfs:label>
+        <rdfs:label xml:lang="no">Blødning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#blood_culture -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#blood_culture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#lab_result"/>
+        <rdfs:label xml:lang="no">Blodkultur</rdfs:label>
+        <rdfs:label xml:lang="en">Blood culture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#blood_pressure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#blood_pressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#vital_sign"/>
+        <rdfs:label xml:lang="no">Blodtrykk</rdfs:label>
+        <rdfs:label xml:lang="en">Blood pressure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#blood_test -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#blood_test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#administration_purpose"/>
+        <rdfs:label xml:lang="no">Blodprøve</rdfs:label>
+        <rdfs:label xml:lang="en">Blood test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#blood_transfusion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#blood_transfusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#administration_purpose"/>
+        <rdfs:label xml:lang="no">Blodverføring</rdfs:label>
+        <rdfs:label xml:lang="en">Blood transfusion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#bloody -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#bloody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="no">Blodig</rdfs:label>
+        <rdfs:label xml:lang="en">Bloody</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#body_part -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#body_part">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#anatomical_location"/>
+        <rdfs:comment xml:lang="en">Part of the human body</rdfs:comment>
+        <rdfs:label xml:lang="en">Body part</rdfs:label>
+        <rdfs:label xml:lang="no">Kroppsdel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#body_temperature -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#body_temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#vital_sign"/>
+        <rdfs:label xml:lang="en">Body temperature</rdfs:label>
+        <rdfs:label xml:lang="no">Kroppstemperatur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#c_reactive_protein -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#c_reactive_protein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#lab_result"/>
+        <rdfs:label xml:lang="en">C-reactive protein</rdfs:label>
+        <rdfs:label xml:lang="no">C-reaktivt protein</rdfs:label>
+        <rdfs:label xml:lang="en">CRP</rdfs:label>
+        <rdfs:label xml:lang="no">CRP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#medical_device"/>
+        <rdfs:label xml:lang="en">Catheter</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#catheter_discontinue_use -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#catheter_discontinue_use">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"/>
+        <rdfs:label xml:lang="en">Catheter discontinuation</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter seponering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#catheter_insertion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#catheter_insertion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"/>
+        <rdfs:label xml:lang="en">Catheter insertion</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter innstikking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#catheter_procedure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#catheter_procedure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#procedure"/>
+        <rdfs:label xml:lang="en">Catheter procedure</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter prosedyre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#catheter_removal -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#catheter_removal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"/>
+        <rdfs:label xml:lang="en">Catheter removal</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter fjerning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#catheter_replacement -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#catheter_replacement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"/>
+        <rdfs:label xml:lang="en">Catheter replacement</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter bytting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#catheter_rinse -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#catheter_rinse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"/>
+        <rdfs:label xml:lang="en">Catheter rinsing</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter skylling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#catheter_self_removal -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#catheter_self_removal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"/>
+        <rdfs:label xml:lang="en">Catheter self-removal</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter selvseponering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#central_venous_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#central_venous_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#venous_catheter"/>
+        <rdfs:label xml:lang="en">Central venous catheter</rdfs:label>
+        <rdfs:label xml:lang="no">Sentralt venekateter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#circulatory_system -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#circulatory_system">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#organ_part"/>
+        <rdfs:isDefinedBy xml:lang="no">Sirkulasjonssystemet består av hjertet og alle blodårene i kroppen. Hovedoppgaven til sirkulasjonssystemet er temperaturregulering og transport av ulike stoffer i kroppen.
+
+https://ndla.no/subject:1:22dee9ab-5b1a-4c23-8c97-c68107b881bb/topic:2:77162/topic:2:188655/resource:1:109709
+
+Last accessed 5. Dec 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Circulatory system</rdfs:label>
+        <rdfs:label xml:lang="no">Karsystemet</rdfs:label>
+        <rdfs:label xml:lang="no">Sirkulasjonssystem</rdfs:label>
+        <rdfs:label xml:lang="en">Vascular system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#consciousness_level -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#consciousness_level">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#vital_sign"/>
+        <rdfs:label xml:lang="no">Bevissthetsnivå</rdfs:label>
+        <rdfs:label xml:lang="en">Consciousness level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#observation"/>
+        <rdfs:comment xml:lang="en">Description of a sign or symptom that is part of a patient. Such as the color, shape, temperature, length, mass, or growth.</rdfs:comment>
+        <rdfs:label xml:lang="no">Beskrivende tegn eller symptom</rdfs:label>
+        <rdfs:label xml:lang="en">Descriptive sign or symptom</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">physical sign from Ontology for General Medical Science (OGMS)
+
+An abnormal material entity that is part of a patient and hypothesized to be clinically relevant.
+
+Example: an abnormal growth; an inflammatory infiltrate; swollen tissue; distension
+
+https://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000142
+
+Last accessed: 25. November 2021</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">qualitative sign from Ontology for General Medical Science (OGMS)
+
+An abnormal observable quality of a part of a patient that is hypothesized to be clinically relevant.
+
+Example: the color of a rash; the shape of a melanoma
+
+https://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000142
+
+Last accessed: 25. November 2021</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#device_number -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#device_number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"/>
+        <rdfs:label xml:lang="en">Device number</rdfs:label>
+        <rdfs:label xml:lang="no">Utstyrsnummer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#device_observation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#device_observation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#observation"/>
+        <rdfs:label xml:lang="en">Device observation</rdfs:label>
+        <rdfs:label xml:lang="no">Utstyrsobservasjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#dizziness -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#dizziness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Dizziness</rdfs:label>
+        <rdfs:label xml:lang="no">Svimmelhet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#edema -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#edema">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Edema</rdfs:label>
+        <rdfs:label xml:lang="no">Ødem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#elbow -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#elbow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#arm"/>
+        <rdfs:label xml:lang="no">Albue</rdfs:label>
+        <rdfs:label xml:lang="en">Elbow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#email -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#email">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#identifier"/>
+        <rdfs:label xml:lang="no">E-post</rdfs:label>
+        <rdfs:label xml:lang="en">Email</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#epidural_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#epidural_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter"/>
+        <rdfs:label xml:lang="en">Epidural catheter</rdfs:label>
+        <rdfs:label xml:lang="no">Epidural kateter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#epidural_use -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#epidural_use">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#administration_way"/>
+        <rdfs:isDefinedBy xml:lang="no">Administrasjonsvei kodeverdier
+17 Epidural bruk
+
+https://volven.no/produkt.asp?id=462607&amp;catID=3&amp;subID=8
+
+Last accessed: 30. November 2021</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">Administration way code 
+17 Epidural use
+
+(Translated to English)
+https://volven.no/produkt.asp?id=462607&amp;catID=3&amp;subID=8
+
+Last accessed: 30. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="no">Epidural bruk</rdfs:label>
+        <rdfs:label xml:lang="en">Epidural use</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#foot -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#foot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#leg"/>
+        <rdfs:label xml:lang="en">Foot</rdfs:label>
+        <rdfs:label xml:lang="no">Fot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#forearm -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#forearm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#arm"/>
+        <rdfs:label xml:lang="en">Forearm</rdfs:label>
+        <rdfs:label xml:lang="no">Underarm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#general_iv -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#general_iv">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#administration_purpose"/>
+        <rdfs:label xml:lang="en">General IV</rdfs:label>
+        <rdfs:label xml:lang="no">Generelt IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#geographic_location_identifier -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#geographic_location_identifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#identifier"/>
+        <rdfs:comment xml:lang="no">Fysisk geografisk lokaliseringsopplysninger, for eksempel adresse eller postnummer.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Physical geographical location identifier, such as address or zip codes.</rdfs:comment>
+        <rdfs:label xml:lang="no">Geografiske lokasjon identifikator</rdfs:label>
+        <rdfs:label xml:lang="en">Geographic location identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#hand -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#hand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#arm"/>
+        <rdfs:label xml:lang="en">Hand</rdfs:label>
+        <rdfs:label xml:lang="no">Hånd</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#hardness -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#hardness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="no">Hardhet</rdfs:label>
+        <rdfs:label xml:lang="en">Hardness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#head -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#head">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#body_part"/>
+        <rdfs:label xml:lang="en">Head</rdfs:label>
+        <rdfs:label xml:lang="no">Hode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#headache -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#headache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Headache</rdfs:label>
+        <rdfs:label xml:lang="no">Hodepine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#health_care_provider -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#health_care_provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#person"/>
+        <rdfs:comment xml:lang="en">health care provider, such as a clinician.</rdfs:comment>
+        <rdfs:label xml:lang="en">Health care provider</rdfs:label>
+        <rdfs:label xml:lang="no">Helsepersonell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#hemodialysis -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#hemodialysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#administration_purpose"/>
+        <rdfs:label xml:lang="no">Hemodialyse</rdfs:label>
+        <rdfs:label xml:lang="en">Hemodialysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#hemodialysis_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#hemodialysis_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#venous_catheter"/>
+        <rdfs:label xml:lang="no">Hemodialysekateter</rdfs:label>
+        <rdfs:label xml:lang="en">Hemodialysis catheter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#hickman_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#hickman_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#venous_catheter"/>
+        <rdfs:label xml:lang="en">Hickman catheter</rdfs:label>
+        <rdfs:label xml:lang="no">Hickman kateter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#hip -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#hip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#leg"/>
+        <rdfs:label xml:lang="en">Hip</rdfs:label>
+        <rdfs:label xml:lang="no">Hofte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#identifier -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#identifier">
+        <rdfs:comment xml:lang="en">Health data linked to certain identiers must be protected to ensure patient privacy and confidentiality. These identifiers are called protected health information (PHI) under the U.S. Health Insurance Portability and Accountability Act (HIPAA).
+
+*Here &quot;names&quot; are excluded because this is a data property for the &quot;person&quot; class.  This is to help identify individuals annotated.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Personopplysninger er alle informasjon som kan brukes til å identifisere en person.
+
+Her er &quot;navn&quot; ekskludert fordi dette er en data property for &quot;person&quot; class.  Dette er for å hjelpe med å identifisere personer som er annotert.</rdfs:comment>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <rdfs:label xml:lang="no">Identifikator</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">List of identifiers for an individual or of relatives, employers, or household members of the individual.
+ - Names
+ - Postal address information, other than town or city, State, and zip code
+ - Telephone numbers
+ - Fax numbers
+ - Electronic mail addresses
+ - Social Security numbers
+ - Medical record numbers
+ - Health-plan beneficiary numbers
+ - Account numbers
+ - Certificate and license numbers
+ - Vehicle identifiers and serial numbers, including license plate numbers
+ - Device identifiers and serial numbers
+ - Web Universal Resource Locators (URLs)
+ - Internet Protocol (IP) address numbers
+ - Biometric identifies including fingerprints and voice prints
+ - Full-face photographic images and any comparable image
+
+https://www.hhs.gov/hipaa/for-professionals/special-topics/emergency-preparedness/limited-data-set/index.html
+
+Last accessed: 25. November 2021</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">PHI includes all information that could be used to identify an individual. Any part of a person’s medical record and payment history is considered PHI and may not be shared with unauthorized personnel. PHI is used within a medical facility and includes verbal and written communications. PHI can be found in computer files, paper medical records, information from insurance companies, information from the provider, and information from legal offices (9). Name, address, date of birth, phone number, social security number, medical record number, medical history, photographs, charts, health plan beneficiary numbers, license numbers, vehicle identifiers, internet protocol addresses, biometric identifiers (such as retina, voice, and fingerprints), and test results are all considered PHI (10). Physicians’ and nurses’ notes, billing records, and other treatment records are also included. Medical images are also considered PHI (11).
+
+Moore, W., &amp; Frye, S. (2019). Review of HIPAA, Part 1: History, Protected Health Information, and Privacy and Security Rules. Journal of nuclear medicine technology, 47(4), 269–272. https://doi.org/10.2967/jnmt.119.227819</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="no">Personopplysninger er alle opplysninger og vurderinger som kan knyttes til deg som enkeltperson. Typiske personopplysninger er navn, adresse, telefonnummer, e-post og fødselsnummer. Et bilde regnes som en personopplysning dersom personer kan gjenkjennes, og lydopptak kan være personopplysninger selv om ingen navn blir nevnt i innspillingen. Biometri slik som fingeravtrykk, irismønster, hodeform (for ansiktsgjenkjenning) er også personopplysninger.
+
+Videre er en dynamisk IP-adresse i gitte tilfeller også definert som personopplysning. Registreringsnummeret på en bil kan være en personopplysning hvis det kan knyttes til en bestemt person, mens ikke hvis det står på en firmabil som benyttes av flere.
+
+Opplysninger om atferdsmønstre er også regnet som personopplysninger. Opplysninger om hva du handler, hvilke butikker du går i, hvilke tv-serier du ser på, hvor du fysisk beveger deg i løpet av en dag og hva du søker etter på nettet er alt sammen eksempler på dette. En av de nyere utfordringene for personvernet  er nemlig det at vi legger igjen så mange digitale spor - ofte uten å vite om det eller tenke over det.
+
+Personvernforordningen artikkel 4
+Personopplysninger er «enhver opplysning om en identifisert eller identifiserbar fysisk person («den registrerte»); en identifiserbar fysisk person er en person som direkte eller indirekte kan identifiseres, særlig ved hjelp av en identifikator, f.eks. et navn, et identifikasjonsnummer, lokaliseringsopplysninger, en nettidentifikator eller ett eller flere elementer som er spesifikke for nevnte fysiske persons fysiske, fysiologiske, genetiske, psykiske, økonomiske, kulturelle eller sosiale identitet»
+
+https://www.datatilsynet.no/rettigheter-og-plikter/personopplysninger/
+
+Last accessed: 25. November 2021</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="no">«personopplysninger» enhver opplysning om en identifisert eller identifiserbar fysisk person («den registrerte»); en identifiserbar fysisk person er en person som direkte eller indirekte kan identifiseres, særlig ved hjelp av en identifikator, f.eks. et navn, et identifikasjonsnummer, lokaliseringsopplysninger, en nettidentifikator eller ett eller flere elementer som er spesifikke for nevnte fysiske persons fysiske, fysiologiske, genetiske, psykiske, økonomiske, kulturelle eller sosiale identitet
+
+https://lovdata.no/dokument/NL/lov/2018-06-15-38/*#&amp;#x2a;
+
+Last accessed: 25. November 2021</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#incision -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#incision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#wound"/>
+        <rdfs:isDefinedBy xml:lang="no">Disse kan blø sterkt og har ofte skarpe, sprikende kanter. Selve blødningen virker rensende, og sårene er som regel ganske rene.
+
+https://nhi.no/forstehjelp/hudskader/sarskader/
+
+Last accessed: 22. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Incision</rdfs:label>
+        <rdfs:label xml:lang="no">Snittsår</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#infection -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#infection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Infection</rdfs:label>
+        <rdfs:label xml:lang="no">Infeksjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#infusion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#infusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#procedure"/>
+        <rdfs:label xml:lang="en">Infusion</rdfs:label>
+        <rdfs:label xml:lang="no">Infusjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#infusion_set -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#infusion_set">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#medical_device"/>
+        <rdfs:label xml:lang="en">Infusion set</rdfs:label>
+        <rdfs:label xml:lang="no">infusjonssett</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#injection -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#procedure"/>
+        <rdfs:label xml:lang="en">Injection</rdfs:label>
+        <rdfs:label xml:lang="no">Injeksjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#insertion_site -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#insertion_site">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#anatomical_location"/>
+        <rdfs:label xml:lang="en">Insertion site</rdfs:label>
+        <rdfs:label xml:lang="no">innstikkssted</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#intradermal_injection -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#intradermal_injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#injection"/>
+        <rdfs:label xml:lang="en">Intradermal injection</rdfs:label>
+        <rdfs:label xml:lang="no">Intradermalt injeksjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#intramuscular_injection -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#intramuscular_injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#injection"/>
+        <rdfs:label xml:lang="en">Intramuscular injection</rdfs:label>
+        <rdfs:label xml:lang="no">Intramuskulært injeksjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#intraosseous_cannula -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#intraosseous_cannula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter"/>
+        <rdfs:label xml:lang="en">Intraosseous cannula</rdfs:label>
+        <rdfs:label xml:lang="no">Intraossøs kanyle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#intraosseous_infusion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#intraosseous_infusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#infusion"/>
+        <rdfs:label xml:lang="en">Intraosseous infusion</rdfs:label>
+        <rdfs:label xml:lang="no">Intraossøs infusjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#intravenous_infusion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#intravenous_infusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#infusion"/>
+        <rdfs:label xml:lang="en">Intravenous infusion</rdfs:label>
+        <rdfs:label xml:lang="no">Intravenøst infusjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#intravenous_injection -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#intravenous_injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#injection"/>
+        <rdfs:label xml:lang="en">Intravenous injection</rdfs:label>
+        <rdfs:label xml:lang="no">Intravenøst injeksjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#ip_address -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#ip_address">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#identifier"/>
+        <rdfs:comment xml:lang="no">IP-adressenummer som er en identifikator som gis til en enhet, for eksempel en PC.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Internet Protocol (IP) address number is an identifier given to a device, such as a computer.</rdfs:comment>
+        <rdfs:label xml:lang="en">IP address</rdfs:label>
+        <rdfs:label xml:lang="no">IP adresse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#itchy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#itchy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Itchy</rdfs:label>
+        <rdfs:label xml:lang="no">Kløende</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#iv_antibiotics -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#iv_antibiotics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#general_iv"/>
+        <rdfs:label xml:lang="en">IV antibiotics</rdfs:label>
+        <rdfs:label xml:lang="no">IV antibiotika</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#iv_chemo -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#iv_chemo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#general_iv"/>
+        <rdfs:isDefinedBy xml:lang="no">Intravenøs kjemoterapi</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="no">IV cellegift</rdfs:label>
+        <rdfs:label xml:lang="en">IV chemo</rdfs:label>
+        <rdfs:label xml:lang="en">Intravenous chemotherapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#iv_fluid -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#iv_fluid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#general_iv"/>
+        <rdfs:label xml:lang="en">IV fluid</rdfs:label>
+        <rdfs:label xml:lang="no">IV væske</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#iv_medication -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#iv_medication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#general_iv"/>
+        <rdfs:label xml:lang="en">IV medication</rdfs:label>
+        <rdfs:label xml:lang="no">IV medisiner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#iv_nutrient -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#iv_nutrient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#general_iv"/>
+        <rdfs:label xml:lang="en">IV nutrient</rdfs:label>
+        <rdfs:label xml:lang="no">IV næringsstoff</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#iv_painkiller -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#iv_painkiller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#general_iv"/>
+        <rdfs:label xml:lang="en">IV painkiller</rdfs:label>
+        <rdfs:label xml:lang="no">IV smertestillende</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#iv_use -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#iv_use">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#administration_way"/>
+        <rdfs:isDefinedBy xml:lang="no">Administrasjonsvei kodeverdier
+43 Intravenøs bruk
+
+https://volven.no/produkt.asp?id=462607&amp;catID=3&amp;subID=8
+
+Last accessed: 30. November 2021</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">Administration way code 
+43 Intravenous use
+
+(Translated to English)
+https://volven.no/produkt.asp?id=462607&amp;catID=3&amp;subID=8
+
+Last accessed: 30. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="no">IV bruk</rdfs:label>
+        <rdfs:label xml:lang="en">IV use</rdfs:label>
+        <rdfs:label xml:lang="en">Intravenous use</rdfs:label>
+        <rdfs:label xml:lang="no">Intravenøs bruk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#lab_result -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#lab_result">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#observation"/>
+        <rdfs:label xml:lang="en">Lab result</rdfs:label>
+        <rdfs:label xml:lang="no">Laboratorieresultat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#laceration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#laceration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#wound"/>
+        <rdfs:label xml:lang="en">Laceration</rdfs:label>
+        <rdfs:label xml:lang="no">Laserasjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#leakage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#leakage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#device_observation"/>
+        <rdfs:label xml:lang="en">Leakage</rdfs:label>
+        <rdfs:label xml:lang="no">Lekkasje</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#leg -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#leg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#limb"/>
+        <rdfs:label xml:lang="no">Bein</rdfs:label>
+        <rdfs:label xml:lang="en">Leg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#leukocyte -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#leukocyte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#lab_result"/>
+        <rdfs:label xml:lang="en">Leukocyte</rdfs:label>
+        <rdfs:label xml:lang="no">Leukocytt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#limb -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#limb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#body_part"/>
+        <rdfs:label xml:lang="no">Lem</rdfs:label>
+        <rdfs:label xml:lang="en">Limb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#liquid -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#liquid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#device_observation"/>
+        <rdfs:label xml:lang="en">Liquid</rdfs:label>
+        <rdfs:label xml:lang="no">Væske</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#medical_device -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#medical_device">
+        <rdfs:comment xml:lang="en">Any instrument, device, or equipment used for a medical purpose.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Ethvert instrument, enhet eller utstyr som brukes til medisinske formål.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C16830"/>
+        <rdfs:label xml:lang="en">Medical device</rdfs:label>
+        <rdfs:label xml:lang="no">Medisk utstyr</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#midline_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#midline_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#venous_catheter"/>
+        <rdfs:label xml:lang="en">Midline catheter</rdfs:label>
+        <rdfs:label xml:lang="no">Midline kateter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#mobility_impairment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#mobility_impairment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#neurological_and_physiological"/>
+        <rdfs:label xml:lang="no">Bevegelseshemming</rdfs:label>
+        <rdfs:label xml:lang="en">Mobility impairment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#moisture -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#moisture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#device_observation"/>
+        <rdfs:label xml:lang="no">Fukt</rdfs:label>
+        <rdfs:label xml:lang="en">Moisture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#nausea -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#nausea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="no">Kvalme</rdfs:label>
+        <rdfs:label xml:lang="en">Nausea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#navel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#navel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#trunk"/>
+        <rdfs:label xml:lang="en">Navel</rdfs:label>
+        <rdfs:label xml:lang="no">Navle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#neck -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#neck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#body_part"/>
+        <rdfs:label xml:lang="no">Hals</rdfs:label>
+        <rdfs:label xml:lang="en">Neck</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#necrosis -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#necrosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Necrosis</rdfs:label>
+        <rdfs:label xml:lang="no">Nekrose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#neurological_and_physiological -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#neurological_and_physiological">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#observation"/>
+        <rdfs:label xml:lang="en">Neurological and physiological</rdfs:label>
+        <rdfs:label xml:lang="no">nevrologisk og fysiologisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#norwegian_social_security_number -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#norwegian_social_security_number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"/>
+        <rdfs:comment xml:lang="no">Norsk fødselsnummer.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Norwegian social security number.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">A national identity number is an eleven digit ID number, and the last five digits are called a &quot;personal number&quot;.
+
+https://www.udi.no/en/word-definitions/national-identity-number/
+
+Last accessed: 25. November 2021</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="no">Et fødselsnummer er et 11-sifret ID-nummer, og de 5 siste sifrene kalles &quot;personnummer&quot;.
+
+https://www.udi.no/ord-og-begreper/fodselsnummer/
+
+Last accessed: 25. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="no">Fødselsnummer</rdfs:label>
+        <rdfs:label xml:lang="en">Norwegian national identity number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#numeral_identifier -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#numeral_identifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#identifier"/>
+        <rdfs:comment xml:lang="en">Numerical values which can identify an individual.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Numeriske verdier som kan identifisere en person.</rdfs:comment>
+        <rdfs:label xml:lang="en">Numeral identifier</rdfs:label>
+        <rdfs:label xml:lang="no">Numerisk identifikator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#observation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#observation">
+        <rdfs:comment xml:lang="en">Any sign or symptom that can be monitored.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Ethvert tegn eller symptom som kan overvåkes.</rdfs:comment>
+        <rdfs:label xml:lang="no">Observasjon</rdfs:label>
+        <rdfs:label xml:lang="en">Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#oral_medication -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#oral_medication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#administration_purpose"/>
+        <rdfs:label xml:lang="en">Oral medication</rdfs:label>
+        <rdfs:label xml:lang="no">Oral medisinering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#oral_use -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#oral_use">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#administration_way"/>
+        <rdfs:isDefinedBy xml:lang="no">Administrasjonsvei kodeverdier
+53 Oral bruk
+
+https://volven.no/produkt.asp?id=462607&amp;catID=3&amp;subID=8
+
+Last accessed: 30. November 2021</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">Administration way code 
+53 Oral use
+
+(Translated to English)
+https://volven.no/produkt.asp?id=462607&amp;catID=3&amp;subID=8
+
+Last accessed: 30. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="no">Oral bruk</rdfs:label>
+        <rdfs:label xml:lang="en">Oral use</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#organ_part -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#organ_part">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#anatomical_location"/>
+        <rdfs:label xml:lang="en">Organ part</rdfs:label>
+        <rdfs:label xml:lang="no">Organdel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#pain -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#pain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Pain</rdfs:label>
+        <rdfs:label xml:lang="no">Smerte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#patient -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#person"/>
+        <rdfs:comment xml:lang="en">Person receiving care or registered for care</rdfs:comment>
+        <rdfs:comment xml:lang="no">Person som mottar pleie eller er registrert for pleie.</rdfs:comment>
+        <rdfs:label xml:lang="no">Pasient</rdfs:label>
+        <rdfs:label xml:lang="en">Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#patient_identification_number -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#patient_identification_number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"/>
+        <rdfs:comment xml:lang="no">Pasientidentifikasjon nummer i Doculive, et norsk elektonisk journalsystem(PAS/EPJ).  Dette kan inkludere en ID for EPJ eller midlertidige Hjelpenummer (H-nummeret) gitt til pasienter uten kjent identitet.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Personal identification numerical values in Doculive, a Norwegian internal electronic health record system.  This can include an ID to the medical records or the temporary H-number given to patients without a known identity.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="no">H-nummer:
+Hjelpenummer brukes når det er behov for å føre journal på en pasient som ikke har fødselsnummer eller D-nummer, eller når fødsel- eller D-nummer ikke er kjent. Dette kan for eksempel være nyfødte og utlendinger på kortere besøk i Norge.
+
+Hjelpenummer identifiserer en person innad i en virksomhet.
+
+Hjelpenummer opprettes av journalsystemene.
+
+https://www.ehelse.no/standardisering/standarder/identifikatorer-for-personer
+
+Last accessed: 25. November 2021</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="no">Interne ID-er: Personidentifikatorer tildelt av et system og brukt internt (brukes utelukkende for ett system) for å identifisere pasienter. Noen ganger brukt som en midlertidig personidentifikator. System-interne PID-er skal ikke forveksles med lokale eller regionale hjelpenumre, som er identifikatorer tildelt av PAS / EPJ.
+
+Nasjonalt felles hjelpenummer (NFH): Nasjonalt, felles hjelpenummer er en i) midlertidig eller ii) varig supplerende identifikator i Helsesektoren brukt for å kunne muliggjøre helsepersonells dokumentasjonsplikt for personer som ikke kan gjøre rede for seg, eller mangler norsk identifikator av type fødselsnummer eller d-nummer.
+
+Hjelpenummer (H-nummer): Midlertidig personidentifikator, tildelt av PAS / EPJ-applikasjonen for å midlertidig identifisere en pasient på tvers av systemstabelen i organisasjonen. Bruk av hjelpenummer inkluderer i dag pasienter uten kjent identitet, nyfødte barn før de har offisiell ID, turister og andre pasienter uten offisiell personidentitet. 
+
+Fødselsnummer (F-nummer): Et norsk fødselsnummer er et unikt identitetsnummer. Det består av 11 tall, hvor de seks første tallene viser fødselsdato. Personidentifikator som blir brukt til å identifisere pasienten. Tildeles alle som blir født i Norge. Skatteetaten gir barnet et fødselsnummer etter at sykehuset har sendt fødselsmelding til Skatteetaten. Tildeles også personer som bosetter seg i Norge (opphold over 6 måneder).
+
+https://www.ehelse.no/styrer-og-utvalg/nufa-fagutvalget/_/attachment/download/e48ca30a-25c7-4c2a-823a-89d11a7af565:b79ea70e3a7de5ae715b54a8832386b351dd638d/Vedlegg%205A_Sak6-20_Felles%20hjelpenummer_Prosjektbegrunnelse%20utkast.pdf
+
+Last accessed: 25. November 2021</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="no">Videre har virksomheter i helsevesenet i en årrekke måttet opprette såkalte hjelpenumre (H-nummer) for pasienter som ikke har hatt fødselsnummer eller d-nummer, eller hvor dette ikke har vært kjent.
+
+https://www.ehelse.no/teknisk-dokumentasjon/oid-identifikatorserier-i-helse-og-omsorgstjenesten
+
+Last accessed: 25. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="no">PID</rdfs:label>
+        <rdfs:label xml:lang="no">Pasientidentifikasjonsnummer</rdfs:label>
+        <rdfs:label xml:lang="en">Patient identification number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#peripheral_intravenous_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#peripheral_intravenous_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#venous_catheter"/>
+        <rdfs:label xml:lang="en">PIVC</rdfs:label>
+        <rdfs:label xml:lang="no">PVK</rdfs:label>
+        <rdfs:label xml:lang="no">Perifert venekateter</rdfs:label>
+        <rdfs:label xml:lang="en">Peripheral intravenous catheter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#peripherally_inserted_central_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#peripherally_inserted_central_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#venous_catheter"/>
+        <rdfs:isDefinedBy xml:lang="no">A peripherally inserted central catheter (PICC), also called a PICC line, is a long, thin tube that&apos;s inserted through a vein in your arm and passed through to the larger veins near your heart. Very rarely, the PICC line may be placed in your leg.
+
+A PICC line gives your doctor access to the large central veins near the heart. It&apos;s generally used to give medications or liquid nutrition. A PICC line can help avoid the pain of frequent needle sticks and reduce the risk of irritation to the smaller veins in your arms.
+
+https://www.mayoclinic.org/tests-procedures/picc-line/about/pac-20468748
+
+Last accessed: 30. November 2021</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="no">En annen type langvarig venetilgang er et PICC-kateter, eller et perifert-innsatt sentralt kateter. Sammenlignet med et sentralt venekateter settes et PICC-kateter inn i en vene i armen eller hånden. Som med sentralt venekateter føres kateteret innover langs stadig større vener inntil det når vena cava superior.
+
+https://nhi.no/animasjoner/hjerte-og-kar/sentrale-venekatetre/
+
+Last accessed: 30. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">PICC</rdfs:label>
+        <rdfs:label xml:lang="no">PICC</rdfs:label>
+        <rdfs:label xml:lang="no">Perifert innsatt sentralt kateter</rdfs:label>
+        <rdfs:label xml:lang="en">Peripherally inserted central catheter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#person -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#person">
+        <rdfs:comment xml:lang="en">An individual.  A human being.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Et individ. Et menneske.</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:label xml:lang="no">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#phlebitis -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#phlebitis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="no">Flebitis</rdfs:label>
+        <rdfs:label xml:lang="en">Phlebitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#procedure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#procedure">
+        <rdfs:comment xml:lang="en">Any procedure, intervention, or activity related to catheters.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Enhver prosedyre, intervensjon eller aktivitet relatert til katetre.</rdfs:comment>
+        <rdfs:label xml:lang="en">Procedure</rdfs:label>
+        <rdfs:label xml:lang="no">Prosedyre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#psychosis -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#psychosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#neurological_and_physiological"/>
+        <rdfs:label xml:lang="en">Psychosis</rdfs:label>
+        <rdfs:label xml:lang="no">Psykose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#pulse -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#pulse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#vital_sign"/>
+        <rdfs:label xml:lang="no">Puls</rdfs:label>
+        <rdfs:label xml:lang="en">Pulse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#pump -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#pump">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#medical_device"/>
+        <rdfs:label xml:lang="en">Pump</rdfs:label>
+        <rdfs:label xml:lang="no">Pumpe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#puncture -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#puncture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#wound"/>
+        <rdfs:isDefinedBy xml:lang="no">Forårsakes av kniv, spiker, glassbiter, piggtråd eller lignende. Innstikksåret kan være nokså lite, men såret kan likevel gå dypt inn i kroppen og omfatte indre organer. Faren for infeksjon er stor på grunn av forurensninger som sitter dypt.
+
+https://nhi.no/forstehjelp/hudskader/sarskader/
+
+Last accessed: 22. November 2021</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="no">Stikksår, sår forårsaket av spisse gjenstander som for eksempel spiker. Dersom det er mistanke om at gjenstanden som forårsaket stikket kan være uren, bør lege kontaktes med spørsmål om stivkrampevaksine og antibiotika. Alle dype stikksår i bryst, buk eller ledd må vurderes av lege.
+
+https://sml.snl.no/stikks%C3%A5r
+
+Last accessed: 22. November 2021</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="no">Sår som skyldes spiker, piggtråd og andre spisse gjenstander kan gi dype sår med liten innstikksåpning. Det kan da være fare for betennelse i dybden, og såret bør undersøkes av lege. Alle stikksår i bryst, buk eller ledd må vurderes av lege.
+
+https://sml.snl.no/s%C3%A5rbehandling
+
+Last accessed: 22. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Puncture</rdfs:label>
+        <rdfs:label xml:lang="no">Stikksår</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#purulence -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#purulence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Purulence</rdfs:label>
+        <rdfs:label xml:lang="no">Puss</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#radiology -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#radiology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#procedure"/>
+        <rdfs:label xml:lang="no">Radiologi</rdfs:label>
+        <rdfs:label xml:lang="en">Radiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#red -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Red</rdfs:label>
+        <rdfs:label xml:lang="no">Rød</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#relative -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#relative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#person"/>
+        <rdfs:comment xml:lang="en">Person related to patient</rdfs:comment>
+        <rdfs:comment xml:lang="no">Person relatert til pasient</rdfs:comment>
+        <rdfs:label xml:lang="en">Relative of the patient</rdfs:label>
+        <rdfs:label xml:lang="no">Slektning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#respiratory_rate -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#respiratory_rate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#vital_sign"/>
+        <rdfs:label xml:lang="no">Respirasjons frekvens</rdfs:label>
+        <rdfs:label xml:lang="en">Respiratory rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#sample_or_test_number -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#sample_or_test_number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"/>
+        <rdfs:comment xml:lang="en">Identification number given to specimens for lab testing.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Identifikasjonsnummer gitt til prøver for laboratorietesting.</rdfs:comment>
+        <rdfs:label xml:lang="no">Prøve eller testnummer</rdfs:label>
+        <rdfs:label xml:lang="en">Sample or test number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#self_inflicted_injection -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#self_inflicted_injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#injection"/>
+        <rdfs:label xml:lang="en">Self-inflicted injection</rdfs:label>
+        <rdfs:label xml:lang="no">Selvpåført injeksjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#sepsis -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#sepsis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Sepsis</rdfs:label>
+        <rdfs:label xml:lang="no">Sepsis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#skin -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#skin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#organ_part"/>
+        <rdfs:label xml:lang="no">Hud</rdfs:label>
+        <rdfs:label xml:lang="en">Skin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#subcutaneous -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#subcutaneous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#skin"/>
+        <rdfs:label xml:lang="en">Subcutaneous</rdfs:label>
+        <rdfs:label xml:lang="no">Subkutan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#subcutaneous_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#subcutaneous_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter"/>
+        <rdfs:label xml:lang="en">Subcutaneous catheter</rdfs:label>
+        <rdfs:label xml:lang="no">Subkutant kateter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#subcutaneous_infusion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#subcutaneous_infusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#infusion"/>
+        <rdfs:label xml:lang="en">Subcutaneous infusion</rdfs:label>
+        <rdfs:label xml:lang="no">Subkutant infusjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#subcutaneous_injection -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#subcutaneous_injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#injection"/>
+        <rdfs:label xml:lang="en">Subcutaneous injection</rdfs:label>
+        <rdfs:label xml:lang="no">Subkutant injeksjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#surgery -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#surgery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#procedure"/>
+        <rdfs:label xml:lang="no">Kirurgi</rdfs:label>
+        <rdfs:label xml:lang="en">Surgery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#swollen -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#swollen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="no">Hoven</rdfs:label>
+        <rdfs:label xml:lang="en">Swollen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#telephone_number -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#telephone_number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"/>
+        <rdfs:label xml:lang="no">Telefonnummer</rdfs:label>
+        <rdfs:label xml:lang="en">Telephone number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#tenderness -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#tenderness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:comment xml:lang="en">Sensitivity to pain; soreness</rdfs:comment>
+        <rdfs:label xml:lang="en">Tenderness</rdfs:label>
+        <rdfs:label xml:lang="no">Ømhet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#thigh -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#thigh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#leg"/>
+        <rdfs:label xml:lang="no">Lår</rdfs:label>
+        <rdfs:label xml:lang="en">Thigh</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#three_way_valve -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#three_way_valve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#valve"/>
+        <rdfs:label xml:lang="en">3-way valve</rdfs:label>
+        <rdfs:label xml:lang="no">Treveiskran</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#time -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#identifier"/>
+        <rdfs:comment xml:lang="en">Measurable period using hours, minutes, days, months, years, etc.  This includes date and time.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Målbar periode ved bruk av timer, minutter, dager, måneder, år osv. Dette inkluderer dato og klokkeslett.</rdfs:comment>
+        <rdfs:label xml:lang="no">Tid</rdfs:label>
+        <rdfs:label xml:lang="en">Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#trunk -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#trunk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#body_part"/>
+        <rdfs:label xml:lang="no">Torso</rdfs:label>
+        <rdfs:label xml:lang="en">Trunk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#tube -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#tube">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#medical_device"/>
+        <rdfs:label xml:lang="no">Rør</rdfs:label>
+        <rdfs:label xml:lang="en">Tube</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#upper_arm -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#upper_arm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#arm"/>
+        <rdfs:label xml:lang="no">Overarm</rdfs:label>
+        <rdfs:label xml:lang="en">Upper arm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#urinary_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#urinary_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter"/>
+        <rdfs:label xml:lang="no">Blærekateter</rdfs:label>
+        <rdfs:label xml:lang="en">Urinary catheter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#valve -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#valve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#medical_device"/>
+        <rdfs:label xml:lang="en">Valve</rdfs:label>
+        <rdfs:label xml:lang="no">Ventil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#vas_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#vas_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#venous_catheter"/>
+        <rdfs:label xml:lang="en">VAS</rdfs:label>
+        <rdfs:label xml:lang="no">VAS</rdfs:label>
+        <rdfs:label xml:lang="no">VAS-kateter</rdfs:label>
+        <rdfs:label xml:lang="en">Vascath catheter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#vehicle_identifier -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#vehicle_identifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#identifier"/>
+        <rdfs:label xml:lang="no">Kjøretøy identifikator</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#vein -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#vein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#circulatory_system"/>
+        <rdfs:isDefinedBy xml:lang="no">Vener er blodårer som fører blodet fra kroppen til hjertet. Blodårer som fører blod fra hjertet til kroppen kalles arterier. Ofte følger to mindre vener en arterie i kretsløpet.
+
+De fleste venene samler oksygenfattig blod fra kroppen og fører det til hjertet og lungene. Venene i armene og beina er synlige under huden. De har veneklaffer som hindrer at blodet strømmer «feil vei», det vil si vekk fra hjertet. Blodtrykket i venene er svært lavt sammenliknet med trykket i arteriene.
+
+https://sml.snl.no/vener
+
+Last accessed: 30. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Vein</rdfs:label>
+        <rdfs:label xml:lang="no">Ven</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#venous_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#venous_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#catheter"/>
+        <rdfs:isDefinedBy xml:lang="no">Venekateter er en fellesbetegnelse på forskjellige typer plastrør som legges inn i vener; tidligere ofte brukt om bøyelige rør som under en liten operasjon («blottlegging» av vene) ble ført inn i blodkaret under synets ledelse.
+
+https://sml.snl.no/venekateter
+
+Last accessed: 30. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="no">Venekateter</rdfs:label>
+        <rdfs:label xml:lang="en">Venous catheter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#vital_sign -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#vital_sign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#observation"/>
+        <rdfs:label xml:lang="en">Vital sign</rdfs:label>
+        <rdfs:label xml:lang="no">Vitale livstegn</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">vital sign from Ontology for General Medical Science (OGMS)
+
+A physical sign in which a non-zero value is standardly considered to be an indication that the organism is alive.
+
+https://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000029
+
+Last accessed: 25. November 2021</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#warm -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#warm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="no">Varm</rdfs:label>
+        <rdfs:label xml:lang="en">Warm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#web_address -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#web_address">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#identifier"/>
+        <rdfs:comment xml:lang="no">Link til nettside.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Link to website.</rdfs:comment>
+        <rdfs:label xml:lang="no">Nettadresse</rdfs:label>
+        <rdfs:label xml:lang="en">Web URL address</rdfs:label>
+        <rdfs:label xml:lang="en">Web Uniform Resource Locator (URL) address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#wound -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#wound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#observation"/>
+        <rdfs:isDefinedBy xml:lang="no">https://sml.snl.no/s%C3%A5rbehandling
+
+Last accessed: 22. November 2021</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="no">Sår</rdfs:label>
+        <rdfs:label xml:lang="en">Wound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/aaenote#wrist -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/aaenote#wrist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#arm"/>
+        <rdfs:label xml:lang="no">Håndledd</rdfs:label>
+        <rdfs:label xml:lang="en">Wrist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_1"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_2"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_3"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_session_number"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_4"/>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#anatomical_location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#identifier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#medical_device"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#observation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/aaenote#procedure"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:absolute:aeano.owl#n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:absolute:aeano.owl#pivc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>1. List notes with PIVC</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/2022/04/aaenote#annotated_document"/>
+                        <swrl:argument1 rdf:resource="urn:absolute:aeano.owl#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/2022/04/aaenote#peripheral_intravenous_catheter"/>
+                                <swrl:argument1 rdf:resource="urn:absolute:aeano.owl#pivc"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/2022/04/aaenote#has_label"/>
+                                        <swrl:argument1 rdf:resource="urn:absolute:aeano.owl#n"/>
+                                        <swrl:argument2 rdf:resource="urn:absolute:aeano.owl#pivc"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:absolute:aeano.owl#n"/>
+                            <rdf:Description rdf:about="urn:absolute:aeano.owl#pivc"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

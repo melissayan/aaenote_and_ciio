@@ -1,0 +1,3588 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/2022/04/ciio#"
+     xml:base="http://www.semanticweb.org/2022/04/ciio"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ciio="http://www.semanticweb.org/2022/04/ciio#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/2022/04/ciio">
+        <rdfs:comment xml:lang="en">Catheter Infection Indications Ontology (CIIO). This ontology is for reasoning about clinical signs and symptoms that indicate presence of a catheter or infection.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date: 18. April 2022 13:25</rdfs:comment>
+        <rdfs:comment xml:lang="no">Kateter InfeksjonsIndikasjoner Ontologi (CIIO eller Catheter Infection Indications Ontology på engelsk). Denne otologien er for resonnement om kliniske tegn og symptomer som indikerer tilstedeværelsen av et kateter eller infeksjon.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#contains -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#is_documented_in"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment xml:lang="en">Containing documented textual content.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Inneholder dokumentert tekstinnhold.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contains</rdfs:label>
+        <rdfs:label xml:lang="no">Inneholder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#is_combined_with -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#is_combined_with">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/ciio#general_iv"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/2022/04/ciio#general_iv"/>
+        <rdfs:comment xml:lang="en">General intravenous combined with another general intravenous.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Generell intravenøs kombinert med en annen generell intravenøs.</rdfs:comment>
+        <rdfs:label xml:lang="no">Er kombinert med</rdfs:label>
+        <rdfs:label xml:lang="en">Is combined with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#is_documented_in -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#is_documented_in">
+        <rdfs:comment xml:lang="no">Tekstinnhold er dokumentert innenfor.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Textual content is documented within.</rdfs:comment>
+        <rdfs:label xml:lang="no">Er dokumentert i</rdfs:label>
+        <rdfs:label xml:lang="en">Is documented in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#is_iv_for -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#is_iv_for">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/ciio#general_iv"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion"/>
+        <rdfs:comment xml:lang="en">General intravenous is for a type of infusion.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Generell intravenøs er for en type infusjon.</rdfs:comment>
+        <rdfs:label xml:lang="no">Er intravenøs for</rdfs:label>
+        <rdfs:label xml:lang="en">Is intravenous for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#is_observed_with -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#is_observed_with">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/ciio#observation"/>
+        <rdfs:label xml:lang="no">Er observert med</rdfs:label>
+        <rdfs:label xml:lang="en">Is observed with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#located_nearby_on_at_in -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#located_nearby_on_at_in">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/2022/04/ciio#anatomical_location"/>
+        <rdfs:label xml:lang="en">Located nearby/on/at/in</rdfs:label>
+        <rdfs:label xml:lang="no">Lokalisert nærheten/ved/på/i</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#location_has -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#location_has">
+        <rdfs:label xml:lang="en">Location has</rdfs:label>
+        <rdfs:label xml:lang="no">Lokasjon har</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#medication_should_have_been -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#medication_should_have_been">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/ciio#general_iv"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/2022/04/ciio#general_iv"/>
+        <rdfs:label xml:lang="en">Medication should have been</rdfs:label>
+        <rdfs:label xml:lang="no">Medisiner skulle ha vært</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient_has -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#patient_has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <rdfs:label xml:lang="no">Pasient har</rdfs:label>
+        <rdfs:label xml:lang="en">Patient has</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#procedure_uses -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#procedure_uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/ciio#procedure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/2022/04/ciio#medical_device"/>
+        <rdfs:label xml:lang="en">Procedure uses</rdfs:label>
+        <rdfs:label xml:lang="no">Prosedyre bruker</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#anatomical_location_descriptor -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#anatomical_location_descriptor">
+        <rdfs:comment xml:lang="en">Anatomical positions based on classes in the Biological Spatial Ontology (BSPO) 
+
+Anatomical body positions https://sml.snl.no/topografisk_anatomi
+
+Anatomical side (BSPO:0000054) 
+
+Back = posterior side (BSPO:0000056) https://sml.snl.no/posterior, https://sml.snl.no/dorsal
+Front = anterior side (BSPO:0000055) https://snl.no/anterior, https://sml.snl.no/ventral
+Left = left side (BSPO:0000000) https://sml.snl.no/sinister
+Right = right side (BSPO:0000007) https://sml.snl.no/dexter, https://snl.no/dekstral
+Proximal = proximal side (BSPO:0000061) https://sml.snl.no/proksimal
+Distal = distal side (BSPO:0000062) https://sml.snl.no/distal
+Medial = medial side (BSPO:0000067) https://sml.snl.no/medial
+Sideways = 
+Halfway =
+Lateral = lateral side (BSPO:0000066) https://snl.no/lateral</rdfs:comment>
+        <rdfs:comment xml:lang="en">Location of body parts away from center. 
+
+3 Options: 
+  1. Front
+  2. Back
+or
+  1. Left
+  2. Right
+or
+  1. Proximal (Proksimal)
+  2. Distal (Distal)
+  3. Medial (Medial)
+  4. Sideways (Sideveis)
+  5. Halfway (Halvveis)</rdfs:comment>
+        <rdfs:label xml:lang="en">Anatomical location descriptor</rdfs:label>
+        <rdfs:label xml:lang="no">Anatomisk plasseringsbeskrivelse</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#anatomical_location_descriptor_front_or_back -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#anatomical_location_descriptor_front_or_back">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#anatomical_location_descriptor"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="en">Back</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="en">Front</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Bak</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Foran</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">Anatomical location descriptor front or back</rdfs:label>
+        <rdfs:label xml:lang="no">Anatomisk plasseringsbeskrivelse foran eller bak</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#anatomical_location_descriptor_left_or_right -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#anatomical_location_descriptor_left_or_right">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#anatomical_location_descriptor"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Høyre</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Venstre</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="en">Left</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="en">Right</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">Anatomical location descriptor left or right</rdfs:label>
+        <rdfs:label xml:lang="no">Anatomisk plasseringsbeskrivelse venstre eller høyre</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#blood_test_result -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#blood_test_result">
+        <rdfs:label xml:lang="no">Blodprøveresultat</rdfs:label>
+        <rdfs:label xml:lang="en">Blood test result</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#has_blood_test_result -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#has_blood_test_result">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#blood_test_result"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/ciio#blood_test"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Negativ</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Positivt</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="en">Negative</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="en">Positive</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="no">Har blodprøveresultat</rdfs:label>
+        <rdfs:label xml:lang="en">Has blood test result</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#has_body_temperature_range -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#has_body_temperature_range">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#observation_attribute"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Hypertermi</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Hypotermi</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="no">Normal</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="en">Hyperthermia</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="en">Hypothermia</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="en">Normal</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Temperature ranges: 
+1. Hyperthermia (Hypertermi) https://sml.snl.no/hypertermi, https://sml.snl.no/feber
+2. Normal (Normal) https://sml.snl.no/kroppstemperatur
+3. Hypothermia (Hypotermi) https://sml.snl.no/hypotermi</rdfs:comment>
+        <rdfs:label xml:lang="no">Har kroppstemperaturområde</rdfs:label>
+        <rdfs:label xml:lang="en">Has body temperature range</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#has_conscious_state -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#has_conscious_state">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#observation_attribute"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="en">Alert</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="en">Confusion</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="en">Painfully responsive</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first xml:lang="en">Unresponsive</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first xml:lang="en">Verbally responsive</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Bevisstløshet</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Forvirring</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="no">Smerte respons</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first xml:lang="no">Verbal respons</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first xml:lang="no">Våken</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Level of consciousness based on NEWSII conscious state (Bevissthetsnivå) ACVPU https://ehandboken.ous-hf.no/document/78636
+
+
+Levels:
+1. Alert (Våken)
+2. Confusion (Forvirring)
+3. Verbally responsive (Verbal respons)
+4. Painfully responsive (Smerte respons)
+5. Unresponsive (Bevisstløshet)
+
+https://sml.snl.no/bevissthetsforstyrrelse</rdfs:comment>
+        <rdfs:label xml:lang="no">Har bevisste tilstand av</rdfs:label>
+        <rdfs:label xml:lang="en">Has conscious state of</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#has_cultured_bacteria -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#has_cultured_bacteria">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#blood_test_result"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/ciio#blood_test"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="no">Har dyrkede bakterier</rdfs:label>
+        <rdfs:label xml:lang="en">Has cultured bacteria</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#has_name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#has_name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="no">Har navn</rdfs:label>
+        <rdfs:label xml:lang="en">Has name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#has_pivc_color -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#has_pivc_color">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/ciio#medical_device"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="en">Blue</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="en">Brown</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="en">Gray</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first xml:lang="en">Green</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first xml:lang="en">Orange</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first xml:lang="en">Pink</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first xml:lang="en">Purple</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first xml:lang="en">White</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first xml:lang="en">Yellow</rdf:first>
+                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Blå</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Brun</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="no">Grå</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first xml:lang="no">Grønn</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first xml:lang="no">Gul</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first xml:lang="no">Hvit</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first xml:lang="no">Lilla</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first xml:lang="no">Oransje</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first xml:lang="no">Rosa</rdf:first>
+                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Color of peripheral venous catheter (PIVC; perifert venekateter; PVK):
+1. Purple (Lilla)
+2. Yellow (Gul)
+3. Blue (Blå)
+4. Pink (Rosa)
+5. Green (Grønn)
+6. White (Hvit)
+7. Gray (Grå)
+8. Brown (Brun)
+9. Orange (Oransje)
+
+https://ehandboken.ous-hf.no/document/115280</rdfs:comment>
+        <rdfs:label xml:lang="no">Har perifert venekateter farge</rdfs:label>
+        <rdfs:label xml:lang="en">Has peripheral venous catheter color</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#has_severity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#has_severity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#observation_attribute"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="en">High</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="en">Low</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="en">Normal</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first xml:lang="no">Høy</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first xml:lang="no">Lav</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first xml:lang="no">Normal</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Severity Levels:
+1. High (Høy)
+2. Normal (Normal)
+3. Low (Lav)</rdfs:comment>
+        <rdfs:label xml:lang="no">Har alvorlighetsgrad</rdfs:label>
+        <rdfs:label xml:lang="en">Has severity level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#is_forgotten -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#is_forgotten">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#is_missing -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#is_missing">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Er savnet</rdfs:label>
+        <rdfs:label xml:lang="en">Is missing</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#negation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#negation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="no">Negasjon</rdfs:label>
+        <rdfs:label xml:lang="en">Negation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#observation_attribute -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#observation_attribute">
+        <rdfs:label xml:lang="no">Observasjonsattributt</rdfs:label>
+        <rdfs:label xml:lang="en">Observation attribute</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#relative_is -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/2022/04/ciio#relative_is">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">Relative is</rdfs:label>
+        <rdfs:label xml:lang="no">Slektning er</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#anatomical_location -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#anatomical_location">
+        <rdfs:comment xml:lang="en">Anatomical body parts, organs, or relative positions of the body.  Somewhere on the body.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Anatomiske kroppsdeler, organer, eller relative posisjoner av kroppen. Et plass på kroppen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Anatomical location</rdfs:label>
+        <rdfs:label xml:lang="no">Anatomisk plassering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#arm -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#arm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#anatomical_location"/>
+        <rdfs:label xml:lang="en">Arm</rdfs:label>
+        <rdfs:label xml:lang="no">Arm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#artery -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#artery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#circulatory_system"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/2022/04/ciio#vein"/>
+        <rdfs:comment xml:lang="no">Arterier er blodårer som fører blod fra hjertet og ut i kroppen. Årer som fører blod til hjertet fra kroppen kalles vener.
+
+Den største arterien er aorta, hovedpulsåren, som går ut fra hjertets venstre hovedkammer. Nest størst er lungearterien (truncus pulmonalis), som springer ut fra høyre hovedkammer og er den eneste arterien som fører oksygenfattig blod, bortsett fra navlesnorarteriene under svangerskapet.
+
+Vanligvis er arteriene i kroppen fra 0,1 til omtrent 10 millimeter i diameter. De minste arteriene (under 0,1 millimeter) før overgangen til kapillarene kalles arterioler.
+
+https://sml.snl.no/arterier
+
+Last accessed: 30. November 2021</rdfs:comment>
+        <rdfs:label xml:lang="no">Arterie</rdfs:label>
+        <rdfs:label xml:lang="en">Artery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#blood_pressure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#blood_pressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#vital_sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#blood_test -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#blood_test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#procedure"/>
+        <rdfs:label xml:lang="no">Blodprøve</rdfs:label>
+        <rdfs:label xml:lang="en">Blood test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#body_temperature -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#body_temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#vital_sign"/>
+        <rdfs:label xml:lang="en">Body temperature</rdfs:label>
+        <rdfs:label xml:lang="no">Kroppstemperatur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#medical_device"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/2022/04/ciio#pump"/>
+        <rdfs:label xml:lang="en">Catheter</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_discontinue_use -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_discontinue_use">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_procedure"/>
+        <rdfs:label xml:lang="en">Catheter discontinuation</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter seponering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_insertion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_insertion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_procedure"/>
+        <rdfs:label xml:lang="en">Catheter insertion</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter innstikking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_procedure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_procedure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#procedure"/>
+        <rdfs:label xml:lang="en">Catheter procedure</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter prosedyre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_removal -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_removal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_procedure"/>
+        <rdfs:label xml:lang="en">Catheter removal</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter fjerning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_self_removal -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_self_removal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_procedure"/>
+        <rdfs:label xml:lang="en">Catheter self-removal</rdfs:label>
+        <rdfs:label xml:lang="no">Kateter selvseponering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#circulatory_system -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#circulatory_system">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#anatomical_location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#consciousness_level -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#consciousness_level">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#vital_sign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#observation"/>
+        <rdfs:comment xml:lang="no">Beskrivelse av et tegn eller symptom som er en del av en pasient. Slik som farge, form, temperatur, lengde, masse eller vekst.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Description of a sign or symptom that is part of a patient. Such as the color, shape, temperature, length, mass, or growth.</rdfs:comment>
+        <rdfs:label xml:lang="no">Beskrivende tegn eller symptom</rdfs:label>
+        <rdfs:label xml:lang="en">Descriptive sign or symptom</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">physical sign from Ontology for General Medical Science (OGMS)
+
+Definition: An abnormal material entity that is part of a patient and hypothesized to be clinically relevant.
+
+Example: an abnormal growth; an inflammatory infiltrate; swollen tissue; distension
+
+https://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000129
+
+Last accessed: 25. November 2021</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">qualitative sign from Ontology for General Medical Science (OGMS)
+
+Definition: An abnormal observable quality of a part of a patient that is hypothesized to be clinically relevant.
+
+Example: the color of a rash; the shape of a melanoma
+
+https://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000142
+
+Last accessed: 25. November 2021</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#device_observation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#device_observation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#observation"/>
+        <rdfs:label xml:lang="en">Device observation</rdfs:label>
+        <rdfs:label xml:lang="no">Utstyrsobservasjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#document">
+        <rdfs:comment xml:lang="en">Adverse event note from report.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Annoterte avviksmeldinger fra rapport.</rdfs:comment>
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+        <rdfs:label xml:lang="no">Dokument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#edema -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#edema">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Edema</rdfs:label>
+        <rdfs:label xml:lang="no">Ødem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#elbow -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#elbow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/2022/04/ciio#hand"/>
+        <rdfs:label xml:lang="no">Albue</rdfs:label>
+        <rdfs:label xml:lang="en">Elbow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#epidural -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#epidural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+        <rdfs:label xml:lang="en">Epidural catheter</rdfs:label>
+        <rdfs:label xml:lang="no">Epidural kateter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#frostbite -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#frostbite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#general_iv -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#general_iv">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#procedure"/>
+        <rdfs:label xml:lang="en">General IV</rdfs:label>
+        <rdfs:label xml:lang="no">Generelt IV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#hand -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#hand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm"/>
+        <rdfs:label xml:lang="en">Hand</rdfs:label>
+        <rdfs:label xml:lang="no">Hånd</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#hardness -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#hardness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="no">Hardhet</rdfs:label>
+        <rdfs:label xml:lang="en">Hardness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#infusion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#infusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#procedure"/>
+        <rdfs:label xml:lang="en">Infusion</rdfs:label>
+        <rdfs:label xml:lang="no">Infusjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#injury -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#injury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#insertion_site -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#insertion_site">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#anatomical_location"/>
+        <rdfs:label xml:lang="en">Insertion site</rdfs:label>
+        <rdfs:label xml:lang="no">innstikkssted</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#itchy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#itchy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Itchy</rdfs:label>
+        <rdfs:label xml:lang="no">Kløende</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_antibiotics -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_antibiotics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#general_iv"/>
+        <rdfs:label xml:lang="en">IV antibiotics</rdfs:label>
+        <rdfs:label xml:lang="no">IV antibiotika</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_fluid -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_fluid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#general_iv"/>
+        <rdfs:label xml:lang="en">IV fluid</rdfs:label>
+        <rdfs:label xml:lang="no">IV væske</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_medication -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_medication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#general_iv"/>
+        <rdfs:label xml:lang="en">IV medication</rdfs:label>
+        <rdfs:label xml:lang="no">IV medisiner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#leakage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#leakage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#device_observation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/2022/04/ciio#moisture"/>
+        <rdfs:label xml:lang="en">Leakage</rdfs:label>
+        <rdfs:label xml:lang="no">Lekkasje</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#medical_device -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#medical_device">
+        <rdfs:comment xml:lang="en">Any instrument, device, or equipment used for a medical purpose.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Ethvert instrument, enhet eller utstyr som brukes til medisinske formål.</rdfs:comment>
+        <rdfs:label xml:lang="en">Medical device</rdfs:label>
+        <rdfs:label xml:lang="no">Medisk utstyr</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">Medical Device from NCI Thesaurus (NCIt).
+
+Definition: Any physical object that is useful for prevention, diagnosis, monitoring, or treatment of disease or other conditions. 
+
+http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C16830
+
+Last accessed 25. November 2021</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#mobility_impairment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#mobility_impairment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#observation"/>
+        <rdfs:label xml:lang="no">Bevegelseshemming</rdfs:label>
+        <rdfs:label xml:lang="en">Mobility impairment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#moisture -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#moisture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#device_observation"/>
+        <rdfs:label xml:lang="no">Fukt</rdfs:label>
+        <rdfs:label xml:lang="en">Moisture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#necrosis -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#necrosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Necrosis</rdfs:label>
+        <rdfs:label xml:lang="no">Nekrose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#observation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#observation">
+        <rdfs:comment xml:lang="en">Any sign or symptom that can be monitored.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Ethvert tegn eller symptom som kan overvåkes.</rdfs:comment>
+        <rdfs:label xml:lang="no">Observasjon</rdfs:label>
+        <rdfs:label xml:lang="en">Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#pain -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#pain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Pain</rdfs:label>
+        <rdfs:label xml:lang="no">Smerte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/2022/04/ciio#relative"/>
+        <rdfs:comment xml:lang="en">Person receiving care or registered for care</rdfs:comment>
+        <rdfs:comment xml:lang="no">Person som mottar pleie eller er registrert for pleie.</rdfs:comment>
+        <rdfs:label xml:lang="no">Pasient</rdfs:label>
+        <rdfs:label xml:lang="en">Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter"/>
+        <rdfs:label xml:lang="en">PIVC</rdfs:label>
+        <rdfs:label xml:lang="no">PVK</rdfs:label>
+        <rdfs:label xml:lang="no">Perifert venekateter</rdfs:label>
+        <rdfs:label xml:lang="en">Peripheral intravenous catheter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#person -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#person">
+        <rdfs:comment xml:lang="en">An individual.  A human being.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Et individ. Et menneske.</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+        <rdfs:label xml:lang="no">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#phlebitis -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#phlebitis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="no">Flebitis</rdfs:label>
+        <rdfs:label xml:lang="en">Phlebitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#procedure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#procedure">
+        <rdfs:comment xml:lang="en">Any procedure, intervention, or activity related to catheters.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Enhver prosedyre, intervensjon eller aktivitet relatert til katetre.</rdfs:comment>
+        <rdfs:label xml:lang="en">Procedure</rdfs:label>
+        <rdfs:label xml:lang="no">Prosedyre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#pulse -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#pulse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#vital_sign"/>
+        <rdfs:label xml:lang="no">Puls</rdfs:label>
+        <rdfs:label xml:lang="en">Pulse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#pump -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#pump">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#medical_device"/>
+        <rdfs:label xml:lang="en">Pump</rdfs:label>
+        <rdfs:label xml:lang="no">Pumpe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#pus -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#pus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Pus</rdfs:label>
+        <rdfs:label xml:lang="no">Puss</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#red -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="en">Red</rdfs:label>
+        <rdfs:label xml:lang="no">Rød</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#relative -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#relative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#person"/>
+        <rdfs:comment xml:lang="en">Person related to patient</rdfs:comment>
+        <rdfs:comment xml:lang="no">Person relatert til pasient.</rdfs:comment>
+        <rdfs:label xml:lang="en">Relative of the patient</rdfs:label>
+        <rdfs:label xml:lang="no">Slektning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#respiratory_rate -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#respiratory_rate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#vital_sign"/>
+        <rdfs:label xml:lang="no">Respirasjons frekvens</rdfs:label>
+        <rdfs:label xml:lang="en">Respiratory rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence">
+        <rdfs:comment xml:lang="en">Sentence from a document.</rdfs:comment>
+        <rdfs:comment xml:lang="no">Setning fra et dokument.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sentence</rdfs:label>
+        <rdfs:label xml:lang="no">Setning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion"/>
+        <rdfs:label xml:lang="en">Subcutaneous infusion</rdfs:label>
+        <rdfs:label xml:lang="no">Subkutant infusjon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#anatomical_location"/>
+        <rdfs:label xml:lang="en">Subcutaneous skin</rdfs:label>
+        <rdfs:label xml:lang="no">Subkutan hud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#swollen -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#swollen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="no">Hoven</rdfs:label>
+        <rdfs:label xml:lang="en">Swollen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#tenderness -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#tenderness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+        <rdfs:comment xml:lang="no">Følsomhet for smerte; sårhet</rdfs:comment>
+        <rdfs:comment xml:lang="en">Sensitivity to pain; soreness</rdfs:comment>
+        <rdfs:label xml:lang="en">Tenderness</rdfs:label>
+        <rdfs:label xml:lang="no">Ømhet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#vein -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#vein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#circulatory_system"/>
+        <rdfs:comment xml:lang="no">Vener er blodårer som fører blodet fra kroppen til hjertet. Blodårer som fører blod fra hjertet til kroppen kalles arterier. Ofte følger to mindre vener en arterie i kretsløpet.
+
+De fleste venene samler oksygenfattig blod fra kroppen og fører det til hjertet og lungene. Venene i armene og beina er synlige under huden. De har veneklaffer som hindrer at blodet strømmer «feil vei», det vil si vekk fra hjertet. Blodtrykket i venene er svært lavt sammenliknet med trykket i arteriene.
+
+https://sml.snl.no/vener
+
+Last accessed: 30. November 2021</rdfs:comment>
+        <rdfs:label xml:lang="en">Vein</rdfs:label>
+        <rdfs:label xml:lang="no">Ven</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#vital_sign -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#vital_sign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#observation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#warm -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/2022/04/ciio#warm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+        <rdfs:label xml:lang="no">Varm</rdfs:label>
+        <rdfs:label xml:lang="en">Warm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#arm.09.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#arm.09.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#arm.09.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#arm.09.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#arm.10.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#arm.10.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm"/>
+        <anatomical_location_descriptor_left_or_right xml:lang="en">Left</anatomical_location_descriptor_left_or_right>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#arm.10.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#arm.10.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#arm.13.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#arm.13.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#body_temp.10.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#body_temp.10.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#body_temperature"/>
+        <has_body_temperature_range xml:lang="en">Hyperthermia</has_body_temperature_range>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_discontinue_use.10.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_discontinue_use.10.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_discontinue_use"/>
+        <procedure_uses rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.10.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_insertion.10.05 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_insertion.10.05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_insertion"/>
+        <procedure_uses rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.10.05"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_insertion.11.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_insertion.11.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_insertion"/>
+        <procedure_uses rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.11.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_procedure.09.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_procedure.09.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_procedure"/>
+        <procedure_uses rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.09.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_removal.04.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_removal.04.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_removal"/>
+        <procedure_uses rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.04.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_removal.06.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_removal.06.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_removal"/>
+        <procedure_uses rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.06.01"/>
+        <is_forgotten rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_forgotten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#catheter_self_removal.06.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_self_removal.06.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_self_removal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.01.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.01.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.01.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.02.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.02.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.03.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.03.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.04.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.05 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.05.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.05.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.05.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.06 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.06.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.06.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.06.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.06.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.07 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.07.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.07.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.08 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.08.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.09 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.09.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.09.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.09.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.09.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.10 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.10.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.10.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.10.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.10.04"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.10.05"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.11 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.11.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.11.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.11.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.12 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.12.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.12.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.13 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.13.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.14 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.14.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#document.15 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#document.15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.15.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.15.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#elbow.01.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#elbow.01.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow"/>
+        <anatomical_location_descriptor_left_or_right xml:lang="en">Right</anatomical_location_descriptor_left_or_right>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#elbow.02.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#elbow.02.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow"/>
+        <anatomical_location_descriptor_left_or_right xml:lang="en">Left</anatomical_location_descriptor_left_or_right>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#elbow.05.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#elbow.05.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow"/>
+        <anatomical_location_descriptor_left_or_right xml:lang="en">Left</anatomical_location_descriptor_left_or_right>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#elbow.05.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#elbow.05.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#elbow.05.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#elbow.05.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#elbow.06.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#elbow.06.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#elbow.06.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#elbow.06.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#elbow.07.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#elbow.07.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow"/>
+        <anatomical_location_descriptor_left_or_right xml:lang="en">Left</anatomical_location_descriptor_left_or_right>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#elbow.09.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#elbow.09.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#epidural.08.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#epidural.08.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#epidural"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#frostbite.10.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#frostbite.10.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#frostbite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#general_iv.03.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#general_iv.03.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#general_iv"/>
+        <is_missing rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_missing>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#hand.06.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#hand.06.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#hand"/>
+        <anatomical_location_descriptor_front_or_back xml:lang="en">Back</anatomical_location_descriptor_front_or_back>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#hand.06.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#hand.06.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#hand.12.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#hand.12.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#hand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#infusion.07.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#infusion.07.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin.07.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#infusion.09.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#infusion.09.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#infusion.09.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#infusion.09.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#infusion.14.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#infusion.14.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site.14.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#injury.12.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#injury.12.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#injury"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#hand.12.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#insertion_site.10.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#insertion_site.10.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#insertion_site.10.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#insertion_site.10.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#insertion_site.11.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#insertion_site.11.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#insertion_site.14.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#insertion_site.14.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#itchy.06.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#itchy.06.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#itchy"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#hand.06.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_antibiotics.01.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_antibiotics.01.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_antibiotics"/>
+        <is_combined_with rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid.01.02"/>
+        <is_iv_for rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion.01.02"/>
+        <has_name>penicillin</has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_antibiotics.02.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_antibiotics.02.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_antibiotics"/>
+        <is_iv_for rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion.02.02"/>
+        <has_name>diclocil</has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_fluid.01.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_fluid.01.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid"/>
+        <is_combined_with rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_antibiotics.01.02"/>
+        <has_name>NaCl</has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_fluid.03.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_fluid.03.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid"/>
+        <is_missing rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_missing>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_fluid.03.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_fluid.03.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid"/>
+        <procedure_uses rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.03.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_fluid.09.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_fluid.09.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.09.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_fluid.15.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_fluid.15.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid"/>
+        <has_name>sodium_chloride</has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_fluid.15.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_fluid.15.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid"/>
+        <is_documented_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence.15.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_medication.03.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_medication.03.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication"/>
+        <is_missing rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_missing>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_medication.03.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_medication.03.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication"/>
+        <is_missing rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_missing>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_medication.07.01.1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_medication.07.01.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication"/>
+        <procedure_uses rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.07.01"/>
+        <procedure_uses rdf:resource="http://www.semanticweb.org/2022/04/ciio#pump.07.01"/>
+        <has_name>ringer</has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_medication.07.01.2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_medication.07.01.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication"/>
+        <procedure_uses rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.07.01"/>
+        <procedure_uses rdf:resource="http://www.semanticweb.org/2022/04/ciio#pump.07.01"/>
+        <has_name>potassium chloride</has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_medication.08.01.1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_medication.08.01.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication"/>
+        <medication_should_have_been rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.08.01.2"/>
+        <has_name>rocuronium</has_name>
+        <rdfs:comment xml:lang="en">Rocuronium</rdfs:comment>
+        <rdfs:comment xml:lang="no">Rokuronium</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_medication.08.01.2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_medication.08.01.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication"/>
+        <has_name>midazolam</has_name>
+        <is_missing rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_missing>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_medication.13.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_medication.13.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin.13.01"/>
+        <has_name>potassium</has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_medication.15.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_medication.15.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication"/>
+        <is_missing rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_missing>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#iv_medication.15.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_medication.15.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication"/>
+        <has_name>infliximab</has_name>
+        <is_forgotten rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_forgotten>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#leakage.09.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#leakage.09.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#leakage"/>
+        <is_observed_with rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid.09.02"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.09.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#leakage.09.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#leakage.09.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#leakage"/>
+        <is_observed_with rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion.09.04"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.09.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#mobility_impairment.10.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#mobility_impairment.10.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#mobility_impairment"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.10.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#moisture.07.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#moisture.07.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#moisture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#moisture.09.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#moisture.09.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#moisture"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.09.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#necrosis.13.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#necrosis.13.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#necrosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#pain.05.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#pain.05.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#pain"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.05.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#pain.05.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#pain.05.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#pain"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.05.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#pain.09.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#pain.09.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#pain"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.09.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#pain.10.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#pain.10.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#pain"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site.10.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#pain.11.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#pain.11.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#pain"/>
+        <negation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</negation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.03.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.03.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid.03.03"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.03.03"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.03.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.05.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.05.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#relative.05.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.06.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.06.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.06.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.06.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_self_removal.06.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.06.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.06.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.06.03"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#hand.06.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.08.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.08.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#epidural.08.01"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.08.01.1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.09.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.09.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion.09.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.09.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.09.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.09.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.10.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.10.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#pain.10.01"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#red.10.01"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen.10.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.10.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.10.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.10.02"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#body_temp.10.03"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#frostbite.10.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.10.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.10.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#body_temp.10.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.10.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.10.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#frostbite.10.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.12.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.12.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#patient.15.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#patient.15.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient"/>
+        <patient_has rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid.15.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.01.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.01.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.01.01"/>
+        <has_pivc_color xml:lang="en">Green</has_pivc_color>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.01.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.01.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.02.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.02.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.02.01"/>
+        <has_pivc_color xml:lang="en">Green</has_pivc_color>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.03.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.03.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.04.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.04.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.05.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.05.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.05.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.06.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.06.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.07.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.07.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.07.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.09.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.09.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.10.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.10.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.10.05 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.10.05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.11.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.11.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#pump.07.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#pump.07.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#pump"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#pus.10.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#pus.10.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#pus"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site.10.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#red.05.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#red.05.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#red"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.05.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#red.06.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#red.06.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#red"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.06.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#red.10.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#red.10.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#red"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.10.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#red.11.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#red.11.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#red"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site.11.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#red.12.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#red.12.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#red"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#red.14.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#red.14.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#red"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site.14.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#relative.05.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#relative.05.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#relative"/>
+        <relative_is>wife</relative_is>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.01.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.01.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.01.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.01.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.01.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.01.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_antibiotics.01.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid.01.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion.01.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.01.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.01.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.01.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.02.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.02.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.02.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.02.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.02.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.02.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_antibiotics.02.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion.02.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.03.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.03.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#general_iv.03.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid.03.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.03.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.03.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.03.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid.03.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.03.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.03.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.03.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.04.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.04.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_removal.04.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.04.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.05.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.05.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.05.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.05.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.05.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.05.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#pain.05.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.05.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#relative.05.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen.05.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.05.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.05.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.05.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#pain.05.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#red.05.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen.05.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.06.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.06.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_removal.06.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.06.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.06.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.06.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.06.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_self_removal.06.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.06.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.06.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.06.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.06.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#hand.06.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#itchy.06.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.06.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#warm.06.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.06.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.06.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.06.04"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#hand.06.04"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#red.06.04"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen.06.04"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#warm.06.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.07.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.07.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.07.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.07.01.1"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.07.01.2"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#moisture.07.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.07.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#pump.07.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen.07.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.07.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.07.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion.07.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin.07.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.08.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.08.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#epidural.08.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.08.01.1"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.08.01.2"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.08.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.09.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.09.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion.09.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.09.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.09.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.09.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.09.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.09.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid.09.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#leakage.09.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#pain.09.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.09.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.09.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.09.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_procedure.09.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.09.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.09.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.09.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.09.04"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion.09.04"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#leakage.09.04"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#moisture.09.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.10.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.10.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.10.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_discontinue_use.10.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site.10.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#pain.10.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.10.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.10.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#red.10.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen.10.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.10.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.10.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.10.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_insertion.10.05"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site.10.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#mobility_impairment.10.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.10.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#pus.10.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#tenderness.10.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.10.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.10.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#body_temp.10.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.10.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.10.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.10.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#frostbite.10.04"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.10.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.10.05 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.10.05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_insertion.10.05"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.10.05"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.11.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.11.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#catheter_insertion.11.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.11.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.11.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.11.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site.11.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#red.11.03"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#warm.11.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.11.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.11.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#pain.11.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.12.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.12.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#hand.12.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#injury.12.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.12.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.12.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.12.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#red.12.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen.12.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.13.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.13.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.13.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.13.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#necrosis.13.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin.13.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.14.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.14.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#infusion.14.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site.14.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#red.14.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen.14.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.15.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.15.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid.15.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.15.01"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#patient.15.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#sentence.15.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence.15.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_fluid.15.02"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#iv_medication.15.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion.01.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion.01.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion.02.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion.02.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_infusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin.07.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin.07.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin.13.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin.13.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#swollen.05.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#swollen.05.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.05.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#swollen.05.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#swollen.05.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.05.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#swollen.06.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#swollen.06.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.06.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#swollen.07.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#swollen.07.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen"/>
+        <is_observed_with rdf:resource="http://www.semanticweb.org/2022/04/ciio#peripheral_intravenous_catheter.07.01"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.07.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#swollen.10.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#swollen.10.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.10.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#swollen.12.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#swollen.12.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#swollen.14.01 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#swollen.14.01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#swollen"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site.14.01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#tenderness.10.02 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#tenderness.10.02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#tenderness"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#arm.10.02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#warm.06.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#warm.06.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#warm"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.06.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#warm.06.04 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#warm.06.04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#warm"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#elbow.06.04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#warm.11.03 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#warm.11.03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#warm"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#insertion_site.11.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.test_document -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.test_document">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#01.01.test_sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#01.02.test_sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#01.03.test_sentence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.01.test_blood_pressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.01.test_blood_pressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#blood_pressure"/>
+        <has_severity xml:lang="en">Low</has_severity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.01.test_body_temperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.01.test_body_temperature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#body_temperature"/>
+        <has_body_temperature_range xml:lang="en">Hypothermia</has_body_temperature_range>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.01.test_consciousness_level -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.01.test_consciousness_level">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#consciousness_level"/>
+        <has_conscious_state xml:lang="en">Confusion</has_conscious_state>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.01.test_pulse -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.01.test_pulse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#pulse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.01.test_respiratory_rate -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.01.test_respiratory_rate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#respiratory_rate"/>
+        <has_severity xml:lang="en">High</has_severity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.01.test_sentence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.01.test_sentence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#01.01.test_blood_pressure"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#01.01.test_body_temperature"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#01.01.test_consciousness_level"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#01.01.test_respiratory_rate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.02.test_body_temperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.02.test_body_temperature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#body_temperature"/>
+        <has_body_temperature_range xml:lang="en">Hyperthermia</has_body_temperature_range>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.02.test_consciousness_level -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.02.test_consciousness_level">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#consciousness_level"/>
+        <has_conscious_state xml:lang="en">Painfully responsive</has_conscious_state>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.02.test_sentence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.02.test_sentence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#01.02.test_body_temperature"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#01.02.test_consciousness_level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.03.test_body_temperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.03.test_body_temperature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#body_temperature"/>
+        <has_body_temperature_range xml:lang="en">Hypothermia</has_body_temperature_range>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#01.03.test_sentence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#01.03.test_sentence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#01.03.test_body_temperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#02.test_document -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#02.test_document">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#02.01.test_sentence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#02.01.test_hardness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#02.01.test_hardness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#hardness"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#02.01.test_vein"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#02.01.test_sentence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#02.01.test_sentence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#02.01.test_hardness"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#02.01.test_tenderness"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#02.01.test_vein"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#02.01.test_tenderness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#02.01.test_tenderness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#tenderness"/>
+        <located_nearby_on_at_in rdf:resource="http://www.semanticweb.org/2022/04/ciio#02.01.test_vein"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#02.01.test_vein -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#02.01.test_vein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#vein"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#03.01.test_blood_test -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#03.01.test_blood_test">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#blood_test"/>
+        <has_blood_test_result xml:lang="en">Positive</has_blood_test_result>
+        <has_cultured_bacteria>Streptococcus group A infection</has_cultured_bacteria>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#03.01.test_document -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#03.01.test_document">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#document"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#03.01.test_sentence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/2022/04/ciio#03.01.test_sentence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/2022/04/ciio#03.01.test_sentence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        <contains rdf:resource="http://www.semanticweb.org/2022/04/ciio#03.01.test_blood_test"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#anatomical_location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#document"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#medical_device"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#observation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#procedure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#sentence"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#arm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#circulatory_system"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#insertion_site"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#subcutaneous_skin"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#blood_pressure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#body_temperature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#consciousness_level"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#pulse"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#respiratory_rate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#blood_test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_procedure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#general_iv"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#infusion"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_discontinue_use"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_insertion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_removal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#catheter_self_removal"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#descriptive_sign_or_symptom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#device_observation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#mobility_impairment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#vital_sign"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#edema"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#frostbite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#hardness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#injury"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#itchy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#necrosis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#pain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#phlebitis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#pus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#red"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#swollen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#tenderness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#warm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_antibiotics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_fluid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/2022/04/ciio#iv_medication"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

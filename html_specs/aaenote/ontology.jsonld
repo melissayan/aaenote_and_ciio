@@ -1,0 +1,3538 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@language" : "no",
+      "@value" : "Distal"
+    }, {
+      "@language" : "no",
+      "@value" : "Halvveis"
+    }, {
+      "@language" : "no",
+      "@value" : "Medial"
+    }, {
+      "@language" : "no",
+      "@value" : "Proksimal"
+    }, {
+      "@language" : "no",
+      "@value" : "Sideveis"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@language" : "no",
+      "@value" : "Helsepersonell"
+    }, {
+      "@language" : "no",
+      "@value" : "Pasient"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid105"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid109"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid109",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid113"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid117"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid121"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid125"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid125",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid129"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid129",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid131",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid133"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid133",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid135",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_1"
+  } ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid137"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid137",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid139",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_2"
+  } ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid141"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid141",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid143",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_3"
+  } ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid145"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid145",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid147",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_4"
+  } ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "_:genid149"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid149",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number"
+  } ]
+}, {
+  "@id" : "_:genid151",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location"
+    }, {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+    }, {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#identifier"
+    }, {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#medical_device"
+    }, {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation"
+    }, {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#person"
+    }, {
+      "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid159",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "1. List notes with PIVC"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid165"
+    }, {
+      "@id" : "_:genid163"
+    }, {
+      "@id" : "_:genid161"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid167"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid22"
+    }, {
+      "@id" : "_:genid18"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid161",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:absolute:aeano.owl#n"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:absolute:aeano.owl#pivc"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_label"
+  } ]
+}, {
+  "@id" : "_:genid163",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:absolute:aeano.owl#pivc"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#peripheral_intravenous_catheter"
+  } ]
+}, {
+  "@id" : "_:genid165",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:absolute:aeano.owl#n"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+  } ]
+}, {
+  "@id" : "_:genid167",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:absolute:aeano.owl#n"
+    }, {
+      "@id" : "urn:absolute:aeano.owl#pivc"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Back"
+    }, {
+      "@value" : "Front"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@language" : "no",
+      "@value" : "Bak"
+    }, {
+      "@language" : "no",
+      "@value" : "Foran"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid31"
+    }, {
+      "@id" : "_:genid27"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Left"
+    }, {
+      "@value" : "Right"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Distal"
+    }, {
+      "@value" : "Halfway"
+    }, {
+      "@value" : "Medial"
+    }, {
+      "@value" : "Proximal"
+    }, {
+      "@value" : "Sideways"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@language" : "no",
+      "@value" : "Høyre"
+    }, {
+      "@language" : "no",
+      "@value" : "Venstre"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid41"
+    }, {
+      "@id" : "_:genid36"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Hyperthermia"
+    }, {
+      "@value" : "Hypothermia"
+    }, {
+      "@value" : "Normal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@language" : "no",
+      "@value" : "Hypertermi"
+    }, {
+      "@language" : "no",
+      "@value" : "Hypotermi"
+    }, {
+      "@language" : "no",
+      "@value" : "Normal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid54"
+    }, {
+      "@id" : "_:genid47"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Alert"
+    }, {
+      "@value" : "Confusion"
+    }, {
+      "@value" : "Painfully responsive"
+    }, {
+      "@value" : "Unresponsive"
+    }, {
+      "@value" : "Verbally responsive"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@language" : "no",
+      "@value" : "Bevisstløshet"
+    }, {
+      "@language" : "no",
+      "@value" : "Forvirring"
+    }, {
+      "@language" : "no",
+      "@value" : "Smerte respons"
+    }, {
+      "@language" : "no",
+      "@value" : "Verbal respons"
+    }, {
+      "@language" : "no",
+      "@value" : "Våken"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid73"
+    }, {
+      "@id" : "_:genid62"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Blue"
+    }, {
+      "@value" : "Brown"
+    }, {
+      "@value" : "Gray"
+    }, {
+      "@value" : "Green"
+    }, {
+      "@value" : "Orange"
+    }, {
+      "@value" : "Pink"
+    }, {
+      "@value" : "Purple"
+    }, {
+      "@value" : "White"
+    }, {
+      "@value" : "Yellow"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@language" : "no",
+      "@value" : "Blå"
+    }, {
+      "@language" : "no",
+      "@value" : "Brun"
+    }, {
+      "@language" : "no",
+      "@value" : "Grå"
+    }, {
+      "@language" : "no",
+      "@value" : "Grønn"
+    }, {
+      "@language" : "no",
+      "@value" : "Gul"
+    }, {
+      "@language" : "no",
+      "@value" : "Hvit"
+    }, {
+      "@language" : "no",
+      "@value" : "Lilla"
+    }, {
+      "@language" : "no",
+      "@value" : "Oransje"
+    }, {
+      "@language" : "no",
+      "@value" : "Rosa"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid90"
+    }, {
+      "@id" : "_:genid85"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "High"
+    }, {
+      "@value" : "Low"
+    }, {
+      "@value" : "Normal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@language" : "no",
+      "@value" : "Høy"
+    }, {
+      "@language" : "no",
+      "@value" : "Lav"
+    }, {
+      "@language" : "no",
+      "@value" : "Normal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid94",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid100"
+    }, {
+      "@id" : "_:genid96"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid96",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Healthcare provider"
+    }, {
+      "@value" : "Patient"
+    } ]
+  } ]
+}, {
+  "@id" : "http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Annotated Adverse Event NOte TErminology (AAENOTE). This terminology is for reasoning about labels provided by annotators within an adverse event note. It is not for reasoning about patient states."
+  }, {
+    "@language" : "no",
+    "@value" : "Annotert AvviksmEldingsNOtat TErminologi (AAENOTE). Denne terminologien er for resonnement om marking levert av annotatorer i et notat om avviksmeldinger. Det er ikke for fesonnement om pasienttilstander."
+  }, {
+    "@language" : "en",
+    "@value" : "Date: 17. April 2022 22:38"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#abrasion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "Skrubbsår er en overflatisk skade av huden med punktformede blødninger fra blodkarene i lærhudens papiller som stikker opp under overhuden. Skrubbsår kan bli infisert, og såret bør derfor renses omhyggelig. Også huden omkring skal rengjøres, og såret dekkes med en ren forbinding.\n\nhttps://sml.snl.no/skrubbs%C3%A5r\n\nLast accessed: 22. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Abrasion"
+  }, {
+    "@language" : "no",
+    "@value" : "Skrubbsår"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#wound"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#account_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Account number"
+  }, {
+    "@language" : "no",
+    "@value" : "Kontonummer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#administration_purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Administrasjonsformål"
+  }, {
+    "@language" : "en",
+    "@value" : "Administration purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#administration_way",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "https://volven.no/produkt.asp?id=462607&catID=3&subID=8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Administrasjonsvei"
+  }, {
+    "@language" : "en",
+    "@value" : "Administration way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Anatomical body parts, organs, or relative positions of the body.  Somewhere on the body."
+  }, {
+    "@language" : "no",
+    "@value" : "Anatomiske kroppsdeler, organer, eller relative posisjoner av kroppen. Et plass på kroppen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Anatomical location"
+  }, {
+    "@language" : "no",
+    "@value" : "Anatomisk plassering"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Anatomical positions based on classes in the Biological Spatial Ontology (BSPO) \n\nAnatomical body positions https://sml.snl.no/topografisk_anatomi\n\nAnatomical side (BSPO:0000054) \n\nBack = posterior side (BSPO:0000056) https://sml.snl.no/posterior, https://sml.snl.no/dorsal\nFront = anterior side (BSPO:0000055) https://snl.no/anterior, https://sml.snl.no/ventral\nLeft = left side (BSPO:0000000) https://sml.snl.no/sinister\nRight = right side (BSPO:0000007) https://sml.snl.no/dexter, https://snl.no/dekstral\nProximal = proximal side (BSPO:0000061) https://sml.snl.no/proksimal\nDistal = distal side (BSPO:0000062) https://sml.snl.no/distal\nMedial = medial side (BSPO:0000067) https://sml.snl.no/medial\nSideways = \nHalfway =\nLateral = lateral side (BSPO:0000066) https://snl.no/lateral"
+  }, {
+    "@language" : "en",
+    "@value" : "Location of body parts away from center.\n\n3 Options: \n  1. Front\n  2. Back\nor\n  1. Left\n  2. Right\nor\n  1. Proximal (Proksimal)\n  2. Distal (Distal)\n  3. Medial (Medial)\n  4. Sideways (Sideveis)\n  5. Halfway (Halvveis)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Anatomical location descriptor"
+  }, {
+    "@language" : "no",
+    "@value" : "Anatomisk plasseringsbeskrivelse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Anatomical location descriptor distance"
+  }, {
+    "@language" : "no",
+    "@value" : "Anatomisk plasseringsbeskrivelse avstand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_front_or_back",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Anatomical location descriptor front or back"
+  }, {
+    "@language" : "no",
+    "@value" : "Anatomisk plasseringsbeskrivelse foran eller bak"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_left_or_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Anatomical location descriptor left or right"
+  }, {
+    "@language" : "no",
+    "@value" : "Anatomisk plasseringsbeskrivelse venstre eller høyre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#ankle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Ankel"
+  }, {
+    "@language" : "en",
+    "@value" : "Ankle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#leg"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Annotated adverse event note with metadata and labeling."
+  }, {
+    "@language" : "no",
+    "@value" : "Annotert avviksmelding med metadata og merking."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Annotated document"
+  }, {
+    "@language" : "no",
+    "@value" : "Annotert dokument"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Annotated adverse event notes from annotation session 1."
+  }, {
+    "@language" : "no",
+    "@value" : "Annotert avvikshendelse notater fra sesjon 1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Annotated document session 1"
+  }, {
+    "@language" : "no",
+    "@value" : "Annotert dokument sesjon 1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid107"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid103"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Annotated adverse event notes from annotation session 2."
+  }, {
+    "@language" : "no",
+    "@value" : "Annotert avvikshendelse notater fra sesjon 2."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Annotated document session 2"
+  }, {
+    "@language" : "no",
+    "@value" : "Annotert dokument sesjon 2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid115"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid111"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Annotated adverse event notes from annotation session 3."
+  }, {
+    "@language" : "no",
+    "@value" : "Annotert avvikshendelse notater fra sesjon 3."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Annotated document session 3"
+  }, {
+    "@language" : "no",
+    "@value" : "Annotert dokument sesjon 3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid123"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid119"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Annotated adverse event notes from annotation session 4."
+  }, {
+    "@language" : "no",
+    "@value" : "Annotert avvikshendelse notater fra sesjon 4."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Annotated document session 4"
+  }, {
+    "@language" : "no",
+    "@value" : "Annotert dokument sesjon 4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid131"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid127"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#arm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Arm"
+  }, {
+    "@language" : "no",
+    "@value" : "Arm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#limb"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#arrived_by_ambulance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Ankom med ambulanse"
+  }, {
+    "@language" : "en",
+    "@value" : "Arrived by Ambulance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#arterial_catether",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Arterial catheter"
+  }, {
+    "@language" : "no",
+    "@value" : "Arteriekateter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#artery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "Arterier er blodårer som fører blod fra hjertet og ut i kroppen. Årer som fører blod til hjertet fra kroppen kalles vener.\n\nDen største arterien er aorta, hovedpulsåren, som går ut fra hjertets venstre hovedkammer. Nest størst er lungearterien (truncus pulmonalis), som springer ut fra høyre hovedkammer og er den eneste arterien som fører oksygenfattig blod, bortsett fra navlesnorarteriene under svangerskapet.\n\nVanligvis er arteriene i kroppen fra 0,1 til omtrent 10 millimeter i diameter. De minste arteriene (under 0,1 millimeter) før overgangen til kapillarene kalles arterioler.\n\nhttps://sml.snl.no/arterier\n\nLast accessed: 30. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Arterie"
+  }, {
+    "@language" : "en",
+    "@value" : "Artery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#circulatory_system"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#back",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Back"
+  }, {
+    "@language" : "no",
+    "@value" : "Rygg"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#trunk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#biometric_identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Biometric identifier"
+  }, {
+    "@language" : "no",
+    "@value" : "Biometrisk identifikator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#bleeding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bleeding"
+  }, {
+    "@language" : "no",
+    "@value" : "Blødning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#blood_culture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Blodkultur"
+  }, {
+    "@language" : "en",
+    "@value" : "Blood culture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#lab_result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#blood_pressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Blodtrykk"
+  }, {
+    "@language" : "en",
+    "@value" : "Blood pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#vital_sign"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#blood_test",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Blodprøve"
+  }, {
+    "@language" : "en",
+    "@value" : "Blood test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#administration_purpose"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#blood_transfusion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Blodverføring"
+  }, {
+    "@language" : "en",
+    "@value" : "Blood transfusion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#administration_purpose"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#bloody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Blodig"
+  }, {
+    "@language" : "en",
+    "@value" : "Bloody"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#body_part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Part of the human body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Body part"
+  }, {
+    "@language" : "no",
+    "@value" : "Kroppsdel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#body_temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Body temperature"
+  }, {
+    "@language" : "no",
+    "@value" : "Kroppstemperatur"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#vital_sign"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#c_reactive_protein",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "C-reactive protein"
+  }, {
+    "@language" : "no",
+    "@value" : "C-reaktivt protein"
+  }, {
+    "@language" : "en",
+    "@value" : "CRP"
+  }, {
+    "@language" : "no",
+    "@value" : "CRP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#lab_result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Catheter"
+  }, {
+    "@language" : "no",
+    "@value" : "Kateter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#medical_device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_discontinue_use",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Catheter discontinuation"
+  }, {
+    "@language" : "no",
+    "@value" : "Kateter seponering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_insertion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Catheter insertion"
+  }, {
+    "@language" : "no",
+    "@value" : "Kateter innstikking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_procedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Catheter procedure"
+  }, {
+    "@language" : "no",
+    "@value" : "Kateter prosedyre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_removal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Catheter removal"
+  }, {
+    "@language" : "no",
+    "@value" : "Kateter fjerning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_replacement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Catheter replacement"
+  }, {
+    "@language" : "no",
+    "@value" : "Kateter bytting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_rinse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Catheter rinsing"
+  }, {
+    "@language" : "no",
+    "@value" : "Kateter skylling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_self_removal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Catheter self-removal"
+  }, {
+    "@language" : "no",
+    "@value" : "Kateter selvseponering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter_procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#central_venous_catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Central venous catheter"
+  }, {
+    "@language" : "no",
+    "@value" : "Sentralt venekateter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#venous_catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#circulatory_system",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "Sirkulasjonssystemet består av hjertet og alle blodårene i kroppen. Hovedoppgaven til sirkulasjonssystemet er temperaturregulering og transport av ulike stoffer i kroppen.\n\nhttps://ndla.no/subject:1:22dee9ab-5b1a-4c23-8c97-c68107b881bb/topic:2:77162/topic:2:188655/resource:1:109709\n\nLast accessed 5. Dec 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Circulatory system"
+  }, {
+    "@language" : "no",
+    "@value" : "Karsystemet"
+  }, {
+    "@language" : "no",
+    "@value" : "Sirkulasjonssystem"
+  }, {
+    "@language" : "en",
+    "@value" : "Vascular system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#organ_part"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#consciousness_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Bevissthetsnivå"
+  }, {
+    "@language" : "en",
+    "@value" : "Consciousness level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#vital_sign"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Description of a sign or symptom that is part of a patient. Such as the color, shape, temperature, length, mass, or growth."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Beskrivende tegn eller symptom"
+  }, {
+    "@language" : "en",
+    "@value" : "Descriptive sign or symptom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "physical sign from Ontology for General Medical Science (OGMS)\n\nAn abnormal material entity that is part of a patient and hypothesized to be clinically relevant.\n\nExample: an abnormal growth; an inflammatory infiltrate; swollen tissue; distension\n\nhttps://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000142\n\nLast accessed: 25. November 2021"
+  }, {
+    "@language" : "en",
+    "@value" : "qualitative sign from Ontology for General Medical Science (OGMS)\n\nAn abnormal observable quality of a part of a patient that is hypothesized to be clinically relevant.\n\nExample: the color of a rash; the shape of a melanoma\n\nhttps://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000142\n\nLast accessed: 25. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#device_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device number"
+  }, {
+    "@language" : "no",
+    "@value" : "Utstyrsnummer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#device_observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device observation"
+  }, {
+    "@language" : "no",
+    "@value" : "Utstyrsobservasjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#dizziness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dizziness"
+  }, {
+    "@language" : "no",
+    "@value" : "Svimmelhet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Notat inneholder"
+  }, {
+    "@language" : "en",
+    "@value" : "Note contains"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Document identification"
+  }, {
+    "@language" : "no",
+    "@value" : "Dokument identifikasjon"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#edema",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Edema"
+  }, {
+    "@language" : "no",
+    "@value" : "Ødem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#elbow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Albue"
+  }, {
+    "@language" : "en",
+    "@value" : "Elbow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#arm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "E-post"
+  }, {
+    "@language" : "en",
+    "@value" : "Email"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#epidural_catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Epidural catheter"
+  }, {
+    "@language" : "no",
+    "@value" : "Epidural kateter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#epidural_use",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "Administrasjonsvei kodeverdier\n17 Epidural bruk\n\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021"
+  }, {
+    "@language" : "en",
+    "@value" : "Administration way code \n17 Epidural use\n\n(Translated to English)\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Epidural bruk"
+  }, {
+    "@language" : "en",
+    "@value" : "Epidural use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#administration_way"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#foot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Foot"
+  }, {
+    "@language" : "no",
+    "@value" : "Fot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#leg"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#forearm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Forearm"
+  }, {
+    "@language" : "no",
+    "@value" : "Underarm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#arm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#general_iv",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "General IV"
+  }, {
+    "@language" : "no",
+    "@value" : "Generelt IV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#administration_purpose"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#geographic_location_identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "no",
+    "@value" : "Fysisk geografisk lokaliseringsopplysninger, for eksempel adresse eller postnummer."
+  }, {
+    "@language" : "en",
+    "@value" : "Physical geographical location identifier, such as address or zip codes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Geografiske lokasjon identifikator"
+  }, {
+    "@language" : "en",
+    "@value" : "Geographic location identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#hand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hand"
+  }, {
+    "@language" : "no",
+    "@value" : "Hånd"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#arm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#hardness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Hardhet"
+  }, {
+    "@language" : "en",
+    "@value" : "Hardness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_annotator_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "har annotator ID"
+  }, {
+    "@language" : "en",
+    "@value" : "has annotator ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_id"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_body_temperature_range",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Temperature ranges: \n1. Hyperthermia (Hypertermi) https://sml.snl.no/hypertermi, https://sml.snl.no/feber\n2. Normal (Normal) https://sml.snl.no/kroppstemperatur\n3. Hypothermia (Hypotermi) https://sml.snl.no/hypotermi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#body_temperature"
+  }, {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation"
+  }, {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#vital_sign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Har kroppstemperaturområde"
+  }, {
+    "@language" : "en",
+    "@value" : "Has body temperature range"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid34"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_conscious_state",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Level of consciousness based on NEWSII conscious state (Bevissthetsnivå) ACVPU https://ehandboken.ous-hf.no/document/78636\n\n\nLevels:\n1. Alert (Våken)\n2. Confusion (Forvirring)\n3. Verbally responsive (Verbal respons)\n4. Painfully responsive (Smerte respons)\n5. Unresponsive (Bevisstløshet)\n\nhttps://sml.snl.no/bevissthetsforstyrrelse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#consciousness_level"
+  }, {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation"
+  }, {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#vital_sign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Har bevisste tilstand av"
+  }, {
+    "@language" : "en",
+    "@value" : "Has conscious state of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid45"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_document_filename",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Har dokumentfilnavn"
+  }, {
+    "@language" : "en",
+    "@value" : "Has document filename"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_id"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Har identifikator"
+  }, {
+    "@language" : "en",
+    "@value" : "Has identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_contains"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An annotated document has an annotated label."
+  }, {
+    "@language" : "no",
+    "@value" : "Et annotert dokument har et annotert merking."
+  }, {
+    "@language" : "no",
+    "@value" : "Har merking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has label"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_medical_device_malfunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Har medisink utstyrsfeil"
+  }, {
+    "@language" : "en",
+    "@value" : "Has medical device malfunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_contains"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_pivc_color",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Color of peripheral venous catheter (PIVC; perifert venekateter; PVK):\n1. Purple (Lilla)\n2. Yellow (Gul)\n3. Blue (Blå)\n4. Pink (Rosa)\n5. Green (Grønn)\n6. White (Hvit)\n7. Gray (Grå)\n8. Brown (Brun)\n9. Orange (Oransje)\n\nhttps://ehandboken.ous-hf.no/document/115280"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter"
+  }, {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#medical_device"
+  }, {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#peripheral_intravenous_catheter"
+  }, {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#venous_catheter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Har perifert venekateter farge"
+  }, {
+    "@language" : "en",
+    "@value" : "Has peripheral venous catheter color"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid60"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has annotation session number"
+  }, {
+    "@language" : "no",
+    "@value" : "har annoteringssesjonsnummer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_id"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#has_severity_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Severity Levels:\n1. High (Høy)\n2. Normal (Normal)\n3. Low (Lav)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#blood_pressure"
+  }, {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation"
+  }, {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#pulse"
+  }, {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#respiratory_rate"
+  }, {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#vital_sign"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Har alvorlighetsgrad"
+  }, {
+    "@language" : "en",
+    "@value" : "Has severity level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid83"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#head",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Head"
+  }, {
+    "@language" : "no",
+    "@value" : "Hode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#body_part"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#headache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Headache"
+  }, {
+    "@language" : "no",
+    "@value" : "Hodepine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#health_care_provider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "health care provider, such as a clinician."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Health care provider"
+  }, {
+    "@language" : "no",
+    "@value" : "Helsepersonell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#hemodialysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Hemodialyse"
+  }, {
+    "@language" : "en",
+    "@value" : "Hemodialysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#administration_purpose"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#hemodialysis_catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Hemodialysekateter"
+  }, {
+    "@language" : "en",
+    "@value" : "Hemodialysis catheter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#venous_catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#hickman_catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hickman catheter"
+  }, {
+    "@language" : "no",
+    "@value" : "Hickman kateter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#venous_catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#hip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hip"
+  }, {
+    "@language" : "no",
+    "@value" : "Hofte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#leg"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Health data linked to certain identiers must be protected to ensure patient privacy and confidentiality. These identifiers are called protected health information (PHI) under the U.S. Health Insurance Portability and Accountability Act (HIPAA).\n\n*Here \"names\" are excluded because this is a data property for the \"person\" class.  This is to help identify individuals annotated."
+  }, {
+    "@language" : "no",
+    "@value" : "Personopplysninger er alle informasjon som kan brukes til å identifisere en person.\n\nHer er \"navn\" ekskludert fordi dette er en data property for \"person\" class.  Dette er for å hjelpe med å identifisere personer som er annotert."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Identifier"
+  }, {
+    "@language" : "no",
+    "@value" : "Identifikator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "List of identifiers for an individual or of relatives, employers, or household members of the individual.\n - Names\n - Postal address information, other than town or city, State, and zip code\n - Telephone numbers\n - Fax numbers\n - Electronic mail addresses\n - Social Security numbers\n - Medical record numbers\n - Health-plan beneficiary numbers\n - Account numbers\n - Certificate and license numbers\n - Vehicle identifiers and serial numbers, including license plate numbers\n - Device identifiers and serial numbers\n - Web Universal Resource Locators (URLs)\n - Internet Protocol (IP) address numbers\n - Biometric identifies including fingerprints and voice prints\n - Full-face photographic images and any comparable image\n\nhttps://www.hhs.gov/hipaa/for-professionals/special-topics/emergency-preparedness/limited-data-set/index.html\n\nLast accessed: 25. November 2021"
+  }, {
+    "@language" : "en",
+    "@value" : "PHI includes all information that could be used to identify an individual. Any part of a person’s medical record and payment history is considered PHI and may not be shared with unauthorized personnel. PHI is used within a medical facility and includes verbal and written communications. PHI can be found in computer files, paper medical records, information from insurance companies, information from the provider, and information from legal offices (9). Name, address, date of birth, phone number, social security number, medical record number, medical history, photographs, charts, health plan beneficiary numbers, license numbers, vehicle identifiers, internet protocol addresses, biometric identifiers (such as retina, voice, and fingerprints), and test results are all considered PHI (10). Physicians’ and nurses’ notes, billing records, and other treatment records are also included. Medical images are also considered PHI (11).\n\nMoore, W., & Frye, S. (2019). Review of HIPAA, Part 1: History, Protected Health Information, and Privacy and Security Rules. Journal of nuclear medicine technology, 47(4), 269–272. https://doi.org/10.2967/jnmt.119.227819"
+  }, {
+    "@language" : "no",
+    "@value" : "Personopplysninger er alle opplysninger og vurderinger som kan knyttes til deg som enkeltperson. Typiske personopplysninger er navn, adresse, telefonnummer, e-post og fødselsnummer. Et bilde regnes som en personopplysning dersom personer kan gjenkjennes, og lydopptak kan være personopplysninger selv om ingen navn blir nevnt i innspillingen. Biometri slik som fingeravtrykk, irismønster, hodeform (for ansiktsgjenkjenning) er også personopplysninger.\n\nVidere er en dynamisk IP-adresse i gitte tilfeller også definert som personopplysning. Registreringsnummeret på en bil kan være en personopplysning hvis det kan knyttes til en bestemt person, mens ikke hvis det står på en firmabil som benyttes av flere.\n\nOpplysninger om atferdsmønstre er også regnet som personopplysninger. Opplysninger om hva du handler, hvilke butikker du går i, hvilke tv-serier du ser på, hvor du fysisk beveger deg i løpet av en dag og hva du søker etter på nettet er alt sammen eksempler på dette. En av de nyere utfordringene for personvernet  er nemlig det at vi legger igjen så mange digitale spor - ofte uten å vite om det eller tenke over det.\n\nPersonvernforordningen artikkel 4\nPersonopplysninger er «enhver opplysning om en identifisert eller identifiserbar fysisk person («den registrerte»); en identifiserbar fysisk person er en person som direkte eller indirekte kan identifiseres, særlig ved hjelp av en identifikator, f.eks. et navn, et identifikasjonsnummer, lokaliseringsopplysninger, en nettidentifikator eller ett eller flere elementer som er spesifikke for nevnte fysiske persons fysiske, fysiologiske, genetiske, psykiske, økonomiske, kulturelle eller sosiale identitet»\n\nhttps://www.datatilsynet.no/rettigheter-og-plikter/personopplysninger/\n\nLast accessed: 25. November 2021"
+  }, {
+    "@language" : "no",
+    "@value" : "«personopplysninger» enhver opplysning om en identifisert eller identifiserbar fysisk person («den registrerte»); en identifiserbar fysisk person er en person som direkte eller indirekte kan identifiseres, særlig ved hjelp av en identifikator, f.eks. et navn, et identifikasjonsnummer, lokaliseringsopplysninger, en nettidentifikator eller ett eller flere elementer som er spesifikke for nevnte fysiske persons fysiske, fysiologiske, genetiske, psykiske, økonomiske, kulturelle eller sosiale identitet\n\nhttps://lovdata.no/dokument/NL/lov/2018-06-15-38/*#&#x2a;\n\nLast accessed: 25. November 2021"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#incision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "Disse kan blø sterkt og har ofte skarpe, sprikende kanter. Selve blødningen virker rensende, og sårene er som regel ganske rene.\n\nhttps://nhi.no/forstehjelp/hudskader/sarskader/\n\nLast accessed: 22. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Incision"
+  }, {
+    "@language" : "no",
+    "@value" : "Snittsår"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#wound"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#incorrect_procedure_action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Er feil prosedyre handling"
+  }, {
+    "@language" : "en",
+    "@value" : "Is incorrect procedure action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#infection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infection"
+  }, {
+    "@language" : "no",
+    "@value" : "Infeksjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#infusion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infusion"
+  }, {
+    "@language" : "no",
+    "@value" : "Infusjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#infusion_set",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infusion set"
+  }, {
+    "@language" : "no",
+    "@value" : "infusjonssett"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#medical_device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#injection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Injection"
+  }, {
+    "@language" : "no",
+    "@value" : "Injeksjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#insertion_site",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Insertion site"
+  }, {
+    "@language" : "no",
+    "@value" : "innstikkssted"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#intradermal_injection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Intradermal injection"
+  }, {
+    "@language" : "no",
+    "@value" : "Intradermalt injeksjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#injection"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#intramuscular_injection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Intramuscular injection"
+  }, {
+    "@language" : "no",
+    "@value" : "Intramuskulært injeksjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#injection"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#intraosseous_cannula",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Intraosseous cannula"
+  }, {
+    "@language" : "no",
+    "@value" : "Intraossøs kanyle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#intraosseous_infusion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Intraosseous infusion"
+  }, {
+    "@language" : "no",
+    "@value" : "Intraossøs infusjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#infusion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#intravenous_infusion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Intravenous infusion"
+  }, {
+    "@language" : "no",
+    "@value" : "Intravenøst infusjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#infusion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#intravenous_injection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Intravenous injection"
+  }, {
+    "@language" : "no",
+    "@value" : "Intravenøst injeksjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#injection"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#ip_address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "no",
+    "@value" : "IP-adressenummer som er en identifikator som gis til en enhet, for eksempel en PC."
+  }, {
+    "@language" : "en",
+    "@value" : "Internet Protocol (IP) address number is an identifier given to a device, such as a computer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IP address"
+  }, {
+    "@language" : "no",
+    "@value" : "IP adresse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#is_bandage_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#medical_device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Er bandasje av"
+  }, {
+    "@language" : "en",
+    "@value" : "Is bandage of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#is_bsi_related",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Er BSI-relatert"
+  }, {
+    "@language" : "en",
+    "@value" : "Is BSI-related"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_contains"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#is_catheter_related",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Er kateterrelatert"
+  }, {
+    "@language" : "en",
+    "@value" : "Is catheter-related"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_contains"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#is_infection_related",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Er infeksjonsrelatert"
+  }, {
+    "@language" : "en",
+    "@value" : "Is infection-related"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_contains"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#is_medical_device_malfunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#medical_device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Er medisinsk utstyrsfeil"
+  }, {
+    "@language" : "en",
+    "@value" : "Is medical device malfunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#is_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Er navn"
+  }, {
+    "@language" : "en",
+    "@value" : "Is name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#is_observed_with",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Er observert med"
+  }, {
+    "@language" : "en",
+    "@value" : "Is observed with"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#is_pivc_related",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Er PVK-relatert"
+  }, {
+    "@language" : "en",
+    "@value" : "Is PIVC-related"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_contains"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#is_sepsis_related",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Er sepsis-relatert"
+  }, {
+    "@language" : "en",
+    "@value" : "Is sepsis-related"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#document_contains"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#itchy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Itchy"
+  }, {
+    "@language" : "no",
+    "@value" : "Kløende"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#iv_antibiotics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IV antibiotics"
+  }, {
+    "@language" : "no",
+    "@value" : "IV antibiotika"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#general_iv"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#iv_chemo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "Intravenøs kjemoterapi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "IV cellegift"
+  }, {
+    "@language" : "en",
+    "@value" : "IV chemo"
+  }, {
+    "@language" : "en",
+    "@value" : "Intravenous chemotherapy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#general_iv"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#iv_fluid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IV fluid"
+  }, {
+    "@language" : "no",
+    "@value" : "IV væske"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#general_iv"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#iv_medication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IV medication"
+  }, {
+    "@language" : "no",
+    "@value" : "IV medisiner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#general_iv"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#iv_nutrient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IV nutrient"
+  }, {
+    "@language" : "no",
+    "@value" : "IV næringsstoff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#general_iv"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#iv_painkiller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IV painkiller"
+  }, {
+    "@language" : "no",
+    "@value" : "IV smertestillende"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#general_iv"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#iv_use",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "Administrasjonsvei kodeverdier\n43 Intravenøs bruk\n\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021"
+  }, {
+    "@language" : "en",
+    "@value" : "Administration way code \n43 Intravenous use\n\n(Translated to English)\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "IV bruk"
+  }, {
+    "@language" : "en",
+    "@value" : "IV use"
+  }, {
+    "@language" : "en",
+    "@value" : "Intravenous use"
+  }, {
+    "@language" : "no",
+    "@value" : "Intravenøs bruk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#administration_way"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#lab_result",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lab result"
+  }, {
+    "@language" : "no",
+    "@value" : "Laboratorieresultat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#laceration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Laceration"
+  }, {
+    "@language" : "no",
+    "@value" : "Laserasjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#wound"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#leakage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Leakage"
+  }, {
+    "@language" : "no",
+    "@value" : "Lekkasje"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#device_observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#leg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Bein"
+  }, {
+    "@language" : "en",
+    "@value" : "Leg"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#limb"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#leukocyte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Leukocyte"
+  }, {
+    "@language" : "no",
+    "@value" : "Leukocytt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#lab_result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#limb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Lem"
+  }, {
+    "@language" : "en",
+    "@value" : "Limb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#body_part"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#liquid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Liquid"
+  }, {
+    "@language" : "no",
+    "@value" : "Væske"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#device_observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#located_nearby_on_at_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Located nearby/on/at/in"
+  }, {
+    "@language" : "no",
+    "@value" : "Lokalisert nærheten/ved/på/i"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#medical_device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any instrument, device, or equipment used for a medical purpose."
+  }, {
+    "@language" : "no",
+    "@value" : "Ethvert instrument, enhet eller utstyr som brukes til medisinske formål."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C16830"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medical device"
+  }, {
+    "@language" : "no",
+    "@value" : "Medisk utstyr"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#midline_catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Midline catheter"
+  }, {
+    "@language" : "no",
+    "@value" : "Midline kateter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#venous_catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#mobility_impairment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Bevegelseshemming"
+  }, {
+    "@language" : "en",
+    "@value" : "Mobility impairment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#neurological_and_physiological"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#moisture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Fukt"
+  }, {
+    "@language" : "en",
+    "@value" : "Moisture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#device_observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#nausea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Kvalme"
+  }, {
+    "@language" : "en",
+    "@value" : "Nausea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#navel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Navel"
+  }, {
+    "@language" : "no",
+    "@value" : "Navle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#trunk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#neck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Hals"
+  }, {
+    "@language" : "en",
+    "@value" : "Neck"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#body_part"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#necrosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Necrosis"
+  }, {
+    "@language" : "no",
+    "@value" : "Nekrose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#negation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Negasjon"
+  }, {
+    "@language" : "en",
+    "@value" : "Negation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#neurological_and_physiological",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Neurological and physiological"
+  }, {
+    "@language" : "no",
+    "@value" : "nevrologisk og fysiologisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#norwegian_social_security_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "no",
+    "@value" : "Norsk fødselsnummer."
+  }, {
+    "@language" : "en",
+    "@value" : "Norwegian social security number."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "A national identity number is an eleven digit ID number, and the last five digits are called a \"personal number\".\n\nhttps://www.udi.no/en/word-definitions/national-identity-number/\n\nLast accessed: 25. November 2021"
+  }, {
+    "@language" : "no",
+    "@value" : "Et fødselsnummer er et 11-sifret ID-nummer, og de 5 siste sifrene kalles \"personnummer\".\n\nhttps://www.udi.no/ord-og-begreper/fodselsnummer/\n\nLast accessed: 25. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Fødselsnummer"
+  }, {
+    "@language" : "en",
+    "@value" : "Norwegian national identity number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#numeral_identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Numerical values which can identify an individual."
+  }, {
+    "@language" : "no",
+    "@value" : "Numeriske verdier som kan identifisere en person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Numeral identifier"
+  }, {
+    "@language" : "no",
+    "@value" : "Numerisk identifikator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any sign or symptom that can be monitored."
+  }, {
+    "@language" : "no",
+    "@value" : "Ethvert tegn eller symptom som kan overvåkes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Observasjon"
+  }, {
+    "@language" : "en",
+    "@value" : "Observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation_is_diagnosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Observasjon er diagnose"
+  }, {
+    "@language" : "en",
+    "@value" : "Observation is diagnosis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation_said_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Observasjon sagt av"
+  }, {
+    "@language" : "en",
+    "@value" : "Observation said by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid94"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#oral_medication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oral medication"
+  }, {
+    "@language" : "no",
+    "@value" : "Oral medisinering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#administration_purpose"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#oral_use",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "Administrasjonsvei kodeverdier\n53 Oral bruk\n\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021"
+  }, {
+    "@language" : "en",
+    "@value" : "Administration way code \n53 Oral use\n\n(Translated to English)\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Oral bruk"
+  }, {
+    "@language" : "en",
+    "@value" : "Oral use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#administration_way"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#organ_part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organ part"
+  }, {
+    "@language" : "no",
+    "@value" : "Organdel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#pain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pain"
+  }, {
+    "@language" : "no",
+    "@value" : "Smerte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#patient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Person receiving care or registered for care"
+  }, {
+    "@language" : "no",
+    "@value" : "Person som mottar pleie eller er registrert for pleie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Pasient"
+  }, {
+    "@language" : "en",
+    "@value" : "Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#patient_identification_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "no",
+    "@value" : "Pasientidentifikasjon nummer i Doculive, et norsk elektonisk journalsystem(PAS/EPJ).  Dette kan inkludere en ID for EPJ eller midlertidige Hjelpenummer (H-nummeret) gitt til pasienter uten kjent identitet."
+  }, {
+    "@language" : "en",
+    "@value" : "Personal identification numerical values in Doculive, a Norwegian internal electronic health record system.  This can include an ID to the medical records or the temporary H-number given to patients without a known identity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "H-nummer:\nHjelpenummer brukes når det er behov for å føre journal på en pasient som ikke har fødselsnummer eller D-nummer, eller når fødsel- eller D-nummer ikke er kjent. Dette kan for eksempel være nyfødte og utlendinger på kortere besøk i Norge.\n\nHjelpenummer identifiserer en person innad i en virksomhet.\n\nHjelpenummer opprettes av journalsystemene.\n\nhttps://www.ehelse.no/standardisering/standarder/identifikatorer-for-personer\n\nLast accessed: 25. November 2021"
+  }, {
+    "@language" : "no",
+    "@value" : "Interne ID-er: Personidentifikatorer tildelt av et system og brukt internt (brukes utelukkende for ett system) for å identifisere pasienter. Noen ganger brukt som en midlertidig personidentifikator. System-interne PID-er skal ikke forveksles med lokale eller regionale hjelpenumre, som er identifikatorer tildelt av PAS / EPJ.\n\nNasjonalt felles hjelpenummer (NFH): Nasjonalt, felles hjelpenummer er en i) midlertidig eller ii) varig supplerende identifikator i Helsesektoren brukt for å kunne muliggjøre helsepersonells dokumentasjonsplikt for personer som ikke kan gjøre rede for seg, eller mangler norsk identifikator av type fødselsnummer eller d-nummer.\n\nHjelpenummer (H-nummer): Midlertidig personidentifikator, tildelt av PAS / EPJ-applikasjonen for å midlertidig identifisere en pasient på tvers av systemstabelen i organisasjonen. Bruk av hjelpenummer inkluderer i dag pasienter uten kjent identitet, nyfødte barn før de har offisiell ID, turister og andre pasienter uten offisiell personidentitet. \n\nFødselsnummer (F-nummer): Et norsk fødselsnummer er et unikt identitetsnummer. Det består av 11 tall, hvor de seks første tallene viser fødselsdato. Personidentifikator som blir brukt til å identifisere pasienten. Tildeles alle som blir født i Norge. Skatteetaten gir barnet et fødselsnummer etter at sykehuset har sendt fødselsmelding til Skatteetaten. Tildeles også personer som bosetter seg i Norge (opphold over 6 måneder).\n\nhttps://www.ehelse.no/styrer-og-utvalg/nufa-fagutvalget/_/attachment/download/e48ca30a-25c7-4c2a-823a-89d11a7af565:b79ea70e3a7de5ae715b54a8832386b351dd638d/Vedlegg%205A_Sak6-20_Felles%20hjelpenummer_Prosjektbegrunnelse%20utkast.pdf\n\nLast accessed: 25. November 2021"
+  }, {
+    "@language" : "no",
+    "@value" : "Videre har virksomheter i helsevesenet i en årrekke måttet opprette såkalte hjelpenumre (H-nummer) for pasienter som ikke har hatt fødselsnummer eller d-nummer, eller hvor dette ikke har vært kjent.\n\nhttps://www.ehelse.no/teknisk-dokumentasjon/oid-identifikatorserier-i-helse-og-omsorgstjenesten\n\nLast accessed: 25. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "PID"
+  }, {
+    "@language" : "no",
+    "@value" : "Pasientidentifikasjonsnummer"
+  }, {
+    "@language" : "en",
+    "@value" : "Patient identification number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#peripheral_intravenous_catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PIVC"
+  }, {
+    "@language" : "no",
+    "@value" : "PVK"
+  }, {
+    "@language" : "no",
+    "@value" : "Perifert venekateter"
+  }, {
+    "@language" : "en",
+    "@value" : "Peripheral intravenous catheter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#venous_catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#peripherally_inserted_central_catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "A peripherally inserted central catheter (PICC), also called a PICC line, is a long, thin tube that's inserted through a vein in your arm and passed through to the larger veins near your heart. Very rarely, the PICC line may be placed in your leg.\n\nA PICC line gives your doctor access to the large central veins near the heart. It's generally used to give medications or liquid nutrition. A PICC line can help avoid the pain of frequent needle sticks and reduce the risk of irritation to the smaller veins in your arms.\n\nhttps://www.mayoclinic.org/tests-procedures/picc-line/about/pac-20468748\n\nLast accessed: 30. November 2021"
+  }, {
+    "@language" : "no",
+    "@value" : "En annen type langvarig venetilgang er et PICC-kateter, eller et perifert-innsatt sentralt kateter. Sammenlignet med et sentralt venekateter settes et PICC-kateter inn i en vene i armen eller hånden. Som med sentralt venekateter føres kateteret innover langs stadig større vener inntil det når vena cava superior.\n\nhttps://nhi.no/animasjoner/hjerte-og-kar/sentrale-venekatetre/\n\nLast accessed: 30. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PICC"
+  }, {
+    "@language" : "no",
+    "@value" : "PICC"
+  }, {
+    "@language" : "no",
+    "@value" : "Perifert innsatt sentralt kateter"
+  }, {
+    "@language" : "en",
+    "@value" : "Peripherally inserted central catheter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#venous_catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual.  A human being."
+  }, {
+    "@language" : "no",
+    "@value" : "Et individ. Et menneske."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  }, {
+    "@language" : "no",
+    "@value" : "Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#person_has",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Person har"
+  }, {
+    "@language" : "en",
+    "@value" : "Person has"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#phlebitis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Flebitis"
+  }, {
+    "@language" : "en",
+    "@value" : "Phlebitis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any procedure, intervention, or activity related to catheters."
+  }, {
+    "@language" : "no",
+    "@value" : "Enhver prosedyre, intervensjon eller aktivitet relatert til katetre."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Procedure"
+  }, {
+    "@language" : "no",
+    "@value" : "Prosedyre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure_uses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Procedure uses"
+  }, {
+    "@language" : "no",
+    "@value" : "Prosedyre bruker"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#medical_device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#psychosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Psychosis"
+  }, {
+    "@language" : "no",
+    "@value" : "Psykose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#neurological_and_physiological"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#pulse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Puls"
+  }, {
+    "@language" : "en",
+    "@value" : "Pulse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#vital_sign"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#pump",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pump"
+  }, {
+    "@language" : "no",
+    "@value" : "Pumpe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#medical_device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#puncture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "Forårsakes av kniv, spiker, glassbiter, piggtråd eller lignende. Innstikksåret kan være nokså lite, men såret kan likevel gå dypt inn i kroppen og omfatte indre organer. Faren for infeksjon er stor på grunn av forurensninger som sitter dypt.\n\nhttps://nhi.no/forstehjelp/hudskader/sarskader/\n\nLast accessed: 22. November 2021"
+  }, {
+    "@language" : "no",
+    "@value" : "Stikksår, sår forårsaket av spisse gjenstander som for eksempel spiker. Dersom det er mistanke om at gjenstanden som forårsaket stikket kan være uren, bør lege kontaktes med spørsmål om stivkrampevaksine og antibiotika. Alle dype stikksår i bryst, buk eller ledd må vurderes av lege.\n\nhttps://sml.snl.no/stikks%C3%A5r\n\nLast accessed: 22. November 2021"
+  }, {
+    "@language" : "no",
+    "@value" : "Sår som skyldes spiker, piggtråd og andre spisse gjenstander kan gi dype sår med liten innstikksåpning. Det kan da være fare for betennelse i dybden, og såret bør undersøkes av lege. Alle stikksår i bryst, buk eller ledd må vurderes av lege.\n\nhttps://sml.snl.no/s%C3%A5rbehandling\n\nLast accessed: 22. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Puncture"
+  }, {
+    "@language" : "no",
+    "@value" : "Stikksår"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#wound"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#purulence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Purulence"
+  }, {
+    "@language" : "no",
+    "@value" : "Puss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#radiology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Radiologi"
+  }, {
+    "@language" : "en",
+    "@value" : "Radiology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#red",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Red"
+  }, {
+    "@language" : "no",
+    "@value" : "Rød"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#relative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Person related to patient"
+  }, {
+    "@language" : "no",
+    "@value" : "Person relatert til pasient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Relative of the patient"
+  }, {
+    "@language" : "no",
+    "@value" : "Slektning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#respiratory_rate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Respirasjons frekvens"
+  }, {
+    "@language" : "en",
+    "@value" : "Respiratory rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#vital_sign"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#sample_or_test_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identification number given to specimens for lab testing."
+  }, {
+    "@language" : "no",
+    "@value" : "Identifikasjonsnummer gitt til prøver for laboratorietesting."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Prøve eller testnummer"
+  }, {
+    "@language" : "en",
+    "@value" : "Sample or test number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#self_inflicted_injection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Self-inflicted injection"
+  }, {
+    "@language" : "no",
+    "@value" : "Selvpåført injeksjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#injection"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#sepsis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sepsis"
+  }, {
+    "@language" : "no",
+    "@value" : "Sepsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#skin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Hud"
+  }, {
+    "@language" : "en",
+    "@value" : "Skin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#organ_part"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#subcutaneous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subcutaneous"
+  }, {
+    "@language" : "no",
+    "@value" : "Subkutan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#skin"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#subcutaneous_catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subcutaneous catheter"
+  }, {
+    "@language" : "no",
+    "@value" : "Subkutant kateter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#subcutaneous_infusion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subcutaneous infusion"
+  }, {
+    "@language" : "no",
+    "@value" : "Subkutant infusjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#infusion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#subcutaneous_injection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subcutaneous injection"
+  }, {
+    "@language" : "no",
+    "@value" : "Subkutant injeksjon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#injection"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#surgery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Kirurgi"
+  }, {
+    "@language" : "en",
+    "@value" : "Surgery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#procedure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#swollen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Hoven"
+  }, {
+    "@language" : "en",
+    "@value" : "Swollen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#telephone_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Telefonnummer"
+  }, {
+    "@language" : "en",
+    "@value" : "Telephone number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#numeral_identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#tenderness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sensitivity to pain; soreness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tenderness"
+  }, {
+    "@language" : "no",
+    "@value" : "Ømhet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#thigh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Lår"
+  }, {
+    "@language" : "en",
+    "@value" : "Thigh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#leg"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#three_way_valve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "3-way valve"
+  }, {
+    "@language" : "no",
+    "@value" : "Treveiskran"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#valve"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measurable period using hours, minutes, days, months, years, etc.  This includes date and time."
+  }, {
+    "@language" : "no",
+    "@value" : "Målbar periode ved bruk av timer, minutter, dager, måneder, år osv. Dette inkluderer dato og klokkeslett."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Tid"
+  }, {
+    "@language" : "en",
+    "@value" : "Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#trunk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Torso"
+  }, {
+    "@language" : "en",
+    "@value" : "Trunk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#body_part"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#tube",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Rør"
+  }, {
+    "@language" : "en",
+    "@value" : "Tube"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#medical_device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#upper_arm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Overarm"
+  }, {
+    "@language" : "en",
+    "@value" : "Upper arm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#arm"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#urinary_catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Blærekateter"
+  }, {
+    "@language" : "en",
+    "@value" : "Urinary catheter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#valve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Valve"
+  }, {
+    "@language" : "no",
+    "@value" : "Ventil"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#medical_device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#vas_catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "VAS"
+  }, {
+    "@language" : "no",
+    "@value" : "VAS"
+  }, {
+    "@language" : "no",
+    "@value" : "VAS-kateter"
+  }, {
+    "@language" : "en",
+    "@value" : "Vascath catheter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#venous_catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#vehicle_identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Kjøretøy identifikator"
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#vein",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "Vener er blodårer som fører blodet fra kroppen til hjertet. Blodårer som fører blod fra hjertet til kroppen kalles arterier. Ofte følger to mindre vener en arterie i kretsløpet.\n\nDe fleste venene samler oksygenfattig blod fra kroppen og fører det til hjertet og lungene. Venene i armene og beina er synlige under huden. De har veneklaffer som hindrer at blodet strømmer «feil vei», det vil si vekk fra hjertet. Blodtrykket i venene er svært lavt sammenliknet med trykket i arteriene.\n\nhttps://sml.snl.no/vener\n\nLast accessed: 30. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vein"
+  }, {
+    "@language" : "no",
+    "@value" : "Ven"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#circulatory_system"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#venous_catheter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "Venekateter er en fellesbetegnelse på forskjellige typer plastrør som legges inn i vener; tidligere ofte brukt om bøyelige rør som under en liten operasjon («blottlegging» av vene) ble ført inn i blodkaret under synets ledelse.\n\nhttps://sml.snl.no/venekateter\n\nLast accessed: 30. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Venekateter"
+  }, {
+    "@language" : "en",
+    "@value" : "Venous catheter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#catheter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#vital_sign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vital sign"
+  }, {
+    "@language" : "no",
+    "@value" : "Vitale livstegn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "vital sign from Ontology for General Medical Science (OGMS)\n\nA physical sign in which a non-zero value is standardly considered to be an indication that the organism is alive.\n\nhttps://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000029\n\nLast accessed: 25. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#warm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Varm"
+  }, {
+    "@language" : "en",
+    "@value" : "Warm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#web_address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "no",
+    "@value" : "Link til nettside."
+  }, {
+    "@language" : "en",
+    "@value" : "Link to website."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Nettadresse"
+  }, {
+    "@language" : "en",
+    "@value" : "Web URL address"
+  }, {
+    "@language" : "en",
+    "@value" : "Web Uniform Resource Locator (URL) address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#identifier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#wound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "no",
+    "@value" : "https://sml.snl.no/s%C3%A5rbehandling\n\nLast accessed: 22. November 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Sår"
+  }, {
+    "@language" : "en",
+    "@value" : "Wound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/2022/04/aaenote#wrist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "no",
+    "@value" : "Håndledd"
+  }, {
+    "@language" : "en",
+    "@value" : "Wrist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/2022/04/aaenote#arm"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#boolean",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "urn:absolute:aeano.owl#n",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:absolute:aeano.owl#pivc",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

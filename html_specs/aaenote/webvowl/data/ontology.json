@@ -1,0 +1,4638 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "no", "en" ],
+    "title": {
+      "no": "AAENOTE",
+      "en": "AAENOTE"
+    },
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/2022/04/aaenote" ],
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "version" : "v1.0.0",
+    "author": [
+      "Melissa Y. Yan",
+      "Lise Tuset Gustad",
+      "Lise Husby Høvik",
+      "Øystein Nytrø"
+    ],
+    "description" : {
+      "no" : "Annotert AvviksmEldingsNOtat TErminologi (AAENOTE) er for resonnement om marking levert av annotatorer i et notat om avviksmeldinger. Det er ikke for fesonnement om pasienttilstander.",
+      "en" : "Annotated Adverse Event NOte TErminology (AAENOTE) is for reasoning about labels provided by annotators within an adverse event note. It is not for reasoning about patient states."
+    },
+    "other": {
+      "created": [
+        {
+          "identifier": "created",
+          "language": "undefined",
+          "value": "2022-04-17",
+          "type": "label"
+        }      
+      ],
+      "github": [
+        {
+          "identifier": "seeAlso",
+          "language": "undefined",
+          "value": "http://https://github.com/melissayan/",
+          "type": "iri"
+        }
+      ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "185",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "164",
+    "type" : "owl:Class"
+  }, {
+    "id" : "188",
+    "type" : "owl:Class"
+  }, {
+    "id" : "169",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "208",
+    "type" : "owl:Class"
+  }, {
+    "id" : "191",
+    "type" : "owl:Class"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "220",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "222",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "226",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "228",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "229",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "231",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "232",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "171",
+    "type" : "owl:Class"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "239",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "240",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "256",
+    "type" : "owl:Class"
+  }, {
+    "id" : "264",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "267",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "272",
+    "type" : "owl:Class"
+  }, {
+    "id" : "274",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "275",
+    "type" : "owl:Class"
+  }, {
+    "id" : "254",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "250",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "288",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "268",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "286",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "265",
+    "type" : "owl:Class"
+  }, {
+    "id" : "283",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "249",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "287",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "165",
+    "type" : "owl:Class"
+  }, {
+    "id" : "269",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "193",
+    "type" : "owl:Class"
+  }, {
+    "id" : "252",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "270",
+    "type" : "owl:Class"
+  }, {
+    "id" : "237",
+    "type" : "owl:Class"
+  }, {
+    "id" : "319",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "320",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "321",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "322",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "251",
+    "type" : "owl:Class"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "329",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "289",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "153",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "236",
+    "type" : "owl:Class"
+  }, {
+    "id" : "308",
+    "type" : "owl:Class"
+  }, {
+    "id" : "223",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "353",
+    "type" : "owl:Class"
+  }, {
+    "id" : "277",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "333",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "306",
+    "type" : "owl:Class"
+  }, {
+    "id" : "273",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#catheter_rinse",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kateter skylling",
+      "IRI-based" : "catheter_rinse",
+      "en" : "Catheter rinsing"
+    },
+    "id" : "19",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#iv_medication",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "IV medisiner",
+      "IRI-based" : "iv_medication",
+      "en" : "IV medication"
+    },
+    "id" : "16",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Annotert dokument",
+      "IRI-based" : "annotated_document",
+      "en" : "Annotated document"
+    },
+    "comment" : {
+      "no" : "Annotert avviksmelding med metadata og merking.",
+      "en" : "Annotated adverse event note with metadata and labeling."
+    },
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#thigh",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Lår",
+      "IRI-based" : "thigh",
+      "en" : "Thigh"
+    },
+    "id" : "28",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#skin",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Hud",
+      "IRI-based" : "skin",
+      "en" : "Skin"
+    },
+    "subClasses" : [ "42" ],
+    "id" : "41",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#catheter_removal",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kateter fjerning",
+      "IRI-based" : "catheter_removal",
+      "en" : "Catheter removal"
+    },
+    "id" : "43",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#descriptive_sign_or_symptom",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "physical sign from Ontology for General Medical Science (OGMS)\n\nAn abnormal material entity that is part of a patient and hypothesized to be clinically relevant.\n\nExample: an abnormal growth; an inflammatory infiltrate; swollen tissue; distension\n\nhttps://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000142\n\nLast accessed: 25. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "qualitative sign from Ontology for General Medical Science (OGMS)\n\nAn abnormal observable quality of a part of a patient that is hypothesized to be clinically relevant.\n\nExample: the color of a rash; the shape of a melanoma\n\nhttps://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000142\n\nLast accessed: 25. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Beskrivende tegn eller symptom",
+      "IRI-based" : "descriptive_sign_or_symptom",
+      "en" : "Descriptive sign or symptom"
+    },
+    "subClasses" : [ "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74" ],
+    "comment" : {
+      "en" : "Description of a sign or symptom that is part of a patient. Such as the color, shape, temperature, length, mass, or growth."
+    },
+    "id" : "55",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#iv_nutrient",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "IV næringsstoff",
+      "IRI-based" : "iv_nutrient",
+      "en" : "IV nutrient"
+    },
+    "id" : "75",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#vehicle_identifier",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kjøretøy identifikator",
+      "IRI-based" : "vehicle_identifier",
+      "en" : "Vehicle identifier"
+    },
+    "id" : "76",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#infusion_set",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "infusjonssett",
+      "IRI-based" : "infusion_set",
+      "en" : "Infusion set"
+    },
+    "id" : "82",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#identifier",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "List of identifiers for an individual or of relatives, employers, or household members of the individual.\n - Names\n - Postal address information, other than town or city, State, and zip code\n - Telephone numbers\n - Fax numbers\n - Electronic mail addresses\n - Social Security numbers\n - Medical record numbers\n - Health-plan beneficiary numbers\n - Account numbers\n - Certificate and license numbers\n - Vehicle identifiers and serial numbers, including license plate numbers\n - Device identifiers and serial numbers\n - Web Universal Resource Locators (URLs)\n - Internet Protocol (IP) address numbers\n - Biometric identifies including fingerprints and voice prints\n - Full-face photographic images and any comparable image\n\nhttps://www.hhs.gov/hipaa/for-professionals/special-topics/emergency-preparedness/limited-data-set/index.html\n\nLast accessed: 25. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "no",
+        "value" : "Personopplysninger er alle opplysninger og vurderinger som kan knyttes til deg som enkeltperson. Typiske personopplysninger er navn, adresse, telefonnummer, e-post og fødselsnummer. Et bilde regnes som en personopplysning dersom personer kan gjenkjennes, og lydopptak kan være personopplysninger selv om ingen navn blir nevnt i innspillingen. Biometri slik som fingeravtrykk, irismønster, hodeform (for ansiktsgjenkjenning) er også personopplysninger.\n\nVidere er en dynamisk IP-adresse i gitte tilfeller også definert som personopplysning. Registreringsnummeret på en bil kan være en personopplysning hvis det kan knyttes til en bestemt person, mens ikke hvis det står på en firmabil som benyttes av flere.\n\nOpplysninger om atferdsmønstre er også regnet som personopplysninger. Opplysninger om hva du handler, hvilke butikker du går i, hvilke tv-serier du ser på, hvor du fysisk beveger deg i løpet av en dag og hva du søker etter på nettet er alt sammen eksempler på dette. En av de nyere utfordringene for personvernet  er nemlig det at vi legger igjen så mange digitale spor - ofte uten å vite om det eller tenke over det.\n\nPersonvernforordningen artikkel 4\nPersonopplysninger er «enhver opplysning om en identifisert eller identifiserbar fysisk person («den registrerte»); en identifiserbar fysisk person er en person som direkte eller indirekte kan identifiseres, særlig ved hjelp av en identifikator, f.eks. et navn, et identifikasjonsnummer, lokaliseringsopplysninger, en nettidentifikator eller ett eller flere elementer som er spesifikke for nevnte fysiske persons fysiske, fysiologiske, genetiske, psykiske, økonomiske, kulturelle eller sosiale identitet»\n\nhttps://www.datatilsynet.no/rettigheter-og-plikter/personopplysninger/\n\nLast accessed: 25. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "PHI includes all information that could be used to identify an individual. Any part of a person’s medical record and payment history is considered PHI and may not be shared with unauthorized personnel. PHI is used within a medical facility and includes verbal and written communications. PHI can be found in computer files, paper medical records, information from insurance companies, information from the provider, and information from legal offices (9). Name, address, date of birth, phone number, social security number, medical record number, medical history, photographs, charts, health plan beneficiary numbers, license numbers, vehicle identifiers, internet protocol addresses, biometric identifiers (such as retina, voice, and fingerprints), and test results are all considered PHI (10). Physicians’ and nurses’ notes, billing records, and other treatment records are also included. Medical images are also considered PHI (11).\n\nMoore, W., & Frye, S. (2019). Review of HIPAA, Part 1: History, Protected Health Information, and Privacy and Security Rules. Journal of nuclear medicine technology, 47(4), 269–272. https://doi.org/10.2967/jnmt.119.227819",
+        "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "no",
+        "value" : "«personopplysninger» enhver opplysning om en identifisert eller identifiserbar fysisk person («den registrerte»); en identifiserbar fysisk person er en person som direkte eller indirekte kan identifiseres, særlig ved hjelp av en identifikator, f.eks. et navn, et identifikasjonsnummer, lokaliseringsopplysninger, en nettidentifikator eller ett eller flere elementer som er spesifikke for nevnte fysiske persons fysiske, fysiologiske, genetiske, psykiske, økonomiske, kulturelle eller sosiale identitet\n\nhttps://lovdata.no/dokument/NL/lov/2018-06-15-38/*#&#x2a;\n\nLast accessed: 25. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Identifikator",
+      "IRI-based" : "identifier",
+      "en" : "Identifier"
+    },
+    "subClasses" : [ "84", "85", "86", "34", "87", "88", "89", "76" ],
+    "comment" : {
+      "no" : "Personopplysninger er alle informasjon som kan brukes til å identifisere en person.\n\nHer er \"navn\" ekskludert fordi dette er en data property for \"person\" class.  Dette er for å hjelpe med å identifisere personer som er annotert.",
+      "en" : "Health data linked to certain identiers must be protected to ensure patient privacy and confidentiality. These identifiers are called protected health information (PHI) under the U.S. Health Insurance Portability and Accountability Act (HIPAA).\n\n*Here \"names\" are excluded because this is a data property for the \"person\" class.  This is to help identify individuals annotated."
+    },
+    "id" : "77"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#intraosseous_cannula",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Intraossøs kanyle",
+      "IRI-based" : "intraosseous_cannula",
+      "en" : "Intraosseous cannula"
+    },
+    "id" : "90",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#wrist",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Håndledd",
+      "IRI-based" : "wrist",
+      "en" : "Wrist"
+    },
+    "id" : "92",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#consciousness_level",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Bevissthetsnivå",
+      "IRI-based" : "consciousness_level",
+      "en" : "Consciousness level"
+    },
+    "id" : "93",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#blood_pressure",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Blodtrykk",
+      "IRI-based" : "blood_pressure",
+      "en" : "Blood pressure"
+    },
+    "id" : "95",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#iv_use",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "Administration way code \n43 Intravenous use\n\n(Translated to English)\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Administrasjonsvei kodeverdier\n43 Intravenøs bruk\n\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Intravenøs bruk",
+      "IRI-based" : "iv_use",
+      "en" : "Intravenous use"
+    },
+    "id" : "96",
+    "superClasses" : [ "97" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#subcutaneous_injection",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Subkutant injeksjon",
+      "IRI-based" : "subcutaneous_injection",
+      "en" : "Subcutaneous injection"
+    },
+    "id" : "102",
+    "superClasses" : [ "103" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#observation",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Observasjon",
+      "IRI-based" : "observation",
+      "en" : "Observation"
+    },
+    "subClasses" : [ "106", "94", "107", "108", "55", "79" ],
+    "comment" : {
+      "no" : "Ethvert tegn eller symptom som kan overvåkes.",
+      "en" : "Any sign or symptom that can be monitored."
+    },
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#oral_medication",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Oral medisinering",
+      "IRI-based" : "oral_medication",
+      "en" : "Oral medication"
+    },
+    "id" : "114",
+    "superClasses" : [ "115" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#intraosseous_infusion",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Intraossøs infusjon",
+      "IRI-based" : "intraosseous_infusion",
+      "en" : "Intraosseous infusion"
+    },
+    "id" : "118",
+    "superClasses" : [ "113" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#headache",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Hodepine",
+      "IRI-based" : "headache",
+      "en" : "Headache"
+    },
+    "id" : "71",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#sepsis",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Sepsis",
+      "IRI-based" : "sepsis",
+      "en" : "Sepsis"
+    },
+    "id" : "62",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#norwegian_social_security_number",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "A national identity number is an eleven digit ID number, and the last five digits are called a \"personal number\".\n\nhttps://www.udi.no/en/word-definitions/national-identity-number/\n\nLast accessed: 25. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Et fødselsnummer er et 11-sifret ID-nummer, og de 5 siste sifrene kalles \"personnummer\".\n\nhttps://www.udi.no/ord-og-begreper/fodselsnummer/\n\nLast accessed: 25. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Fødselsnummer",
+      "IRI-based" : "norwegian_social_security_number",
+      "en" : "Norwegian national identity number"
+    },
+    "comment" : {
+      "no" : "Norsk fødselsnummer.",
+      "en" : "Norwegian social security number."
+    },
+    "id" : "36",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#itchy",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kløende",
+      "IRI-based" : "itchy",
+      "en" : "Itchy"
+    },
+    "id" : "74",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#patient",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Pasient",
+      "IRI-based" : "patient",
+      "en" : "Patient"
+    },
+    "comment" : {
+      "no" : "Person som mottar pleie eller er registrert for pleie.",
+      "en" : "Person receiving care or registered for care"
+    },
+    "id" : "149",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#general_iv",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Generelt IV",
+      "IRI-based" : "general_iv",
+      "en" : "General IV"
+    },
+    "subClasses" : [ "9", "12", "14", "16", "18", "75" ],
+    "id" : "10",
+    "superClasses" : [ "115" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#venous_catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Venekateter er en fellesbetegnelse på forskjellige typer plastrør som legges inn i vener; tidligere ofte brukt om bøyelige rør som under en liten operasjon («blottlegging» av vene) ble ført inn i blodkaret under synets ledelse.\n\nhttps://sml.snl.no/venekateter\n\nLast accessed: 30. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Venekateter",
+      "IRI-based" : "venous_catheter",
+      "en" : "Venous catheter"
+    },
+    "subClasses" : [ "163", "164", "165", "166", "167", "168", "169" ],
+    "id" : "162",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#leg",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Bein",
+      "IRI-based" : "leg",
+      "en" : "Leg"
+    },
+    "subClasses" : [ "28", "170", "171", "172" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#head",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Hode",
+      "IRI-based" : "head",
+      "en" : "Head"
+    },
+    "id" : "173",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#pulse",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Puls",
+      "IRI-based" : "pulse",
+      "en" : "Pulse"
+    },
+    "id" : "185",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#hemodialysis_catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Hemodialysekateter",
+      "IRI-based" : "hemodialysis_catheter",
+      "en" : "Hemodialysis catheter"
+    },
+    "id" : "163",
+    "superClasses" : [ "162" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#central_venous_catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Sentralt venekateter",
+      "IRI-based" : "central_venous_catheter",
+      "en" : "Central venous catheter"
+    },
+    "id" : "164",
+    "superClasses" : [ "162" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#oral_use",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "Administration way code \n53 Oral use\n\n(Translated to English)\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Administrasjonsvei kodeverdier\n53 Oral bruk\n\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Oral bruk",
+      "IRI-based" : "oral_use",
+      "en" : "Oral use"
+    },
+    "id" : "188",
+    "superClasses" : [ "97" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#peripheral_intravenous_catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "PVK",
+      "IRI-based" : "peripheral_intravenous_catheter",
+      "en" : "PIVC"
+    },
+    "id" : "169",
+    "superClasses" : [ "162" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#mobility_impairment",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Bevegelseshemming",
+      "IRI-based" : "mobility_impairment",
+      "en" : "Mobility impairment"
+    },
+    "id" : "194",
+    "superClasses" : [ "107" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "195",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#swollen",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Hoven",
+      "IRI-based" : "swollen",
+      "en" : "Swollen"
+    },
+    "id" : "63",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#person",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Person",
+      "IRI-based" : "person",
+      "en" : "Person"
+    },
+    "subClasses" : [ "144", "147", "149" ],
+    "comment" : {
+      "no" : "Et individ. Et menneske.",
+      "en" : "An individual.  A human being."
+    },
+    "id" : "145"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#wound",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "https://sml.snl.no/s%C3%A5rbehandling\n\nLast accessed: 22. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Sår",
+      "IRI-based" : "wound",
+      "en" : "Wound"
+    },
+    "subClasses" : [ "132", "134", "136", "138" ],
+    "id" : "106",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#urinary_catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Blærekateter",
+      "IRI-based" : "urinary_catheter",
+      "en" : "Urinary catheter"
+    },
+    "id" : "198",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "199",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "200",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "117",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "201",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "202",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "203",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "205",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "206",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#hand",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Hånd",
+      "IRI-based" : "hand",
+      "en" : "Hand"
+    },
+    "id" : "161",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#foot",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Fot",
+      "IRI-based" : "foot",
+      "en" : "Foot"
+    },
+    "id" : "170",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#moisture",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Fukt",
+      "IRI-based" : "moisture",
+      "en" : "Moisture"
+    },
+    "id" : "208",
+    "superClasses" : [ "108" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#artery",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Arterier er blodårer som fører blod fra hjertet og ut i kroppen. Årer som fører blod til hjertet fra kroppen kalles vener.\n\nDen største arterien er aorta, hovedpulsåren, som går ut fra hjertets venstre hovedkammer. Nest størst er lungearterien (truncus pulmonalis), som springer ut fra høyre hovedkammer og er den eneste arterien som fører oksygenfattig blod, bortsett fra navlesnorarteriene under svangerskapet.\n\nVanligvis er arteriene i kroppen fra 0,1 til omtrent 10 millimeter i diameter. De minste arteriene (under 0,1 millimeter) før overgangen til kapillarene kalles arterioler.\n\nhttps://sml.snl.no/arterier\n\nLast accessed: 30. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Arterie",
+      "IRI-based" : "artery",
+      "en" : "Artery"
+    },
+    "id" : "191",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "219",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "220",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#neck",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Hals",
+      "IRI-based" : "neck",
+      "en" : "Neck"
+    },
+    "id" : "222",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#patient_identification_number",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Interne ID-er: Personidentifikatorer tildelt av et system og brukt internt (brukes utelukkende for ett system) for å identifisere pasienter. Noen ganger brukt som en midlertidig personidentifikator. System-interne PID-er skal ikke forveksles med lokale eller regionale hjelpenumre, som er identifikatorer tildelt av PAS / EPJ.\n\nNasjonalt felles hjelpenummer (NFH): Nasjonalt, felles hjelpenummer er en i) midlertidig eller ii) varig supplerende identifikator i Helsesektoren brukt for å kunne muliggjøre helsepersonells dokumentasjonsplikt for personer som ikke kan gjøre rede for seg, eller mangler norsk identifikator av type fødselsnummer eller d-nummer.\n\nHjelpenummer (H-nummer): Midlertidig personidentifikator, tildelt av PAS / EPJ-applikasjonen for å midlertidig identifisere en pasient på tvers av systemstabelen i organisasjonen. Bruk av hjelpenummer inkluderer i dag pasienter uten kjent identitet, nyfødte barn før de har offisiell ID, turister og andre pasienter uten offisiell personidentitet. \n\nFødselsnummer (F-nummer): Et norsk fødselsnummer er et unikt identitetsnummer. Det består av 11 tall, hvor de seks første tallene viser fødselsdato. Personidentifikator som blir brukt til å identifisere pasienten. Tildeles alle som blir født i Norge. Skatteetaten gir barnet et fødselsnummer etter at sykehuset har sendt fødselsmelding til Skatteetaten. Tildeles også personer som bosetter seg i Norge (opphold over 6 måneder).\n\nhttps://www.ehelse.no/styrer-og-utvalg/nufa-fagutvalget/_/attachment/download/e48ca30a-25c7-4c2a-823a-89d11a7af565:b79ea70e3a7de5ae715b54a8832386b351dd638d/Vedlegg%205A_Sak6-20_Felles%20hjelpenummer_Prosjektbegrunnelse%20utkast.pdf\n\nLast accessed: 25. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Videre har virksomheter i helsevesenet i en årrekke måttet opprette såkalte hjelpenumre (H-nummer) for pasienter som ikke har hatt fødselsnummer eller d-nummer, eller hvor dette ikke har vært kjent.\n\nhttps://www.ehelse.no/teknisk-dokumentasjon/oid-identifikatorserier-i-helse-og-omsorgstjenesten\n\nLast accessed: 25. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "H-nummer:\nHjelpenummer brukes når det er behov for å føre journal på en pasient som ikke har fødselsnummer eller D-nummer, eller når fødsel- eller D-nummer ikke er kjent. Dette kan for eksempel være nyfødte og utlendinger på kortere besøk i Norge.\n\nHjelpenummer identifiserer en person innad i en virksomhet.\n\nHjelpenummer opprettes av journalsystemene.\n\nhttps://www.ehelse.no/standardisering/standarder/identifikatorer-for-personer\n\nLast accessed: 25. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Pasientidentifikasjonsnummer",
+      "IRI-based" : "patient_identification_number",
+      "en" : "Patient identification number"
+    },
+    "comment" : {
+      "no" : "Pasientidentifikasjon nummer i Doculive, et norsk elektonisk journalsystem(PAS/EPJ).  Dette kan inkludere en ID for EPJ eller midlertidige Hjelpenummer (H-nummeret) gitt til pasienter uten kjent identitet.",
+      "en" : "Personal identification numerical values in Doculive, a Norwegian internal electronic health record system.  This can include an ID to the medical records or the temporary H-number given to patients without a known identity."
+    },
+    "id" : "49",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#red",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Rød",
+      "IRI-based" : "red",
+      "en" : "Red"
+    },
+    "id" : "70",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#procedure",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Prosedyre",
+      "IRI-based" : "procedure",
+      "en" : "Procedure"
+    },
+    "subClasses" : [ "129", "115", "97", "103", "111", "113", "223", "20" ],
+    "comment" : {
+      "no" : "Enhver prosedyre, intervensjon eller aktivitet relatert til katetre.",
+      "en" : "Any procedure, intervention, or activity related to catheters."
+    },
+    "id" : "105"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "224",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#abrasion",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Skrubbsår er en overflatisk skade av huden med punktformede blødninger fra blodkarene i lærhudens papiller som stikker opp under overhuden. Skrubbsår kan bli infisert, og såret bør derfor renses omhyggelig. Også huden omkring skal rengjøres, og såret dekkes med en ren forbinding.\n\nhttps://sml.snl.no/skrubbs%C3%A5r\n\nLast accessed: 22. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Skrubbsår",
+      "IRI-based" : "abrasion",
+      "en" : "Abrasion"
+    },
+    "id" : "138",
+    "superClasses" : [ "106" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "226",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "227",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "228",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "229",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "230",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#elbow",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Albue",
+      "IRI-based" : "elbow",
+      "en" : "Elbow"
+    },
+    "id" : "159",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "231",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#arterial_catether",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Arteriekateter",
+      "IRI-based" : "arterial_catether",
+      "en" : "Arterial catheter"
+    },
+    "id" : "232",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#edema",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Ødem",
+      "IRI-based" : "edema",
+      "en" : "Edema"
+    },
+    "id" : "68",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#necrosis",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Nekrose",
+      "IRI-based" : "necrosis",
+      "en" : "Necrosis"
+    },
+    "id" : "69",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "235",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#ankle",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Ankel",
+      "IRI-based" : "ankle",
+      "en" : "Ankle"
+    },
+    "id" : "171",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "234",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#infusion",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Infusjon",
+      "IRI-based" : "infusion",
+      "en" : "Infusion"
+    },
+    "subClasses" : [ "236", "118", "237" ],
+    "id" : "113",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "238",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "239",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "197",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "187",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "240",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#dizziness",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Svimmelhet",
+      "IRI-based" : "dizziness",
+      "en" : "Dizziness"
+    },
+    "id" : "59",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#email",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "E-post",
+      "IRI-based" : "email",
+      "en" : "Email"
+    },
+    "id" : "87",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#health_care_provider",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Helsepersonell",
+      "IRI-based" : "health_care_provider",
+      "en" : "Health care provider"
+    },
+    "comment" : {
+      "en" : "health care provider, such as a clinician."
+    },
+    "id" : "144",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#sample_or_test_number",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Prøve eller testnummer",
+      "IRI-based" : "sample_or_test_number",
+      "en" : "Sample or test number"
+    },
+    "comment" : {
+      "no" : "Identifikasjonsnummer gitt til prøver for laboratorietesting.",
+      "en" : "Identification number given to specimens for lab testing."
+    },
+    "id" : "38",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#catheter_procedure",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kateter prosedyre",
+      "IRI-based" : "catheter_procedure",
+      "en" : "Catheter procedure"
+    },
+    "subClasses" : [ "249", "43", "250", "251", "19", "252" ],
+    "id" : "20",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#blood_transfusion",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Blodverføring",
+      "IRI-based" : "blood_transfusion",
+      "en" : "Blood transfusion"
+    },
+    "id" : "256",
+    "superClasses" : [ "115" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#back",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Rygg",
+      "IRI-based" : "back",
+      "en" : "Back"
+    },
+    "id" : "264",
+    "superClasses" : [ "265" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#hardness",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Hardhet",
+      "IRI-based" : "hardness",
+      "en" : "Hardness"
+    },
+    "id" : "66",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#phlebitis",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Flebitis",
+      "IRI-based" : "phlebitis",
+      "en" : "Phlebitis"
+    },
+    "id" : "73",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#nausea",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kvalme",
+      "IRI-based" : "nausea",
+      "en" : "Nausea"
+    },
+    "id" : "72",
+    "superClasses" : [ "55" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "56", "94", "95", "268", "185" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "267"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#device_observation",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Utstyrsobservasjon",
+      "IRI-based" : "device_observation",
+      "en" : "Device observation"
+    },
+    "subClasses" : [ "269", "208", "270" ],
+    "id" : "108",
+    "superClasses" : [ "56" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "273", "56", "94" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "272"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "274",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "56", "94", "93" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "275"
+  }, {
+    "instances" : 0,
+    "union" : [ "91", "162", "83", "169" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "254"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#ip_address",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "IP adresse",
+      "IRI-based" : "ip_address",
+      "en" : "IP address"
+    },
+    "comment" : {
+      "no" : "IP-adressenummer som er en identifikator som gis til en enhet, for eksempel en PC.",
+      "en" : "Internet Protocol (IP) address number is an identifier given to a device, such as a computer."
+    },
+    "id" : "85",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#leukocyte",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Leukocytt",
+      "IRI-based" : "leukocyte",
+      "en" : "Leukocyte"
+    },
+    "id" : "155",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#laceration",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Laserasjon",
+      "IRI-based" : "laceration",
+      "en" : "Laceration"
+    },
+    "id" : "134",
+    "superClasses" : [ "106" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#injection",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Injeksjon",
+      "IRI-based" : "injection",
+      "en" : "Injection"
+    },
+    "subClasses" : [ "102", "286", "287", "288", "289" ],
+    "id" : "103",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#account_number",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kontonummer",
+      "IRI-based" : "account_number",
+      "en" : "Account number"
+    },
+    "id" : "33",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#catheter_replacement",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kateter bytting",
+      "IRI-based" : "catheter_replacement",
+      "en" : "Catheter replacement"
+    },
+    "id" : "250",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#tenderness",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Ømhet",
+      "IRI-based" : "tenderness",
+      "en" : "Tenderness"
+    },
+    "comment" : {
+      "en" : "Sensitivity to pain; soreness"
+    },
+    "id" : "58",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#device_number",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Utstyrsnummer",
+      "IRI-based" : "device_number",
+      "en" : "Device number"
+    },
+    "id" : "45",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#arrived_by_ambulance",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Ankom med ambulanse",
+      "IRI-based" : "arrived_by_ambulance",
+      "en" : "Arrived by Ambulance"
+    },
+    "id" : "129",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#intravenous_injection",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Intravenøst injeksjon",
+      "IRI-based" : "intravenous_injection",
+      "en" : "Intravenous injection"
+    },
+    "id" : "288",
+    "superClasses" : [ "103" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#telephone_number",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Telefonnummer",
+      "IRI-based" : "telephone_number",
+      "en" : "Telephone number"
+    },
+    "id" : "40",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#respiratory_rate",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Respirasjons frekvens",
+      "IRI-based" : "respiratory_rate",
+      "en" : "Respiratory rate"
+    },
+    "id" : "268",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#insertion_site",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "innstikkssted",
+      "IRI-based" : "insertion_site",
+      "en" : "Insertion site"
+    },
+    "id" : "27",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#administration_purpose",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Administrasjonsformål",
+      "IRI-based" : "administration_purpose",
+      "en" : "Administration purpose"
+    },
+    "subClasses" : [ "308", "306", "114", "256", "10" ],
+    "id" : "115",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#intramuscular_injection",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Intramuskulært injeksjon",
+      "IRI-based" : "intramuscular_injection",
+      "en" : "Intramuscular injection"
+    },
+    "id" : "286",
+    "superClasses" : [ "103" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#c_reactive_protein",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "C-reaktivt protein",
+      "IRI-based" : "c_reactive_protein",
+      "en" : "C-reactive protein"
+    },
+    "id" : "151",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#administration_way",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "https://volven.no/produkt.asp?id=462607&catID=3&subID=8",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Administrasjonsvei",
+      "IRI-based" : "administration_way",
+      "en" : "Administration way"
+    },
+    "subClasses" : [ "283", "96", "188" ],
+    "id" : "97",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#biometric_identifier",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Biometrisk identifikator",
+      "IRI-based" : "biometric_identifier",
+      "en" : "Biometric identifier"
+    },
+    "id" : "84",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#hip",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Hofte",
+      "IRI-based" : "hip",
+      "en" : "Hip"
+    },
+    "id" : "172",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#trunk",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Torso",
+      "IRI-based" : "trunk",
+      "en" : "Trunk"
+    },
+    "subClasses" : [ "264", "277" ],
+    "id" : "265",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#epidural_use",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "Administration way code \n17 Epidural use\n\n(Translated to English)\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Administrasjonsvei kodeverdier\n17 Epidural bruk\n\nhttps://volven.no/produkt.asp?id=462607&catID=3&subID=8\n\nLast accessed: 30. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Epidural bruk",
+      "IRI-based" : "epidural_use",
+      "en" : "Epidural use"
+    },
+    "id" : "283",
+    "superClasses" : [ "97" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#infection",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Infeksjon",
+      "IRI-based" : "infection",
+      "en" : "Infection"
+    },
+    "id" : "60",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#catheter_discontinue_use",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kateter seponering",
+      "IRI-based" : "catheter_discontinue_use",
+      "en" : "Catheter discontinuation"
+    },
+    "id" : "249",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#iv_antibiotics",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "IV antibiotika",
+      "IRI-based" : "iv_antibiotics",
+      "en" : "IV antibiotics"
+    },
+    "id" : "12",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#purulence",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Puss",
+      "IRI-based" : "purulence",
+      "en" : "Purulence"
+    },
+    "id" : "67",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#self_inflicted_injection",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Selvpåført injeksjon",
+      "IRI-based" : "self_inflicted_injection",
+      "en" : "Self-inflicted injection"
+    },
+    "id" : "287",
+    "superClasses" : [ "103" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#valve",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Ventil",
+      "IRI-based" : "valve",
+      "en" : "Valve"
+    },
+    "subClasses" : [ "30" ],
+    "id" : "31",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#midline_catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Midline kateter",
+      "IRI-based" : "midline_catheter",
+      "en" : "Midline catheter"
+    },
+    "id" : "165",
+    "superClasses" : [ "162" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#liquid",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Væske",
+      "IRI-based" : "liquid",
+      "en" : "Liquid"
+    },
+    "id" : "269",
+    "superClasses" : [ "108" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#relative",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Slektning",
+      "IRI-based" : "relative",
+      "en" : "Relative of the patient"
+    },
+    "comment" : {
+      "no" : "Person relatert til pasient",
+      "en" : "Person related to patient"
+    },
+    "id" : "147",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#vein",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Vener er blodårer som fører blodet fra kroppen til hjertet. Blodårer som fører blod fra hjertet til kroppen kalles arterier. Ofte følger to mindre vener en arterie i kretsløpet.\n\nDe fleste venene samler oksygenfattig blod fra kroppen og fører det til hjertet og lungene. Venene i armene og beina er synlige under huden. De har veneklaffer som hindrer at blodet strømmer «feil vei», det vil si vekk fra hjertet. Blodtrykket i venene er svært lavt sammenliknet med trykket i arteriene.\n\nhttps://sml.snl.no/vener\n\nLast accessed: 30. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Ven",
+      "IRI-based" : "vein",
+      "en" : "Vein"
+    },
+    "id" : "193",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#catheter_self_removal",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kateter selvseponering",
+      "IRI-based" : "catheter_self_removal",
+      "en" : "Catheter self-removal"
+    },
+    "id" : "252",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#peripherally_inserted_central_catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "En annen type langvarig venetilgang er et PICC-kateter, eller et perifert-innsatt sentralt kateter. Sammenlignet med et sentralt venekateter settes et PICC-kateter inn i en vene i armen eller hånden. Som med sentralt venekateter føres kateteret innover langs stadig større vener inntil det når vena cava superior.\n\nhttps://nhi.no/animasjoner/hjerte-og-kar/sentrale-venekatetre/\n\nLast accessed: 30. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "A peripherally inserted central catheter (PICC), also called a PICC line, is a long, thin tube that's inserted through a vein in your arm and passed through to the larger veins near your heart. Very rarely, the PICC line may be placed in your leg.\n\nA PICC line gives your doctor access to the large central veins near the heart. It's generally used to give medications or liquid nutrition. A PICC line can help avoid the pain of frequent needle sticks and reduce the risk of irritation to the smaller veins in your arms.\n\nhttps://www.mayoclinic.org/tests-procedures/picc-line/about/pac-20468748\n\nLast accessed: 30. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "PICC",
+      "IRI-based" : "peripherally_inserted_central_catheter",
+      "en" : "PICC"
+    },
+    "id" : "166",
+    "superClasses" : [ "162" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#iv_fluid",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "IV væske",
+      "IRI-based" : "iv_fluid",
+      "en" : "IV fluid"
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#numeral_identifier",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Numerisk identifikator",
+      "IRI-based" : "numeral_identifier",
+      "en" : "Numeral identifier"
+    },
+    "subClasses" : [ "33", "36", "38", "40", "45", "49" ],
+    "comment" : {
+      "no" : "Numeriske verdier som kan identifisere en person.",
+      "en" : "Numerical values which can identify an individual."
+    },
+    "id" : "34",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#organ_part",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Organdel",
+      "IRI-based" : "organ_part",
+      "en" : "Organ part"
+    },
+    "subClasses" : [ "51", "41" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Anatomisk plassering",
+      "IRI-based" : "anatomical_location",
+      "en" : "Anatomical location"
+    },
+    "subClasses" : [ "25", "27", "1" ],
+    "comment" : {
+      "no" : "Anatomiske kroppsdeler, organer, eller relative posisjoner av kroppen. Et plass på kroppen.",
+      "en" : "Anatomical body parts, organs, or relative positions of the body.  Somewhere on the body."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#limb",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Lem",
+      "IRI-based" : "limb",
+      "en" : "Limb"
+    },
+    "subClasses" : [ "4", "7" ],
+    "id" : "5",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#hickman_catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Hickman kateter",
+      "IRI-based" : "hickman_catheter",
+      "en" : "Hickman catheter"
+    },
+    "id" : "167",
+    "superClasses" : [ "162" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#circulatory_system",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Sirkulasjonssystemet består av hjertet og alle blodårene i kroppen. Hovedoppgaven til sirkulasjonssystemet er temperaturregulering og transport av ulike stoffer i kroppen.\n\nhttps://ndla.no/subject:1:22dee9ab-5b1a-4c23-8c97-c68107b881bb/topic:2:77162/topic:2:188655/resource:1:109709\n\nLast accessed 5. Dec 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Karsystemet",
+      "IRI-based" : "circulatory_system",
+      "en" : "Vascular system"
+    },
+    "subClasses" : [ "191", "193" ],
+    "id" : "51",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#leakage",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Lekkasje",
+      "IRI-based" : "leakage",
+      "en" : "Leakage"
+    },
+    "id" : "270",
+    "superClasses" : [ "108" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#subcutaneous_infusion",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Subkutant infusjon",
+      "IRI-based" : "subcutaneous_infusion",
+      "en" : "Subcutaneous infusion"
+    },
+    "id" : "237",
+    "superClasses" : [ "113" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_1",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Annotert dokument sesjon 1",
+      "IRI-based" : "annotated_document_session_1",
+      "en" : "Annotated document session 1"
+    },
+    "intersection" : [ "23" ],
+    "comment" : {
+      "no" : "Annotert avvikshendelse notater fra sesjon 1.",
+      "en" : "Annotated adverse event notes from annotation session 1."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "319"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_3",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Annotert dokument sesjon 3",
+      "IRI-based" : "annotated_document_session_3",
+      "en" : "Annotated document session 3"
+    },
+    "intersection" : [ "23" ],
+    "comment" : {
+      "no" : "Annotert avvikshendelse notater fra sesjon 3.",
+      "en" : "Annotated adverse event notes from annotation session 3."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "320"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_2",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Annotert dokument sesjon 2",
+      "IRI-based" : "annotated_document_session_2",
+      "en" : "Annotated document session 2"
+    },
+    "intersection" : [ "23" ],
+    "comment" : {
+      "no" : "Annotert avvikshendelse notater fra sesjon 2.",
+      "en" : "Annotated adverse event notes from annotation session 2."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "321"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#annotated_document_session_4",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Annotert dokument sesjon 4",
+      "IRI-based" : "annotated_document_session_4",
+      "en" : "Annotated document session 4"
+    },
+    "intersection" : [ "23" ],
+    "comment" : {
+      "no" : "Annotert avvikshendelse notater fra sesjon 4.",
+      "en" : "Annotated adverse event notes from annotation session 4."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "322"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#bleeding",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Blødning",
+      "IRI-based" : "bleeding",
+      "en" : "Bleeding"
+    },
+    "id" : "64",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#iv_chemo",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Intravenøs kjemoterapi",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "IV cellegift",
+      "IRI-based" : "iv_chemo",
+      "en" : "Intravenous chemotherapy"
+    },
+    "id" : "18",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#lab_result",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Laboratorieresultat",
+      "IRI-based" : "lab_result",
+      "en" : "Lab result"
+    },
+    "subClasses" : [ "151", "153", "155" ],
+    "id" : "79",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#bloody",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Blodig",
+      "IRI-based" : "bloody",
+      "en" : "Bloody"
+    },
+    "id" : "61",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#arm",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Arm",
+      "IRI-based" : "arm",
+      "en" : "Arm"
+    },
+    "subClasses" : [ "157", "159", "161", "141", "92" ],
+    "id" : "7",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#surgery",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kirurgi",
+      "IRI-based" : "surgery",
+      "en" : "Surgery"
+    },
+    "id" : "111",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#catheter_insertion",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kateter innstikking",
+      "IRI-based" : "catheter_insertion",
+      "en" : "Catheter insertion"
+    },
+    "id" : "251",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#forearm",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Underarm",
+      "IRI-based" : "forearm",
+      "en" : "Forearm"
+    },
+    "id" : "157",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#medical_device",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C16830",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "no" : "Medisk utstyr",
+      "IRI-based" : "medical_device",
+      "en" : "Medical device"
+    },
+    "subClasses" : [ "91", "123", "31", "82", "127" ],
+    "comment" : {
+      "no" : "Ethvert instrument, enhet eller utstyr som brukes til medisinske formål.",
+      "en" : "Any instrument, device, or equipment used for a medical purpose."
+    },
+    "id" : "83"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#psychosis",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Psykose",
+      "IRI-based" : "psychosis",
+      "en" : "Psychosis"
+    },
+    "id" : "329",
+    "superClasses" : [ "107" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#incision",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Disse kan blø sterkt og har ofte skarpe, sprikende kanter. Selve blødningen virker rensende, og sårene er som regel ganske rene.\n\nhttps://nhi.no/forstehjelp/hudskader/sarskader/\n\nLast accessed: 22. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Snittsår",
+      "IRI-based" : "incision",
+      "en" : "Incision"
+    },
+    "id" : "136",
+    "superClasses" : [ "106" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#warm",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Varm",
+      "IRI-based" : "warm",
+      "en" : "Warm"
+    },
+    "id" : "65",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#intradermal_injection",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Intradermalt injeksjon",
+      "IRI-based" : "intradermal_injection",
+      "en" : "Intradermal injection"
+    },
+    "id" : "289",
+    "superClasses" : [ "103" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#tube",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Rør",
+      "IRI-based" : "tube",
+      "en" : "Tube"
+    },
+    "id" : "127",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#pump",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Pumpe",
+      "IRI-based" : "pump",
+      "en" : "Pump"
+    },
+    "id" : "123",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#blood_culture",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Blodkultur",
+      "IRI-based" : "blood_culture",
+      "en" : "Blood culture"
+    },
+    "id" : "153",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#web_address",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Nettadresse",
+      "IRI-based" : "web_address",
+      "en" : "Web Uniform Resource Locator (URL) address"
+    },
+    "comment" : {
+      "no" : "Link til nettside.",
+      "en" : "Link to website."
+    },
+    "id" : "88",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#intravenous_infusion",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Intravenøst infusjon",
+      "IRI-based" : "intravenous_infusion",
+      "en" : "Intravenous infusion"
+    },
+    "id" : "236",
+    "superClasses" : [ "113" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#blood_test",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Blodprøve",
+      "IRI-based" : "blood_test",
+      "en" : "Blood test"
+    },
+    "id" : "308",
+    "superClasses" : [ "115" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#radiology",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Radiologi",
+      "IRI-based" : "radiology",
+      "en" : "Radiology"
+    },
+    "id" : "223",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#puncture",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Forårsakes av kniv, spiker, glassbiter, piggtråd eller lignende. Innstikksåret kan være nokså lite, men såret kan likevel gå dypt inn i kroppen og omfatte indre organer. Faren for infeksjon er stor på grunn av forurensninger som sitter dypt.\n\nhttps://nhi.no/forstehjelp/hudskader/sarskader/\n\nLast accessed: 22. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Stikksår, sår forårsaket av spisse gjenstander som for eksempel spiker. Dersom det er mistanke om at gjenstanden som forårsaket stikket kan være uren, bør lege kontaktes med spørsmål om stivkrampevaksine og antibiotika. Alle dype stikksår i bryst, buk eller ledd må vurderes av lege.\n\nhttps://sml.snl.no/stikks%C3%A5r\n\nLast accessed: 22. November 2021",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "no",
+        "value" : "Sår som skyldes spiker, piggtråd og andre spisse gjenstander kan gi dype sår med liten innstikksåpning. Det kan da være fare for betennelse i dybden, og såret bør undersøkes av lege. Alle stikksår i bryst, buk eller ledd må vurderes av lege.\n\nhttps://sml.snl.no/s%C3%A5rbehandling\n\nLast accessed: 22. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Stikksår",
+      "IRI-based" : "puncture",
+      "en" : "Puncture"
+    },
+    "id" : "132",
+    "superClasses" : [ "106" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#upper_arm",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Overarm",
+      "IRI-based" : "upper_arm",
+      "en" : "Upper arm"
+    },
+    "id" : "141",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#subcutaneous_catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Subkutant kateter",
+      "IRI-based" : "subcutaneous_catheter",
+      "en" : "Subcutaneous catheter"
+    },
+    "id" : "353",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#navel",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Navle",
+      "IRI-based" : "navel",
+      "en" : "Navel"
+    },
+    "id" : "277",
+    "superClasses" : [ "265" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#body_part",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kroppsdel",
+      "IRI-based" : "body_part",
+      "en" : "Body part"
+    },
+    "subClasses" : [ "5", "173", "222", "265" ],
+    "comment" : {
+      "en" : "Part of the human body"
+    },
+    "id" : "25",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kateter",
+      "IRI-based" : "catheter",
+      "en" : "Catheter"
+    },
+    "subClasses" : [ "198", "162", "353", "232", "90", "333" ],
+    "id" : "91",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#iv_painkiller",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "IV smertestillende",
+      "IRI-based" : "iv_painkiller",
+      "en" : "IV painkiller"
+    },
+    "id" : "14",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#vas_catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "VAS-kateter",
+      "IRI-based" : "vas_catheter",
+      "en" : "VAS"
+    },
+    "id" : "168",
+    "superClasses" : [ "162" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#epidural_catheter",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Epidural kateter",
+      "IRI-based" : "epidural_catheter",
+      "en" : "Epidural catheter"
+    },
+    "id" : "333",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#pain",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Smerte",
+      "IRI-based" : "pain",
+      "en" : "Pain"
+    },
+    "id" : "57",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#vital_sign",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "vital sign from Ontology for General Medical Science (OGMS)\n\nA physical sign in which a non-zero value is standardly considered to be an indication that the organism is alive.\n\nhttps://www.ebi.ac.uk/ols/ontologies/ogms/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOGMS_0000029\n\nLast accessed: 25. November 2021",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "no" : "Vitale livstegn",
+      "IRI-based" : "vital_sign",
+      "en" : "Vital sign"
+    },
+    "subClasses" : [ "273", "93", "95", "268", "185" ],
+    "id" : "94",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#hemodialysis",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Hemodialyse",
+      "IRI-based" : "hemodialysis",
+      "en" : "Hemodialysis"
+    },
+    "id" : "306",
+    "superClasses" : [ "115" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#body_temperature",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Kroppstemperatur",
+      "IRI-based" : "body_temperature",
+      "en" : "Body temperature"
+    },
+    "id" : "273",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#three_way_valve",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Treveiskran",
+      "IRI-based" : "three_way_valve",
+      "en" : "3-way valve"
+    },
+    "id" : "30",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#time",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Tid",
+      "IRI-based" : "time",
+      "en" : "Time"
+    },
+    "comment" : {
+      "no" : "Målbar periode ved bruk av timer, minutter, dager, måneder, år osv. Dette inkluderer dato og klokkeslett.",
+      "en" : "Measurable period using hours, minutes, days, months, years, etc.  This includes date and time."
+    },
+    "id" : "86",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#subcutaneous",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Subkutan",
+      "IRI-based" : "subcutaneous",
+      "en" : "Subcutaneous"
+    },
+    "id" : "42",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#neurological_and_physiological",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "nevrologisk og fysiologisk",
+      "IRI-based" : "neurological_and_physiological",
+      "en" : "Neurological and physiological"
+    },
+    "subClasses" : [ "194", "329" ],
+    "id" : "107",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#geographic_location_identifier",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "instances" : 0,
+    "label" : {
+      "no" : "Geografiske lokasjon identifikator",
+      "IRI-based" : "geographic_location_identifier",
+      "en" : "Geographic location identifier"
+    },
+    "comment" : {
+      "no" : "Fysisk geografisk lokaliseringsopplysninger, for eksempel adresse eller postnummer.",
+      "en" : "Physical geographical location identifier, such as address or zip codes."
+    },
+    "id" : "89",
+    "superClasses" : [ "77" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "216",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "217",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "221",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "225",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "233",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "245",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "246",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "253",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "257",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "258",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "260",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "271",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "276",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "278",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "280",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "281",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "282",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "284",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "285",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "290",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "291",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "292",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "293",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "294",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "295",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "296",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "297",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "298",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "299",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "300",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "301",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "302",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "303",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "304",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "305",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "307",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "309",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "310",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "311",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "312",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "313",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "314",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "315",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "316",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "317",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "318",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "323",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "324",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "325",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "326",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "327",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "328",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "330",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "331",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "332",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "334",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "335",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "336",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "337",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "338",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "339",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "340",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "341",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "342",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "343",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "344",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "345",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "346",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "347",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "348",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "349",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "350",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "351",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "352",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "354",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "355",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "356",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "357",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "358",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "359",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "360",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "361",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "362",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "363",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "364",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "365",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "366",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "367",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "368",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "369",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "370",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "371",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "372",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "373",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "374",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "375",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "376",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "377",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "378",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "10",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "10",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "10",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "10",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "22",
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
+  }, {
+    "range" : "2",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "2",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "34",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "34",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "34",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "34",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "34",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "47",
+    "label" : {
+      "no" : "Anatomisk plasseringsbeskrivelse",
+      "IRI-based" : "anatomical_location_descriptor",
+      "en" : "Anatomical location descriptor"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Location of body parts away from center.\n\n3 Options: \n  1. Front\n  2. Back\nor\n  1. Left\n  2. Right\nor\n  1. Proximal (Proksimal)\n  2. Distal (Distal)\n  3. Medial (Medial)\n  4. Sideways (Sideveis)\n  5. Halfway (Halvveis)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "range" : "34",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "1",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "1",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#is_sepsis_related",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "54",
+    "label" : {
+      "no" : "Er sepsis-relatert",
+      "IRI-based" : "is_sepsis_related",
+      "en" : "Is sepsis-related"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "range" : "56",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_front_or_back",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "81",
+    "label" : {
+      "no" : "Anatomisk plasseringsbeskrivelse foran eller bak",
+      "IRI-based" : "anatomical_location_descriptor_front_or_back",
+      "en" : "Anatomical location descriptor front or back"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#observation_said_by",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "99",
+    "label" : {
+      "no" : "Observasjon sagt av",
+      "IRI-based" : "observation_said_by",
+      "en" : "Observation said by"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "100"
+  }, {
+    "range" : "105",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "105",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "105",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "105",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#has_medical_device_malfunction",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "117",
+    "label" : {
+      "no" : "Har medisink utstyrsfeil",
+      "IRI-based" : "has_medical_device_malfunction",
+      "en" : "Has medical device malfunction"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#procedure_uses",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "83",
+    "label" : {
+      "no" : "Prosedyre bruker",
+      "IRI-based" : "procedure_uses",
+      "en" : "Procedure uses"
+    },
+    "domain" : "105",
+    "attributes" : [ "object" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#is_catheter_related",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "121",
+    "label" : {
+      "no" : "Er kateterrelatert",
+      "IRI-based" : "is_catheter_related",
+      "en" : "Is catheter-related"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "range" : "83",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "83",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "83",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "83",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "105",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "105",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "106",
+    "domain" : "132",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "106",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "106",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "106",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "83",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "7",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "7",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "145",
+    "domain" : "144",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "145",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "145",
+    "domain" : "149",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "79",
+    "domain" : "151",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "79",
+    "domain" : "153",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "79",
+    "domain" : "155",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "7",
+    "domain" : "157",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "7",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "7",
+    "domain" : "161",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "4",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "4",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "4",
+    "domain" : "171",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "4",
+    "domain" : "172",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "162",
+    "domain" : "163",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "162",
+    "domain" : "164",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "162",
+    "domain" : "165",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "162",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "162",
+    "domain" : "167",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "162",
+    "domain" : "168",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "162",
+    "domain" : "169",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#is_medical_device_malfunction",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "187",
+    "label" : {
+      "no" : "Er medisinsk utstyrsfeil",
+      "IRI-based" : "is_medical_device_malfunction",
+      "en" : "Is medical device malfunction"
+    },
+    "domain" : "83",
+    "attributes" : [ "datatype" ],
+    "id" : "186"
+  }, {
+    "range" : "10",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "51",
+    "domain" : "191",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "51",
+    "domain" : "193",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#is_name",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "197",
+    "label" : {
+      "no" : "Er navn",
+      "IRI-based" : "is_name",
+      "en" : "Is name"
+    },
+    "domain" : "145",
+    "attributes" : [ "datatype" ],
+    "id" : "196"
+  }, {
+    "range" : "105",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#has_session_number",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "200",
+    "label" : {
+      "no" : "har annoteringssesjonsnummer",
+      "IRI-based" : "has_session_number",
+      "en" : "Has annotation session number"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "207"
+  }, {
+    "range" : "145",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "range" : "105",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "105",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "105",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "145",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  }, {
+    "range" : "145",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "56",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "range" : "105",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
+  }, {
+    "range" : "56",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "83",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#incorrect_procedure_action",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "202",
+    "label" : {
+      "no" : "Er feil prosedyre handling",
+      "IRI-based" : "incorrect_procedure_action",
+      "en" : "Is incorrect procedure action"
+    },
+    "domain" : "105",
+    "attributes" : [ "datatype" ],
+    "id" : "221"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#is_bandage_of",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "201",
+    "label" : {
+      "no" : "Er bandasje av",
+      "IRI-based" : "is_bandage_of",
+      "en" : "Is bandage of"
+    },
+    "domain" : "83",
+    "attributes" : [ "datatype" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#observation_is_diagnosis",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "234",
+    "label" : {
+      "no" : "Observasjon er diagnose",
+      "IRI-based" : "observation_is_diagnosis",
+      "en" : "Observation is diagnosis"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "233"
+  }, {
+    "range" : "55",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "241"
+  }, {
+    "range" : "55",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "55",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "243"
+  }, {
+    "range" : "55",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "244"
+  }, {
+    "range" : "55",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "245"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#is_infection_related",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "195",
+    "label" : {
+      "no" : "Er infeksjonsrelatert",
+      "IRI-based" : "is_infection_related",
+      "en" : "Is infection-related"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "246"
+  }, {
+    "range" : "55",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "247"
+  }, {
+    "range" : "55",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "248"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#has_pivc_color",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "230",
+    "label" : {
+      "no" : "Har perifert venekateter farge",
+      "IRI-based" : "has_pivc_color",
+      "en" : "Has peripheral venous catheter color"
+    },
+    "domain" : "254",
+    "comment" : {
+      "en" : "Color of peripheral venous catheter (PIVC; perifert venekateter; PVK):\n1. Purple (Lilla)\n2. Yellow (Gul)\n3. Blue (Blå)\n4. Pink (Rosa)\n5. Green (Grønn)\n6. White (Hvit)\n7. Gray (Grå)\n8. Brown (Brun)\n9. Orange (Oransje)\n\nhttps://ehandboken.ous-hf.no/document/115280"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "253"
+  }, {
+    "range" : "55",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "255"
+  }, {
+    "range" : "55",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "257"
+  }, {
+    "range" : "55",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "258"
+  }, {
+    "range" : "55",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "259"
+  }, {
+    "range" : "55",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "260"
+  }, {
+    "range" : "55",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "261"
+  }, {
+    "range" : "55",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "262"
+  }, {
+    "range" : "55",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "263"
+  }, {
+    "range" : "41",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "266"
+  }, {
+    "range" : "55",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "271"
+  }, {
+    "range" : "265",
+    "domain" : "277",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "276"
+  }, {
+    "range" : "265",
+    "domain" : "264",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "278"
+  }, {
+    "range" : "56",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "279"
+  }, {
+    "range" : "56",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "280"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#is_observed_with",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "226",
+    "label" : {
+      "no" : "Er observert med",
+      "IRI-based" : "is_observed_with",
+      "en" : "Is observed with"
+    },
+    "domain" : "56",
+    "attributes" : [ "object" ],
+    "id" : "281"
+  }, {
+    "range" : "97",
+    "domain" : "283",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "282"
+  }, {
+    "range" : "97",
+    "domain" : "188",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "284"
+  }, {
+    "range" : "97",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "285"
+  }, {
+    "range" : "77",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "290"
+  }, {
+    "range" : "77",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "291"
+  }, {
+    "range" : "77",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "292"
+  }, {
+    "range" : "77",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "293"
+  }, {
+    "range" : "77",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "294"
+  }, {
+    "range" : "77",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "295"
+  }, {
+    "range" : "77",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "296"
+  }, {
+    "range" : "77",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "297"
+  }, {
+    "range" : "115",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "298"
+  }, {
+    "range" : "115",
+    "domain" : "256",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "299"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#document_id",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "219",
+    "label" : {
+      "no" : "Dokument identifikasjon",
+      "IRI-based" : "document_id",
+      "en" : "Document identification"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "300"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#has_label",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "220",
+    "label" : {
+      "IRI-based" : "has_label",
+      "en" : "Has label"
+    },
+    "domain" : "23",
+    "comment" : {
+      "no" : "Har merking",
+      "en" : "An annotated document has an annotated label."
+    },
+    "attributes" : [ "object" ],
+    "id" : "301"
+  }, {
+    "range" : "115",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "302"
+  }, {
+    "range" : "55",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "303"
+  }, {
+    "range" : "55",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "304"
+  }, {
+    "range" : "115",
+    "domain" : "306",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "305"
+  }, {
+    "range" : "115",
+    "domain" : "308",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "307"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#has_document_filename",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "206",
+    "label" : {
+      "no" : "Har dokumentfilnavn",
+      "IRI-based" : "has_document_filename",
+      "en" : "Has document filename"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "309"
+  }, {
+    "range" : "56",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "310"
+  }, {
+    "range" : "56",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "311"
+  }, {
+    "range" : "56",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "312"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#is_bsi_related",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "199",
+    "label" : {
+      "no" : "Er BSI-relatert",
+      "IRI-based" : "is_bsi_related",
+      "en" : "Is BSI-related"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "313"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#has_conscious_state",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "224",
+    "label" : {
+      "no" : "Har bevisste tilstand av",
+      "IRI-based" : "has_conscious_state",
+      "en" : "Has conscious state of"
+    },
+    "domain" : "275",
+    "comment" : {
+      "en" : "Level of consciousness based on NEWSII conscious state (Bevissthetsnivå) ACVPU https://ehandboken.ous-hf.no/document/78636\n\n\nLevels:\n1. Alert (Våken)\n2. Confusion (Forvirring)\n3. Verbally responsive (Verbal respons)\n4. Painfully responsive (Smerte respons)\n5. Unresponsive (Bevisstløshet)\n\nhttps://sml.snl.no/bevissthetsforstyrrelse"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "314"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#has_annotator_id",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "203",
+    "label" : {
+      "no" : "har annotator ID",
+      "IRI-based" : "has_annotator_id",
+      "en" : "has annotator ID"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "315"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#document_contains",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "235",
+    "label" : {
+      "no" : "Notat inneholder",
+      "IRI-based" : "document_contains",
+      "en" : "Note contains"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "316"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#located_nearby_on_at_in",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "2",
+    "label" : {
+      "no" : "Lokalisert nærheten/ved/på/i",
+      "IRI-based" : "located_nearby_on_at_in",
+      "en" : "Located nearby/on/at/in"
+    },
+    "domain" : "228",
+    "attributes" : [ "object" ],
+    "id" : "317"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#is_pivc_related",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "240",
+    "label" : {
+      "no" : "Er PVK-relatert",
+      "IRI-based" : "is_pivc_related",
+      "en" : "Is PIVC-related"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "318"
+  }, {
+    "range" : "103",
+    "domain" : "286",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "323"
+  }, {
+    "range" : "103",
+    "domain" : "287",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "324"
+  }, {
+    "range" : "103",
+    "domain" : "288",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "325"
+  }, {
+    "range" : "103",
+    "domain" : "289",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "326"
+  }, {
+    "range" : "107",
+    "domain" : "194",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "327"
+  }, {
+    "range" : "107",
+    "domain" : "329",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "328"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#negation",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "238",
+    "label" : {
+      "no" : "Negasjon",
+      "IRI-based" : "negation",
+      "en" : "Negation"
+    },
+    "domain" : "22",
+    "attributes" : [ "datatype" ],
+    "id" : "330"
+  }, {
+    "range" : "103",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "331"
+  }, {
+    "range" : "91",
+    "domain" : "333",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "332"
+  }, {
+    "range" : "108",
+    "domain" : "269",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "334"
+  }, {
+    "range" : "108",
+    "domain" : "208",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "335"
+  }, {
+    "range" : "108",
+    "domain" : "270",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "336"
+  }, {
+    "range" : "94",
+    "domain" : "273",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "337"
+  }, {
+    "range" : "94",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "338"
+  }, {
+    "range" : "94",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "339"
+  }, {
+    "range" : "94",
+    "domain" : "268",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "340"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#person_has",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "229",
+    "label" : {
+      "no" : "Person har",
+      "IRI-based" : "person_has",
+      "en" : "Person has"
+    },
+    "domain" : "145",
+    "attributes" : [ "object" ],
+    "id" : "341"
+  }, {
+    "range" : "94",
+    "domain" : "185",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "342"
+  }, {
+    "range" : "91",
+    "domain" : "232",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "343"
+  }, {
+    "range" : "91",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "344"
+  }, {
+    "range" : "20",
+    "domain" : "252",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "345"
+  }, {
+    "range" : "25",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "346"
+  }, {
+    "range" : "25",
+    "domain" : "173",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "347"
+  }, {
+    "range" : "25",
+    "domain" : "222",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "348"
+  }, {
+    "range" : "25",
+    "domain" : "265",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "349"
+  }, {
+    "range" : "91",
+    "domain" : "198",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "350"
+  }, {
+    "range" : "91",
+    "domain" : "162",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "351"
+  }, {
+    "range" : "91",
+    "domain" : "353",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "352"
+  }, {
+    "range" : "20",
+    "domain" : "250",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "354"
+  }, {
+    "range" : "20",
+    "domain" : "251",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "355"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "356"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#has_identifier",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "205",
+    "label" : {
+      "no" : "Har identifikator",
+      "IRI-based" : "has_identifier",
+      "en" : "Has identifier"
+    },
+    "domain" : "23",
+    "attributes" : [ "datatype" ],
+    "id" : "357"
+  }, {
+    "range" : "105",
+    "domain" : "223",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "358"
+  }, {
+    "range" : "105",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "359"
+  }, {
+    "range" : "113",
+    "domain" : "236",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "360"
+  }, {
+    "range" : "113",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "361"
+  }, {
+    "range" : "113",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "362"
+  }, {
+    "range" : "20",
+    "domain" : "249",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "363"
+  }, {
+    "range" : "20",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "364"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#has_body_temperature_range",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "239",
+    "label" : {
+      "no" : "Har kroppstemperaturområde",
+      "IRI-based" : "has_body_temperature_range",
+      "en" : "Has body temperature range"
+    },
+    "domain" : "272",
+    "comment" : {
+      "en" : "Temperature ranges: \n1. Hyperthermia (Hypertermi) https://sml.snl.no/hypertermi, https://sml.snl.no/feber\n2. Normal (Normal) https://sml.snl.no/kroppstemperatur\n3. Hypothermia (Hypotermi) https://sml.snl.no/hypotermi"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "365"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_left_or_right",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "231",
+    "label" : {
+      "no" : "Anatomisk plasseringsbeskrivelse venstre eller høyre",
+      "IRI-based" : "anatomical_location_descriptor_left_or_right",
+      "en" : "Anatomical location descriptor left or right"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "366"
+  }, {
+    "range" : "83",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "367"
+  }, {
+    "range" : "56",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "368"
+  }, {
+    "range" : "145",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "369"
+  }, {
+    "range" : "105",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "370"
+  }, {
+    "range" : "77",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "371"
+  }, {
+    "range" : "83",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "372"
+  }, {
+    "range" : "56",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "373"
+  }, {
+    "range" : "145",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "374"
+  }, {
+    "range" : "23",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "375"
+  }, {
+    "range" : "77",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "376"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#anatomical_location_descriptor_distance",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "227",
+    "label" : {
+      "no" : "Anatomisk plasseringsbeskrivelse avstand",
+      "IRI-based" : "anatomical_location_descriptor_distance",
+      "en" : "Anatomical location descriptor distance"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "377"
+  }, {
+    "iri" : "http://www.semanticweb.org/2022/04/aaenote#has_severity_level",
+    "baseIri" : "http://www.semanticweb.org/2022/04/aaenote",
+    "range" : "274",
+    "label" : {
+      "no" : "Har alvorlighetsgrad",
+      "IRI-based" : "has_severity_level",
+      "en" : "Has severity level"
+    },
+    "domain" : "267",
+    "comment" : {
+      "en" : "Severity Levels:\n1. High (Høy)\n2. Normal (Normal)\n3. Low (Lav)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "378"
+  } ]
+}
