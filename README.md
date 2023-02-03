@@ -1,5 +1,5 @@
 ---
-# Adverse Event NOte TErminology (AAENOTE) & Catheter Infection Indications Ontology (CIIO)
+# Annotated Adverse Event NOte TErminology (AAENOTE) & Catheter Infection Indications Ontology (CIIO)
 ---
 
 This repository contains the terminology, ontology, competency questions, and SPARQL queries for the manuscript accepted on Jan 11, 2023 by the [Semantic Web Journal](http://www.semantic-web-journal.net/):
